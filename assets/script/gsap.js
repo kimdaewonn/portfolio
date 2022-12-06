@@ -3,7 +3,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 // 오른쪽 다리
 const leg1 = gsap.timeline({repeat: 100, yoyo: true});
-leg1.to(".sec1 .img .img1", {x: 500,y:500, duration: 1, rotation: 30})
+leg1.to(".sec1 .img .img1", {x: 500,y:500, duration: 1, rotation: 30,})
 .to(".sec1 .img .img1", {x: 200,y:100, duration: 1, rotation: -30})
 .to(".sec1 .img .img1", {x: 100,y:100, duration: 1, rotation: 20})
 // 왼쪽 다리
@@ -21,8 +21,10 @@ main_text.to(".main_text", {x:0,y:300, duration: 0.1,opacity:0,})
 
 // 나
 gsap.to(".sec2 .img .img1", {
-    x: -100,y:200,scale:0.6,
+    x: -100,y:200,scale:0.6,	
     duration: 2,
+    // behavior:"smooth",
+    // smooth:true,
     scrollTrigger: {
         trigger: ".sec2 .img .img1",
         start: "top 100%",
@@ -39,6 +41,7 @@ gsap.to(".sec2 .img .img1", {
 gsap.to(".sec2 .img .img2",{
     x: 1020,opacity:0,
     duration: 2,
+    behavior:"smooth",
     scrollTrigger: {
         trigger: ".sec2 .img .img2",
         start: "top 100%",
@@ -55,6 +58,7 @@ gsap.to(".sec2 .img .img2",{
 gsap.to(".sec2 .img .img3",{
     x: 670,opacity:0,
     duration: 2,
+    behavior:"smooth",
     scrollTrigger: {
         trigger: ".sec2 .img .img3",
         start: "top 100%",
@@ -71,6 +75,7 @@ gsap.to(".sec2 .img .img3",{
 gsap.to(".sec2 .img .img4",{
     x: 350,opacity:0,
     duration: 2,
+    behavior:"smooth",
     scrollTrigger: {
         trigger: ".sec2 .img .img4",
         start: "top 100%",
@@ -83,14 +88,32 @@ gsap.to(".sec2 .img .img4",{
          toggleActions: "restart pause rssume restet",
     },
 });
+// 상자4(big)
+// gsap.to(".sec2 .img .img5",{
+//     x: 350,rotate,
+//     duration: 2,
+//     behavior:"smooth",
+//     scrollTrigger: {
+//         trigger: ".sec2 .img .img4",
+//         start: "top 100%",
+//         end: "top 0%",
+//         markers: {
+//             startColor: "blue",
+//             endColor: "purple",
+//             fontSize: "30px"
+//         },
+//          toggleActions: "restart pause rssume restet",
+//     },
+// });
 // 상자5
 gsap.to(".sec2 .img .img6",{
     x: -365,opacity:0,
     duration: 2,
+    behavior:"smooth",
     scrollTrigger: {
         trigger: ".sec2 .img .img6",
-        start: "top 100%",
-        end: "top 0%",
+        // start: "top 100%",
+        // end: "top 0%",
         markers: {
             startColor: "blue",
             endColor: "purple",
@@ -101,8 +124,8 @@ gsap.to(".sec2 .img .img6",{
 });
 // name
 gsap.to(".about_title",{
-    x: -1000,opacity:0,
-    duration: 0.1,
+    x:-500,ease:"elastic",
+    duration: 2,
     scrollTrigger: {
         trigger: ".about_title",
         start: "top 100%",
@@ -114,6 +137,19 @@ gsap.to(".about_title",{
         },
          toggleActions: "restart pause rssume restet",
     },
-}
-.to(".about_title",{x:0,opacity:1,})
-);
+});
+gsap.from(".about_title",{
+    x:0,ease:"elastic",
+    duration: 2,
+    scrollTrigger: {
+        trigger: ".about_title",
+        start: "top 100%",
+        end: "top 0%",
+        markers: {
+            startColor: "blue",
+            endColor: "purple",
+            fontSize: "30px"
+        },
+         toggleActions: "restart pause rssume restet",
+    },
+});
