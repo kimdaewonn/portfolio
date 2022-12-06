@@ -3,14 +3,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 // 오른쪽 다리
 const leg1 = gsap.timeline({repeat: 100, yoyo: true});
-leg1.to(".sec1 .img .img1", {x: 500,y:500, duration: 1.5, rotation: 30})
-.to(".sec1 .img .img1", {x: 200,y:100, duration: 1.5, rotation: -30})
-.to(".sec1 .img .img1", {x: 100,y:100, duration: 1.5, rotation: 20})
+leg1.to(".sec1 .img .img1", {x: 500,y:500, duration: 1, rotation: 30})
+.to(".sec1 .img .img1", {x: 200,y:100, duration: 1, rotation: -30})
+.to(".sec1 .img .img1", {x: 100,y:100, duration: 1, rotation: 20})
 // 왼쪽 다리
 const leg2 = gsap.timeline({repeat: 100, yoyo: true});
-leg2.to(".sec1 .img .img2", {x:-300,y:-500, duration: 1.5, rotation: 30})
-.to(".sec1 .img .img2", {x: -200,y:100, duration: 1.5, rotation: -30})
-.to(".sec1 .img .img2", {x: -100,y:100, duration: 1.5, rotation: 20})
+leg2.to(".sec1 .img .img2", {x:-300,y:-500, duration: 1, rotation: 30})
+.to(".sec1 .img .img2", {x: -200,y:100, duration: 1, rotation: -30})
+.to(".sec1 .img .img2", {x: -100,y:100, duration: 1, rotation: 20})
 
 // 메인 텍스트
 const main_text = gsap.timeline({ yoyo:true});
@@ -101,8 +101,8 @@ gsap.to(".sec2 .img .img6",{
 });
 // name
 gsap.to(".about_title",{
-    x: 0,opacity:1,
-    duration: 5,
+    x: -1000,opacity:0,
+    duration: 0.1,
     scrollTrigger: {
         trigger: ".about_title",
         start: "top 100%",
@@ -114,4 +114,6 @@ gsap.to(".about_title",{
         },
          toggleActions: "restart pause rssume restet",
     },
-});
+}
+.to(".about_title",{x:0,opacity:1,})
+);
