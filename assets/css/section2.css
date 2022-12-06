@@ -1,0 +1,157 @@
+/* section2 */
+#section2 {
+    height: 3300px;
+    background: #000;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+}
+.sec2 {
+}
+@keyframes marquee {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+.marquee .outer {
+    overflow: hidden;
+}
+
+.marquee .outer .inner {
+    position: relative;
+    display: flex;
+    width: 200%;
+}
+
+.marquee .outer .inner:nth-child(1) {
+    animation: marquee 5s linear infinite;
+}
+
+.marquee .outer .inner .content {
+    width: 50%;
+}
+
+
+.load {
+    position: relative;
+    margin-left: -82vw;
+}
+.load span {
+    font-size: 30vw;
+    font-family: 'Migra-Extrabold';
+    white-space: nowrap;
+}
+
+.sec2 .img .img1 {
+    position: absolute;
+    left: 80.5%; bottom: 27.5%;
+    width: 20vw;
+}
+.sec2 .img .img2 {
+    position: absolute;
+    left: 45%; bottom: 5%;
+    width: 20vw;
+}
+.sec2 .img .img3 {
+    position: absolute;
+    left: 56%; bottom: 5%;
+    width: 20vw;
+}
+.sec2 .img .img4 {
+    position: absolute;
+    left: 66%; bottom: 5%;
+    width: 20vw;
+}
+.sec2 .img .img5 {
+    position: absolute;
+    left: 77%; bottom: 0%;
+    width: 20vw;
+    z-index: 1;
+}
+.sec2 .img .img6 {
+    position: absolute;
+    left: 88.5%; bottom: 5%;
+    width: 20vw;
+}
+.about {
+}
+.about .about_title {
+    display: flex;
+    justify-content:end;
+    margin-right: 130px;
+    align-items:baseline;
+    margin-top: 200px;
+}
+.about .about_title .name {
+    font-size: 2.5vw;
+    font-family: 'Migra-Extralight';
+    padding-right: 40px;
+}
+.about .about_title .name_h {
+    font-size: 12vw;
+    font-family: 'Migra-Extrabold';
+    margin-bottom: 50px;
+}
+.about_p1 {
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+.about_p1_p {
+    margin-right: 30px;
+    text-align: right;
+    font-size: 1vw;
+    font-family: 'NexonLv2Gothic';
+    line-height: 1.4;
+    font-weight: 300;
+    
+}
+.about_p1 .ocean1 {
+    width: 65vw;
+}
+.about_p1 .about_left_hand img:nth-child(1) {
+    position: absolute;
+    left: 0%;
+    top: 60%;
+    width: 100vw; 
+    z-index: 1;
+}
+.about_p1 .about_left_hand img:nth-child(2) {
+    position: absolute;
+    left: 45%;
+    top: 80%;
+    width: 18vw; 
+    z-index: 2;
+}
+
+.about_p2 {
+    margin-top: 430px;
+    display: flex;
+    position: relative;
+}
+.about_p2 .ocean2 {
+    width: 65vw;
+}
+.about_p2 .about_right_hand img:nth-child(1) {
+    position: absolute;
+    right: 0%;
+    top: 40%;
+    width: 100vw;
+}
+.about_p2 .about_right_hand img:nth-child(2) {
+    position: absolute;
+    right: 41%;
+    top: 80%;
+    width: 18vw; 
+}
+.about_p2_p {
+    margin-left: 30px;
+    font-size: 1vw;
+    font-family: 'NexonLv2Gothic';
+    line-height: 1.4;
+    font-weight: 300;
+}

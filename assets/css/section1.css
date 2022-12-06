@@ -1,0 +1,32 @@
+/* section1 */
+#section1 {
+    height: 100vh;
+    background-image: url(../img/main.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.sec1 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.sec1 .main_text {
+    color: #fff;
+    font-family: 'Migra-Extrabold';
+    font-size: 8vw;
+    line-height: 0.9;
+}
+.sec1 .img {
+}
+.sec1 .img .img1 {
+    position: absolute;
+    right: 0; bottom: 50%;
+    width: 50vw;
+}
+.sec1 .img .img2 {
+    position: absolute;
+    left: 0; bottom: 10%;
+    width: 50vw;
+}

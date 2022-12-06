@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "Migra-Extrabold";
+  font-weight: 800;
+  font-style: normal;
+  src:url("../fonts/Migra-Extrabold.woff") format("woff"),
+  url("../fonts/Migra-Extrabold.woff2") format("woff2"),
+  url("../fonts/Migra-Extrabold.ttf") format("ttf"),
+  url("../fonts/Migra-Extrabold.eot") format("eot");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Migra-Extralight";
+  font-weight: 200;
+  font-style: normal;
+  src: url("../fonts/Migra-Extralight.woff") format("woff"),
+  url("../fonts/Migra-Extralight.woff2") format("woff2"),
+  url("../fonts/Migra-Extralight.ttf") format("ttf"),
+  url("../fonts/Migra-Extralight.eot") format("eot");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MigraItalic-ExtraboldItalic";
+  font-weight: 800;
+  font-style: normal;
+  src:url("../fonts/MigraItalic-ExtraboldItalic.woff") format("woff"),
+  url("../fonts/MigraItalic-ExtraboldItalic.woff2") format("woff2"),
+  url("../fonts/MigraItalic-ExtraboldItalic.ttf") format("ttf"),
+  url("../fonts/MigraItalic-ExtraboldItalic.eot") format("eot");
+  font-display: swap;
+}
+@font-face {
+  font-family: "MigraItalic-ExtralightItalic";
+  font-weight: 200;
+  font-style: normal;
+  src: url("../fonts/MigraItalic-ExtralightItalic.woff") format("woff"),
+  url("../fonts/MigraItalic-ExtralightItalic.woff2") format("woff2"),
+  url("../fonts/MigraItalic-ExtralightItalic.ttf") format("ttf"),
+  url("../fonts/MigraItalic-ExtralightItalic.eot") format("eot");
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "NexonLv2Gothic";
+  font-weight: 300;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicLight.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicLight.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicLight.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicLight.ttf")
+      format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "NexonLv2Gothic";
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicRegular.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicRegular.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicRegular.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicRegular.ttf")
+      format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "NexonLv2Gothic";
+  font-weight: 500;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicMedium.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicMedium.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicMedium.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicMedium.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicMedium.ttf")
+      format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "NexonLv2Gothic";
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicBold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicBold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicBold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicBold.ttf")
+      format("truetype");
+  font-display: swap;
+}
