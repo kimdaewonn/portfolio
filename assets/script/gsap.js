@@ -21,7 +21,7 @@ main_text.to(".main_text", {x:0,y:300, duration: 0.1,opacity:0,})
 
 // 나
 gsap.to(".sec2 .img .img1", {
-    x: -100,y:200,scale:0.7,
+    x: -100,y:200,scale:0.6,
     duration: 2,
     scrollTrigger: {
         trigger: ".sec2 .img .img1",
@@ -37,7 +37,7 @@ gsap.to(".sec2 .img .img1", {
 });
 // 상자1
 gsap.to(".sec2 .img .img2",{
-    x: 1020,
+    x: 1020,opacity:0,
     duration: 2,
     scrollTrigger: {
         trigger: ".sec2 .img .img2",
@@ -53,7 +53,7 @@ gsap.to(".sec2 .img .img2",{
 });
 // 상자2
 gsap.to(".sec2 .img .img3",{
-    x: 670,
+    x: 670,opacity:0,
     duration: 2,
     scrollTrigger: {
         trigger: ".sec2 .img .img3",
@@ -69,7 +69,7 @@ gsap.to(".sec2 .img .img3",{
 });
 // 상자3
 gsap.to(".sec2 .img .img4",{
-    x: 350,
+    x: 350,opacity:0,
     duration: 2,
     scrollTrigger: {
         trigger: ".sec2 .img .img4",
@@ -85,7 +85,7 @@ gsap.to(".sec2 .img .img4",{
 });
 // 상자5
 gsap.to(".sec2 .img .img6",{
-    x: -365,
+    x: -365,opacity:0,
     duration: 2,
     scrollTrigger: {
         trigger: ".sec2 .img .img6",
