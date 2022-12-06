@@ -13,10 +13,9 @@ leg2.to(".sec1 .img .img2", {x:-300,y:-500, duration: 1.5, rotation: 30})
 .to(".sec1 .img .img2", {x: -100,y:100, duration: 1.5, rotation: 20})
 
 // 메인 텍스트
-const main_text = gsap.timeline({ yoyo: true});
-main_text.to(".main_text", {x:0,y:1000, duration: 2,opacity:0,})
-.to(".main_text", {x:0,y:1000, duration: 2,opacity:1,})
-.to(".main_text", {x: 0,y:0, duration: 2,})
+const main_text = gsap.timeline({ yoyo:true});
+main_text.to(".main_text", {x:0,y:300, duration: 0.1,opacity:0,})
+.to(".main_text", {x:0,y:0, duration: 1,opacity:1,})
 
 
 
