@@ -17,22 +17,85 @@ const main_text = gsap.timeline({ yoyo:true});
 main_text.to(".main_text", {x:0,y:300, duration: 0.1,opacity:0,})
 .to(".main_text", {x:0,y:0, duration: 1,opacity:1,})
 
+// section2
 
-
-
-// gsap.to(".main_text", {
-//     x: 1000,
-//     duration: 3,
-//     scrollTrigger: {
-//         trigger: ".main_text",
-//         start: "top 70%",
-//         end: "top 30%",
-//         markers: {
-//             startColor: "blue",
-//             endColor: "purple",
-//             fontSize: "30px"
-//         },
-//         toggleClass: "red",
-//          toggleActions: "restart pause rssume restet",
-//     },
-// });
+// 나
+gsap.to(".sec2 .img .img1", {
+    x: -100,y:200,scale:0.7,
+    duration: 2,
+    scrollTrigger: {
+        trigger: ".sec2 .img .img1",
+        start: "top 100%",
+        end: "top 0%",
+        markers: {
+            startColor: "blue",
+            endColor: "purple",
+            fontSize: "30px"
+        },
+         toggleActions: "restart pause rssume restet",
+    },
+});
+// 상자1
+gsap.to(".sec2 .img .img2",{
+    x: 1020,
+    duration: 2,
+    scrollTrigger: {
+        trigger: ".sec2 .img .img2",
+        start: "top 100%",
+        end: "top 0%",
+        markers: {
+            startColor: "blue",
+            endColor: "purple",
+            fontSize: "30px"
+        },
+         toggleActions: "restart pause rssume restet",
+    },
+});
+// 상자2
+gsap.to(".sec2 .img .img3",{
+    x: 670,
+    duration: 2,
+    scrollTrigger: {
+        trigger: ".sec2 .img .img3",
+        start: "top 100%",
+        end: "top 0%",
+        markers: {
+            startColor: "blue",
+            endColor: "purple",
+            fontSize: "30px"
+        },
+         toggleActions: "restart pause rssume restet",
+    },
+});
+// 상자3
+gsap.to(".sec2 .img .img4",{
+    x: 350,
+    duration: 2,
+    scrollTrigger: {
+        trigger: ".sec2 .img .img4",
+        start: "top 100%",
+        end: "top 0%",
+        markers: {
+            startColor: "blue",
+            endColor: "purple",
+            fontSize: "30px"
+        },
+         toggleActions: "restart pause rssume restet",
+    },
+});
+// 상자5
+gsap.to(".sec2 .img .img6",{
+    x: -372,
+    duration: 2,
+    scrollTrigger: {
+        trigger: ".sec2 .img .img6",
+        start: "top 100%",
+        end: "top 0%",
+        markers: {
+            startColor: "blue",
+            endColor: "purple",
+            fontSize: "30px"
+        },
+         toggleActions: "restart pause rssume restet",
+    },
+});
