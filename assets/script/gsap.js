@@ -1,8 +1,13 @@
+// section1
+
 // 오른쪽 다리
-const tl = gsap.timeline({repeat: 2, yoyo: true});
-tl.to(".sec1 .img .img1", {x: 1000, duration: 5, rotation: 10000, skewY: 1,  borderRadius: 0})
-.to(".sec1 .img .img1", {y: 500, duration: 5, rotation: 0, skewY: 3,  borderRadius: 100})
-.to(".sec1 .img .img1", {x: 0, duration: 5, rotation: 300, skewY: 1,  width: 400})
-.to(".sec1 .img .img1", {y: 0, duration: 5, rotation: 0,  width: 200})
-// 왼쪽 다리git
+const tl1 = gsap.timeline({repeat: 100, yoyo: true});
+tl1.to(".sec1 .img .img1", {x: 500,y:500, duration: 1, rotation: 30})
+.to(".sec1 .img .img1", {x: 200,y:100, duration: 1, rotation: -30})
+.to(".sec1 .img .img1", {x: 100,y:100, duration: 1, rotation: 20})
+// 왼쪽 다리
+const tl2 = gsap.timeline({repeat: 100, yoyo: true});
+tl2.to(".sec1 .img .img2", {x:-300,y:-500, duration: 1, rotation: 30})
+.to(".sec1 .img .img2", {x: -200,y:100, duration: 1, rotation: -30})
+.to(".sec1 .img .img2", {x: -100,y:100, duration: 1, rotation: 20})
 
