@@ -1,5 +1,5 @@
 // 데이터 애니에미션
-const s = skrollr.init();
+// const s = skrollr.init();
 
 // 스크롤탑
 function scroll() {
