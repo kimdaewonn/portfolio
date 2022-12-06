@@ -25,9 +25,18 @@
     position: absolute;
     right: 0; bottom: 50%;
     width: 50vw;
+    z-index: 1;
+
 }
 .sec1 .img .img2 {
     position: absolute;
     left: 0; bottom: 10%;
     width: 50vw;
+    z-index: 1;
+}
+.sec1 .img .img3 {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    width: 30vw;
 }
