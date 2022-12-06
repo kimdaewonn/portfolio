@@ -85,10 +85,26 @@ gsap.to(".sec2 .img .img4",{
 });
 // 상자5
 gsap.to(".sec2 .img .img6",{
-    x: -372,
+    x: -365,
     duration: 2,
     scrollTrigger: {
         trigger: ".sec2 .img .img6",
+        start: "top 100%",
+        end: "top 0%",
+        markers: {
+            startColor: "blue",
+            endColor: "purple",
+            fontSize: "30px"
+        },
+         toggleActions: "restart pause rssume restet",
+    },
+});
+// name
+gsap.to(".about_title",{
+    x: 0,opacity:1,
+    duration: 5,
+    scrollTrigger: {
+        trigger: ".about_title",
         start: "top 100%",
         end: "top 0%",
         markers: {
