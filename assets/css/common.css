@@ -24,6 +24,23 @@ body.fixed {
   height: 100vh;
   overflow: hidden;
 }
+
+#parallax__info {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 2000;
+  background-color: rgba(0,0,0,0.4);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+#parallax__info li, .scrollTop {
+  line-height: 1.4;
+}
+
+
+
 /* .scrollTop {
   position: fixed;
   top: 50%;
