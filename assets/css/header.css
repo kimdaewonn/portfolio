@@ -5,6 +5,7 @@
   top: 0;
   width: 100%;
   z-index: 1111;
+  background: #000;
 }
 #header h1 {
   color: #fff;

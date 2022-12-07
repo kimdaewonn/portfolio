@@ -9,7 +9,7 @@
     margin-top: 5vw;
 }
 .sec2 .load {
-    margin-left: -73vw;
+    margin-left: -10vw;
 }
 .sec2 .load span {
     color: #fff;
@@ -40,18 +40,19 @@
     margin-bottom: 10vw;
 }
 .about1_p {
-    margin-right: 1.6vw;
+    margin-right: 1vw;
+    width: 30%;
     text-align: right;
     font-size: 1.1vw;
-    white-space: nowrap;
+    word-break: keep-all;
     font-family: 'NexonLv2Gothic';
     line-height: 1.5;
     font-weight: 300;
 }
 .about1_img1 {
     background-image: url(../img/ocean1.png);
-    width: 100vw;
-    height: 40vw;
+    width: 65vw;
+    height: 37vw;
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -60,19 +61,18 @@
     margin-bottom: 10vw;
 }
 .about2_p {
-    margin-left: 1.6vw;
     text-align: left;
+    margin-left: 1vw;
     font-size: 1.1vw;
-    white-space: nowrap;
-    /* word-break:normal;
-    width: 40vw; */
+    word-break: keep-all;
+    width:25%;
     font-family: 'NexonLv2Gothic';
     line-height: 1.5;
     font-weight: 300;
 }
 .about2_img1 {
     background-image: url(../img/ocean2.png);
-    width: 100vw;
+    width: 70vw;
     height: 24vw;
     background-size: contain;
     background-repeat: no-repeat;
