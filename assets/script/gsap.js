@@ -21,13 +21,43 @@ main_text.to(".main_text", {x:0,y:0, duration: 1,opacity:1,})
 const main_img = gsap.timeline({ yoyo:true});
 main_img.to(".sec1 .img .img3", {x:0,y:300, duration: 0.1,scale:0,})
 .to(".sec1 .img .img3", {x:0,y:0, duration: 3,scale:1,})
-.to(".sec1 .img .img3", {x:0,y:1000, duration: 1,scale:0,opacity:0})
+.to(".sec1 .img .img3", {x:0,y:500, duration: 1,scale:0,opacity:0,})
 
-const flow_me = gsap.timeline({ yoyo:true});
-flow_me.to(".flow_me", {x:0,y:-300, duration: 0,opacity:0,})
-.to(".flow_me", {x:0,y:0, duration: 3,opacity:1,})
 
 // section2
+// 상자1
+const box1 = gsap.timeline({repeat: 100, yoyo: true});
+box1.to(".sec2 .img .img1", {x: -100,y:200, duration: 1, rotation: 30,})
+.to(".sec2 .img .img1", {x: 200,y:100, duration: 1, rotation: -30})
+// 상자1
+const box2 = gsap.timeline({repeat: 100, yoyo: true});
+box2.to(".sec2 .img .img2", {x: 200,y:200, duration: 1, rotation: 30,})
+.to(".sec2 .img .img2",{x: 200,y:100, duration: 1, rotation: -30})
+// 상자1
+const box3 = gsap.timeline({repeat: 100, yoyo: true});
+box3.to(".sec2 .img .img3", {x: 200,y:200, duration: 1, rotation: 30,})
+.to(".sec2 .img .img3",{x: 200,y:100, duration: 1, rotation: -30})
+// 상자1
+const box4 = gsap.timeline({repeat: 100, yoyo: true});
+box4.to(".sec2 .img .img4", {x: 200,y:200, duration: 1, rotation: 30,})
+.to(".sec2 .img .img4",{x: 200,y:100, duration: 1, rotation: -30})
+// 상자1
+const box5 = gsap.timeline({repeat: 100, yoyo: true});
+box5.to(".sec2 .img .img5", {x: 200,y:200, duration: 1, rotation: 30,})
+.to(".sec2 .img .img5",{x: 200,y:100, duration: 1, rotation: -30})
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // 나
 // gsap.to(".sec2 .img .img1", {
