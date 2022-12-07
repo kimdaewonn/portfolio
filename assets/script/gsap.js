@@ -46,138 +46,27 @@ const box5 = gsap.timeline({repeat: 100, yoyo: true});
 box5.to(".sec2 .img .img5", {x: 100,y:200, duration: 1, rotation: 30,})
 .to(".sec2 .img .img5",{x: 100,y:100, duration: 1, rotation: -30})
 
+// 
 
 
-
-
-
-
-
-
-
-
-
-
-
-// 나
-// gsap.to(".sec2 .img .img1", {
-//     x: -100,y:200,scale:0.6,opacity:0,	
-//     duration: 2,
-//     // behavior:"smooth",
-//     // smooth:true,
-//     scrollTrigger: {
-//         trigger: ".sec2 .img .img1",
-//         start: "top 100%",
-//         end: "top 0%",
-//         markers: {
-//             startColor: "blue",
-//             endColor: "purple",
-//             fontSize: "30px"
-//         },
-//          toggleActions: "restart pause rssume restet",
-//     },
-// });
-// // 상자1
-// gsap.to(".sec2 .img .img2",{
-//     x: 1020,opacity:0,
-//     duration: 2,
-//     // behavior:"smooth",
-//     scrollTrigger: {
-//         trigger: ".sec2 .img .img2",
-//         start: "top 100%",
-//         end: "top 10%",
-//         markers: {
-//             startColor: "blue",
-//             endColor: "purple",
-//             fontSize: "30px"
-//         },
-//          toggleActions: "restart pause rssume restet",
-//     },
-// });
-// // 상자2
-// gsap.to(".sec2 .img .img3",{
-//     x: 670,opacity:0,
-//     duration: 2,
-//     // behavior:"smooth",
-//     scrollTrigger: {
-//         trigger: ".sec2 .img .img3",
-//         start: "top 100%",
-//         end: "top 10%",
-//         markers: {
-//             startColor: "blue",
-//             endColor: "purple",
-//             fontSize: "30px"
-//         },
-//          toggleActions: "restart pause rssume restet",
-//     },
-// });
-// // 상자3
-// gsap.to(".sec2 .img .img4",{
-//     x: 350,opacity:0,
-//     duration: 2,
-//     // behavior:"smooth",
-//     scrollTrigger: {
-//         trigger: ".sec2 .img .img4",
-//         start: "top 100%",
-//         end: "top 10%",
-//         markers: {
-//             startColor: "blue",
-//             endColor: "purple",
-//             fontSize: "30px"
-//         },
-//          toggleActions: "restart pause rssume restet",
-//     },
-// });
-// // 상자4(big)
-// gsap.to(".sec2 .img .img5",{
-//     x: 1500,y:500,rotate:360,
-//     duration: 2,
-//     // behavior:"smooth",
-//     scrollTrigger: {
-//         trigger: ".sec2 .img .img4",
-//         start: "top 50%",
-//         end: "top 0%",
-//         markers: {
-//             startColor: "blue",
-//             endColor: "purple",
-//             fontSize: "30px"
-//         },
-//          toggleActions: "restart rssume restet",
-//     },
-// });
-// // 상자5
-// gsap.to(".sec2 .img .img6",{
-//     x: -365,opacity:0,
-//     duration: 2,
-//     // behavior:"smooth",
-//     scrollTrigger: {
-//         trigger: ".sec2 .img .img6",
-//         start: "top 100%",
-//         end: "top 10%",
-//         markers: {
-//             startColor: "blue",
-//             endColor: "purple",
-//             fontSize: "30px"
-//         },
-//          toggleActions: "restart pause rssume restet",
-//     },
-// });
-// // name
-// gsap.to(".about_title",{
-//     x:100,ease:"elastic",
-//     duration: 2,
-//     repeat:50,
-//     yoyo:true,
-//     scrollTrigger: {
-//         trigger: ".about_title",
-//         start: "top 100%",
-//         end: "top 0%",
-//         markers: {
-//             startColor: "blue",
-//             endColor: "purple",
-//             fontSize: "30px"
-//         },
-//          toggleActions: "restart pause rssume restet",
-//     },
-// });
-
+gsap.to(".about_title", {
+    x: 1200,
+    duration: 3,
+    scrollTrigger: {
+        trigger: ".about_title",
+        start: "top top",
+        end: "top 20%",
+        scrub: true,
+        // scrub: 4,    // 스무스하게 슬라이드 효과 / 숫자로 쓸 수도 있음.
+        markers: {
+            startColor: "blue",
+            endColor: "green",
+            fontSize: "20px"
+        },
+        toggleClass: "red",
+        toggleActions: "restart none none none",
+        // pin: true,
+        // pinSpacing: false,
+        scrub : 5,
+    },
+});
