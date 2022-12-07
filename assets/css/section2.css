@@ -1,211 +1,80 @@
 /* section2 */
 #section2 {
-    height: 3300px;
     background: #000;
     overflow: hidden;
     position: relative;
     color: #fff;
 }
 .sec2 {
+    margin-top: 5vw;
 }
-/* rail */
-
-/* @keyframes rail {
-	0% {
-		transform: translateZ(0);
-	}
-	100% {
-		transform: translate3d(-100%, 0, 0);
-	}
+.sec2 .load {
+    margin-left: -73vw;
 }
-@keyframes rail2 {
-	0% {
-		transform: translateZ(0);
-	}
-	100% {
-		transform: translate3d(-65%, 0, 0);
-	}
-}
-
-@keyframes rotateIt {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
-}
-
-
-.main__rail {
-	transform: translate(0, 0);
-}
-.rail__inner {
-	white-space: nowrap;
-	display: flex;
-	animation: rail 10s linear infinite;
-}
-.rail__item {
-	display: flex;
-	align-items: center;
-}
-.rail__desc {
-	font-size: 4vw;
-	white-space: nowrap;
-} */
-
-.load {
-    position: relative;
-    margin-left: -82vw;
-}
-.load span {
-    font-size: 30vw;
+.sec2 .load span {
+    color: #fff;
+    font-size: 25vw;
     font-family: 'Migra-Extrabold';
     white-space: nowrap;
 }
-.marquee1 {
-    font-size: 30vw;
-    font-family: 'Migra-Extrabold';
-    white-space: nowrap;
-    position: relative;
-}
-.marquee2 {
-}
-.flow_me {
-    position: absolute;
-    width: 20vw;
-    left: 53.5%;
-    top:17%;
-}
-.flow_me2 {
-    position: absolute;
-    width: 20vw;
-    left: 189.5%;
-    top:17%;
-}
-.flow_me3 {
-    position: absolute;
-    width: 20vw;
-    left: 325.5%;
-    top:17%;
-}
-.flow_me4 {
-    position: absolute;
-    width: 20vw;
-    left: 461.5%;
-    top:17%;
-}
-.flow_me5 {
-    position: absolute;
-    width: 20vw;
-    left: 596.5%;
-    top:17%;
-}
-/* 136 */
-
-
-.sec2 .img .img1 {
-    position: absolute;
-    left: 45%; bottom: 5%;
-    width: 20vw;
-}
-.sec2 .img .img2 {
-    position: absolute;
-    left: 56%; bottom: 5%;
-    width: 20vw;
-}
-.sec2 .img .img3 {
-    position: absolute;
-    left: 66%; bottom: 5%;
-    width: 20vw;
-}
-.sec2 .img .img4 {
-    position: absolute;
-    left: 77%; bottom: 0%;
-    width: 20vw;
-    z-index: 1;
-}
-.sec2 .img .img5 {
-    position: absolute;
-    left: 88.5%; bottom: 5%;
-    width: 20vw;
-}
-.about {
-}
+.about {}
 .about .about_title {
     display: flex;
     justify-content:end;
-    margin-right: 130px;
-    margin-right: 230px;
+    margin-right: 7vw;
     align-items:baseline;
-    margin-top: 200px;
+    margin-bottom: 2vw;
 }
-.about .about_title .name {
-    font-size: 2.5vw;
+.about_title_left {
+    font-size: 2vw;
     font-family: 'Migra-Extralight';
-    padding-right: 40px;
+    padding-right: 4vw;
 }
-.about .about_title .name_h {
+.about_title_right {
     font-size: 12vw;
     font-family: 'Migra-Extrabold';
-    margin-bottom: 50px;
 }
-.about_p1 {
+.about1 {
     display: flex;
-    justify-content: end;
-    position: relative;
+    justify-content: flex-end;
+    margin-bottom: 10vw;
 }
-.about_p1_p {
-    margin-right: 30px;
+.about1_p {
+    margin-right: 1.6vw;
     text-align: right;
-    font-size: 1vw;
+    font-size: 1.1vw;
+    white-space: nowrap;
     font-family: 'NexonLv2Gothic';
-    line-height: 1.4;
+    line-height: 1.5;
     font-weight: 300;
-    
 }
-.about_p1 .ocean1 {
-    width: 65vw;
+.about1_img1 {
+    background-image: url(../img/ocean1.png);
+    width: 100vw;
+    height: 40vw;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
-.about_p1 .about_left_hand img:nth-child(1) {
-    position: absolute;
-    left: 0%;
-    top: 60%;
-    width: 100vw; 
-    z-index: 1;
+.about2 {
+    display: flex;
+    margin-bottom: 10vw;
 }
-.about_p1 .about_left_hand img:nth-child(2) {
-    position: absolute;
-    left: 45%;
-    top: 80%;
-    width: 18vw; 
-    z-index: 2;
+.about2_p {
+    margin-left: 1.6vw;
+    text-align: left;
+    font-size: 1.1vw;
+    white-space: nowrap;
+    /* word-break:normal;
+    width: 40vw; */
+    font-family: 'NexonLv2Gothic';
+    line-height: 1.5;
+    font-weight: 300;
+}
+.about2_img1 {
+    background-image: url(../img/ocean2.png);
+    width: 100vw;
+    height: 24vw;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-.about_p2 {
-    margin-top: 430px;
-    display: flex;
-    position: relative;
-}
-.about_p2 .ocean2 {
-    width: 65vw;
-}
-.about_p2 .about_right_hand img:nth-child(1) {
-    position: absolute;
-    right: 0%;
-    top: 40%;
-    width: 100vw;
-}
-.about_p2 .about_right_hand img:nth-child(2) {
-    position: absolute;
-    right: 41%;
-    top: 80%;
-    width: 18vw; 
-}
-.about_p2_p {
-    margin-left: 30px;
-    font-size: 1vw;
-    font-family: 'NexonLv2Gothic';
-    line-height: 1.4;
-    font-weight: 300;
-}

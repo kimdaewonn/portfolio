@@ -17,26 +17,4 @@
     font-family: 'Migra-Extrabold';
     font-size: 8vw;
     line-height: 0.9;
-    opacity: 0;
-}
-.sec1 .img {
-}
-.sec1 .img .img1 {
-    position: absolute;
-    right: 0; bottom: 50%;
-    width: 50vw;
-    z-index: 1;
-
-}
-.sec1 .img .img2 {
-    position: absolute;
-    left: 0; bottom: 10%;
-    width: 50vw;
-    z-index: 1;
-}
-.sec1 .img .img3 {
-    position: absolute;
-    left: 50%; top: 50%;
-    transform: translate(-50%,-50%);
-    width: 30vw;
 }
