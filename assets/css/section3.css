@@ -79,19 +79,18 @@
     display: flex;
     width: 100%;
 }
-.standard_left {
+.site_left1 {
     width:30%;
     position: relative;
     z-index: 100;
     text-align: right;
     margin-left: 3vw;
 }
-.standard_left h3 {
+.site_left1 h3 {
     font-size: 8vw;
     line-height: 0.8;
-
 }
-.standard_p {
+.site_p1 {
     margin-right: 1vw;
     font-size: 1.1vw;
     word-break: keep-all;
@@ -100,12 +99,12 @@
     font-weight: 300;
     padding-top: 40vh;
 }
-.standard_right {
+.site_right1 {
     overflow: hidden;
     position: relative;
     width: 70%;
 }
-.standard_right .img1 {
+.site_right1 .img1 {
     background-image: url(../img/web_standard.png);
     position: absolute;
     top: -50%;
@@ -118,12 +117,12 @@
 }
 
 
-.responsive_left {
+.site_left2 {
     overflow: hidden;
     position: relative;
     width: 70%;
 }
-.responsive_left .img1 {
+.site_left2 .img1 {
     background-image: url(../img/web_responsive.png);
     position: absolute;
     top: -50%;
@@ -134,18 +133,18 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
-.responsive_right {
+.site_right2 {
     width:30%;
     position: relative;
     z-index: 100;
     text-align: left;
     margin-right: 3vw;
 }
-.responsive_right h3 {
+.site_right2 h3 {
     font-size: 8vw;
     line-height: 0.8;
 }
-.responsive_p {
+.site_p2 {
     margin-left: 1vw;
     font-size: 1.1vw;
     word-break: keep-all;
