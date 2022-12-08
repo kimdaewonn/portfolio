@@ -82,7 +82,7 @@
     width:30%;
     position: relative;
     z-index: 100;
-    text-align: left;
+    text-align: right;
     margin-left: 3vw;
 }
 .standard_left h3 {
@@ -90,11 +90,10 @@
     line-height: 0.8;
 }
 .standard_p {
-    margin-left: 1vw;
+    margin-right: 1vw;
     font-size: 1.1vw;
     word-break: keep-all;
     font-family: 'NexonLv2Gothic';
-    text-align: left;
     line-height: 1.5;
     font-weight: 300;
     padding-top: 40vh;
@@ -107,12 +106,13 @@
 .standard_right .img1 {
     background-image: url(../img/web_standard.png);
     position: absolute;
+    top: -50%;
     right: 0;
-    top: 0;
     width: 100%;
-    height: 80vh;
+    height: 110%;
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center center;
 }
 
 
