@@ -1,132 +1,32 @@
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.to(".load", {
-    xPercent: 70,
-    duration: 1,
+gsap.to(".sec2 .load span, .tx1", {
+    xPercent: -40,
     scrollTrigger: {
-        trigger: ".load",
-        start: "top 30%",
-        end: "top 80%",
-        scrub: 5,    // 스무스하게 슬라이드 효과 / 숫자로 쓸 수도 있음.
-        markers: {
-            startColor: "blue",
-            endColor: "red",
-            fontSize: "20px"
-        },
-        toggleActions: "restart none none none",
-        scrub : 5,
-    },
-});
-
-
-
-// gsap.to(".about1_img1", {
-//     yPercent: 3,
-//     duration: 3,
-//     scrollTrigger: {
-//         trigger: ".about1_img1",
-//         start: "top 30%",
-//         end: "top 80%",
-//         scrub: 5,    // 스무스하게 슬라이드 효과 / 숫자로 쓸 수도 있음.
-//         markers: {
-//             startColor: "blue",
-//             endColor: "red",
-//             fontSize: "20px"
-//         },
-//         // toggleClass: "red",
-//         toggleActions: "restart none none none",
-//         // pin: true,
-//         // pinSpacing: false,
-//         scrub : 5,
-//     },
-// });
-// gsap.to(".about2_img1", {
-//     yPercent: 3,
-//     duration: 3,
-//     scrollTrigger: {
-//         trigger: ".about2_img1",
-//         start: "top 30%",
-//         end: "top 80%",
-//         scrub: 5,    // 스무스하게 슬라이드 효과 / 숫자로 쓸 수도 있음.
-//         markers: {
-//             startColor: "blue",
-//             endColor: "red",
-//             fontSize: "20px"
-//         },
-//         // toggleClass: "red",
-//         toggleActions: "restart none none none",
-//         // pin: true,
-//         // pinSpacing: false,
-//         scrub : 5,
-//     },
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //두개쓰기
-// gsap.to('.load', {
-//     xPercent: -10,opacity:0,duration:0.1,scrub:5,
-//     immediateRender: false,
-//     scrollTrigger: {
-//       trigger: '.load',
-//       scrub: true,
-//       markers: true,
-//     }
-//   });
-
-//   gsap.to('.load', {
-//     xPercent: 10, opacity:1,duration:1,scrub:5,
-//     immediateRender: false,
-//     scrollTrigger: {
-//       trigger: '.load',
-//       scrub: true,
-//       markers: true,
-//     }
-//   });
-
-
-
-    //fromto
-// ScrollTrigger.create({
-//     trigger: ".load",
-//     scrub: 5,
-//     animation: gsap.fromTo(
-//       ".about_title",
-//       {
-//         xPercent: 10,
-//         yPercent: 0,
-//       },
-//       {
-//         xPercent: 100,
-//         yPercent: 0,
-//       }
-//     ),
-//   });
+        scrub: 1,
+    }
+})
+gsap.to(".tx2", {
+    xPercent: 40,
+    scrollTrigger: {
+        scrub: 1,
+    }
+})
+gsap.to(".sec1 .img .img1, .work-wrap .work .right .img", {
+    yPercent: -80,
+    scrollTrigger: {
+        scrub: 1,
+    }
+})
+gsap.to(".sec1 .img .img2", {
+    yPercent: 80,
+    scrollTrigger: {
+        scrub: 1,
+    }
+})
+        // setTimeout(() => {
+//     let mainTl = gsap.timeline();
+   
+//     mainTl.to(".txt1 span", {duration: 0.4, y: 0, opacity:1, stagger: 0.1, ease: Circ.easeOut})
+//     mainTl.to(".txt2 span", {duration: 0.4, y: 0, opacity:1, stagger: 0.1, ease: Circ.easeOut})
+//     mainTl.to("#section1 .img", {duration: 0.7, opacity:1, ease: Power1.easeOut})
+//     mainTl.to("#header", {duration: 0.7, top:0, ease: Power1.easeOut})
+// }, 2000);

@@ -1,17 +1,191 @@
-@charset "UTF-8";
+/* header */
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    background: #000;
+}
+#header h1 {
+    color: #fff;
+    font-size: 14px;
+    line-height: 0.9;
+    font-family: 'Migra-Extrabold';
+    margin-top: 5px;
+    padding: 20px 20px 20px 70px;
+    background: url(../img/logo.png) no-repeat;
+    background-size: contain;
+}
 
-/* basic */
-@import url("fonts.css");
-@import url("reset.css");
-@import url("common.css");
+/* section1 */
+#section1 {
+    height: 100vh;
+    background-image: url(../img/main.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.sec1 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.sec1 .text {
+    color: #fff;
+    font-family: 'Migra-Extrabold';
+    font-size: 8vw;
+    line-height: 0.9;
+}
+.sec1 .img .img1 {
+    position: absolute;
+    right: 0; bottom: 10%;
+    width: 50vw;
+}
+.sec1 .img .img2 {
+    position: absolute;
+    left: 0; bottom: 10%;
+    width: 50vw;
+}
 
-/* section */
+/* section2 */
+#section2 {
+    background: #000;
+    overflow: hidden;
+    padding-bottom: 20vw;
+}
+.sec2 .load {
+    margin-left: -10vw;
+}
+.sec2 .load span {
+    color: #fff;
+    font-size: 30vw;
+    font-family: 'Migra-Extrabold';
+    white-space: nowrap;
+    display: inline-block;
+}
+.sec2 .about {
+    margin-top: 10vw;
+    color: #fff;
+    position: relative;
+}
+.sec2 .about h3 {
+    text-align: center;
+    font-family: 'Migra-Extrabold';
+    font-size: 8vw;
+    position: relative;
+    z-index: 100;
+    margin-bottom: 3vw;
+} 
+.sec2 .about h3 em {
+    font-size: 20px;
+    font-family: 'NexonLv2Gothic';
+    padding-right: 10px;
+    opacity: 0.5;
+    vertical-align: 2px;
+}
+.sec2 .about .img {
+    width: 15vw;
+    position: absolute;
+    right: 12vw; top: -3vw;
+}
+.sec2 .about1 {
+    display: flex;
+    justify-content: space-between;
+}
+.sec2 .about1.reverse {
+    flex-direction: row-reverse;
+    margin-top: 10vw;
+}
+.sec2 .about1 .left {
+    width: 31%;
+    padding-left: 5%;
+    font-family: 'GmarketSans';
+    text-align: right;
+    font-size: 20px;
+    word-break: keep-all;
+}
+.sec2 .about1 .right {
+    width: 67%;
+}
+.sec2 .about1.reverse .left {
+    text-align: left;
+    padding-left: 0;
+    padding-right: 5%;
+}
+.sec2 .about1.reverse .right {
+    height: 50vh;
+    overflow: hidden;
+}
 
-@import url("header.css");
-@import url("section1.css");
-@import url("section2.css");
-@import url("section3.css");
-@import url("section4.css");
-@import url("section5.css");
-@import url("section6.css");
-@import url("section7.css");
+
+/* section3 */
+#section3 {
+    background: #7899F3;
+}
+#section3 h2 {
+    color: #fff;
+    background: #5D8CF3;
+    padding: 1vw 0;
+    text-align: right;
+    font-size: 20vw;
+    line-height: 1;
+    padding-top: 4vw;
+    font-family: 'Migra-Extrabold';
+}
+#section3 h2 em {
+    font-size: 20px;
+    font-family: 'NexonLv2Gothic';
+    padding-right: 10px;
+    opacity: 0.5;
+    vertical-align: 2px;
+}
+.work-wrap {
+    margin-top: 15vw;
+}
+.work-wrap .work {
+    display: flex;
+    margin-top: 20vw;
+}
+.work-wrap .work .left {
+    width: 30%;
+    text-align: right;
+    position: relative;
+    z-index: 100;
+}
+.work-wrap .work .left h3 {
+    color: #000C42;
+    margin-right: -4vw;
+    margin-top: -2vw;
+    font-family: 'Migra-Extrabold';
+    font-size: 7vw;
+    line-height: 1;
+}
+.work-wrap .work .left .desc {
+    font-family: 'GmarketSans';
+    text-align: right;
+    font-size: 20px;
+    word-break: keep-all;
+    line-height: 1.4;
+    color: #000C42;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 40vh;
+}
+.work-wrap .work .right {
+    width: 70%;
+    height: 40vw;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.work-wrap .work .right .img {
+    position: absolute;
+    left: 0;
+    top: 80%;
+    background: url(https://kimdaewonn.github.io/portfolio/assets/img/web_standard.png) no-repeat center center;
+    background-size: cover;
+    width: 110%;
+    height: 120%;
+}
