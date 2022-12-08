@@ -88,6 +88,7 @@
 .standard_left h3 {
     font-size: 8vw;
     line-height: 0.8;
+
 }
 .standard_p {
     margin-right: 1vw;
@@ -116,95 +117,48 @@
 }
 
 
-
-
-
-.standard_view_btn {
-    display: flex;
-    color: #fff;
-    margin-top: 150px;
-    justify-content: flex-end;
-    margin-right: 400px;
+.responsive_left {
+    overflow: hidden;
     position: relative;
+    width: 70%;
 }
-.site_left_hand img {
-    width: 60vw;
-    left: 0;
+.responsive_left .img1 {
+    background-image: url(../img/web_responsive.png);
+    position: absolute;
     top: -50%;
-    position: absolute;
-    
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
-.standard_view_btn div:nth-child(1){
-    background: #000C42;
-    border-radius: 50%;
-    font-size: 1.8vw;
-    padding: 20px 30px;
-    margin-right: 20px;
-    
-}
-.standard_view_btn div:nth-child(2){
-    background: #000C42;
-    border-radius: 50%;
-    font-size: 1.8vw;
-    padding: 20px 30px;
-}
-
-.responsive {
-    display: flex;
-    margin-top: 300px;
-}
-.responsive_img  {
+.responsive_right {
+    width:30%;
     position: relative;
+    z-index: 100;
+    text-align: left;
+    margin-right: 3vw;
 }
-.responsive_img img {
-    width: 65vw;
-}
-.responsive_p {
-    font-size: 1vw;
-    font-family: 'NexonLv2Gothic';
-    line-height: 1.4;
-    font-weight: 300;
-    margin-left: 30px;
-    margin-top: 100px;
-}
-.responsive_h {
-    position: absolute;
-    top: -16%;
-    right: -50%;
-    color: #000C42;
+.responsive_right h3 {
     font-size: 8vw;
     line-height: 0.8;
-    z-index: 1;
 }
-.responsive_view_btn {
-    display: flex;
-    color: #fff;
-    margin-top: 150px;
-    position: relative;
-    /* justify-content: flex-end; */
-    margin-left: 300px;
+.responsive_p {
+    margin-left: 1vw;
+    font-size: 1.1vw;
+    word-break: keep-all;
+    font-family: 'NexonLv2Gothic';
+    line-height: 1.5;
+    font-weight: 300;
+    padding-top: 40vh;
 }
-.site_right_hand img {
-    width: 60vw;
-    right: 0;
-    top: -60%;
-    position: absolute;
-    
-}
-.responsive_view_btn div:nth-child(1){
-    background: #000C42;
-    border-radius: 50%;
-    font-size: 1.8vw;
-    padding: 20px 30px;
-    margin-right: 20px;
-    
-}
-.responsive_view_btn div:nth-child(2){
-    background: #000C42;
-    border-radius: 50%;
-    font-size: 1.8vw;
-    padding: 20px 30px;
-}
+
+
+
+
+
+
 .react {
     display: flex;
     flex-direction: column;
