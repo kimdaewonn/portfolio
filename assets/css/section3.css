@@ -79,19 +79,20 @@
     display: flex;
 }
 /* 오른쪽으로 붙이기 */
-.site_left1 {
+/* standard */
+.standard .site_left1 {
     width:30%;
     position: relative;
     z-index: 100;
     text-align: right;
 }
-.site_left1 h3 {
+.standard .site_left1 h3 {
     font-size: 8vw;
     line-height: 0.8;
     margin-left: 6vw;
     display: inline-block;
 }
-.site_p1 {
+.standard .site_left1 .site_p1 {
     margin-right: 1vw;
     font-size: 1.1vw;
     word-break: keep-all;
@@ -100,13 +101,91 @@
     font-weight: 300;
     padding-top: 40vh;
 }
-.site_right1 {
+.standard .site_right1 {
     overflow: hidden;
     position: relative;
     width: 70%;
     height: 40vw;
 }
-.site_right1 .img1 {
+.standard .site_right1 .img1 {
+    background-image: url(../img/web_standard.png);
+    position: absolute;
+    top: -50%;
+    right: 0;
+    width: 100%;
+    height: 110%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/* react */
+.react .site_left1 {
+    width:30%;
+    position: relative;
+    z-index: 100;
+    text-align: right;
+}
+.react .site_left1 h3 {
+    font-size: 8vw;
+    line-height: 0.8;
+    margin-left: 6vw;
+    display: inline-block;
+}
+.react .site_left1 .site_p1 {
+    margin-right: 1vw;
+    font-size: 1.1vw;
+    word-break: keep-all;
+    font-family: 'NexonLv2Gothic';
+    line-height: 1.5;
+    font-weight: 300;
+    padding-top: 40vh;
+}
+.react .site_right1 {
+    overflow: hidden;
+    position: relative;
+    width: 70%;
+    height: 40vw;
+}
+.react .site_right1 .img1 {
+    background-image: url(../img/web_standard.png);
+    position: absolute;
+    top: -50%;
+    right: 0;
+    width: 100%;
+    height: 110%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/* react2 */
+.react2 .site_left1 {
+    width:30%;
+    position: relative;
+    z-index: 100;
+    text-align: right;
+}
+.react2 .site_left1 h3 {
+    font-size: 8vw;
+    line-height: 0.8;
+    margin-left: 6vw;
+    display: inline-block;
+}
+.react2 .site_left1 .site_p1 {
+    margin-right: 1vw;
+    font-size: 1.1vw;
+    word-break: keep-all;
+    font-family: 'NexonLv2Gothic';
+    line-height: 1.5;
+    font-weight: 300;
+    padding-top: 65vh;
+}
+.react2 .site_right1 {
+    overflow: hidden;
+    position: relative;
+    width: 70%;
+    height: 40vw;
+}
+.react2 .site_right1 .img1 {
     background-image: url(../img/web_standard.png);
     position: absolute;
     top: -50%;
@@ -118,14 +197,17 @@
     background-position: center center;
 }
 
+
+
+
 /* 왼쪽으로 붙이기 */
-.site_left2 {
+.responsive .site_left2 {
     overflow: hidden;
     position: relative;
     width: 70%;
     height: 40vw;
 }
-.site_left2 .img1 {
+.responsive .site_left2 .img1 {
     background-image: url(../img/web_responsive.png);
     position: absolute;
     top: -50%;
@@ -136,13 +218,13 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
-.site_right2 {
+.responsive .site_right2 {
     width:30%;
     position: relative;
     z-index: 100;
     text-align: left;
 }
-.site_right2 h3 {
+.responsive .site_right2 h3 {
     font-size: 8vw;
     line-height: 0.8;
     position: relative;
@@ -150,7 +232,7 @@
     margin-left: -11vw;
 
 }
-.site_p2 {
+.responsive .site_right2 .site_p2 {
     margin-left: 1vw;
     font-size: 1.1vw;
     word-break: keep-all;
@@ -158,229 +240,6 @@
     line-height: 1.5;
     font-weight: 300;
     padding-top: 40vh;
-}
-
-
-.react {
-    display: flex;
-    flex-direction: column;
-    margin-top: 300px;
-}
-.react .react_img {
-    position: relative;
-
-}
-.react .react_img .react_h {
-    position: absolute;
-    top: -17%;
-    left: 15.5%;
-    color: #fff;
-    font-size: 8vw;
-    line-height: 0.8;
-    z-index: 1;
-}
-.react .react_img img {
-    width: 65vw;
-    float: right;
-}
-.react .react_flex {
-    display: flex;
-}
-.react .react_flex .react_p {
-    font-size: 1vw;
-    font-family: 'NexonLv2Gothic';
-    line-height: 1.4;
-    font-weight: 300;
-    margin-top: 50px;
-    margin-left: 200px;
-}
-.react .react_flex .react_view_btn {
-    display: flex;
-    color: #fff;
-    margin-top: 50px;
-    position: relative;
-    justify-content: flex-end;
-    margin-left: 600px;
-}
-.react .react_flex .react_view_btn div:nth-child(1) {
-    background: #000C42;
-    border-radius: 50%;
-    font-size: 1.8vw;
-    padding: 25px 50px;
-    margin-right: 20px;
-}
-.react .react_flex .react_view_btn div:nth-child(2) {
-    background: #000C42;
-    border-radius: 50%;
-    font-size: 1.8vw;
-    padding: 25px 50px;
-}
-.youtube {
-    display: flex;
-    flex-direction: column;
-}
-.youtube .youtube_img {
-    position: relative;
-    margin-top: 50px;
-}
-.youtube .youtube_img img {
-    width: 65vw;
-    float: right;
-
-}
-.youtube .youtube_p {
-    font-size: 1vw;
-    font-family: 'NexonLv2Gothic';
-    line-height: 1.4;
-    font-weight: 300;
-    margin-top: 50px;
-    margin-left: 200px;
-}
-.youtube_view_btn {
-    display: flex;
-    color: #fff;
-    margin-top: 150px;
-    justify-content: flex-end;
-    margin-right: 400px;
-    position: relative;
-}
-.youtube_view_btn div:nth-child(1) {
-    background: #000C42;
-    border-radius: 50%;
-    font-size: 1.8vw;
-    padding: 20px 30px;
-    margin-right: 20px;
-}
-.youtube_view_btn div:nth-child(2) {
-    background: #000C42;
-    border-radius: 50%;
-    font-size: 1.8vw;
-    padding: 20px 30px;
-}
-.youtube_view_btn .site_left_hand {}
-.youtube_view_btn .site_left_hand img {
-    width: 60vw;
-    left: -5%;
-    top: -50%;
-    position: absolute;
-}
-.vue {
-    display: flex;
-    margin-top: 300px;
-}
-.vue .vue_img {
-    position: relative;
-}
-.vue .vue_img .vue_h {
-    position: absolute;
-    top: -17%;
-    right: -50%;
-    color: #000C42;
-    font-size: 8vw;
-    line-height: 0.8;
-    z-index: 1;
-}
-.vue .vue_img img {
-    width: 65vw;
-}
-.vue .vue_p {
-    font-size: 1vw;
-    font-family: 'NexonLv2Gothic';
-    line-height: 1.4;
-    font-weight: 300;
-    margin-top: 100px;
-    margin-left: 30px;
-}
-.vue_view_btn {
-    display: flex;
-    color: #fff;
-    margin-top: 150px;
-    position: relative;
-    /* justify-content: flex-end; */
-    margin-left: 300px;
-}
-.vue_view_btn div:nth-child(1) {
-    background: #000C42;
-    border-radius: 50%;
-    font-size: 1.8vw;
-    padding: 20px 30px;
-    margin-right: 20px;
-}
-.vue_view_btn div:nth-child(2) {
-    background: #000C42;
-    border-radius: 50%;
-    font-size: 1.8vw;
-    padding: 20px 30px;
-}
-.vue_view_btn .site_right_hand {}
-.vue_view_btn .site_right_hand img {
-    width: 60vw;
-    right: 0;
-    top: -60%;
-    position: absolute;
-}
-
-
-.php {
-    display: flex;
-    flex-direction: column;
-    margin-top: 300px;
-}
-.web_php_img {
-    position: relative;
-
-}
-.web_php_img img {
-    width: 65vw;
-    float: right;
-}
-.web_php_p {
-    font-size: 1vw;
-    font-family: 'NexonLv2Gothic';
-    line-height: 1.4;
-    font-weight: 300;
-    margin-top: 50px;
-    margin-left: 200px;
-}
-.web_php_h {
-    position: absolute;
-    top: -16%;
-    left: 15.5%;
-    color: #000C42;
-    font-size: 8vw;
-    line-height: 0.8;
-    z-index: 1;
-}
-
-
-.php_view_btn {
-    display: flex;
-    color: #fff;
-    margin-top: 150px;
-    justify-content: flex-end;
-    margin-right: 400px;
-    position: relative;
-}
-.site_left_hand img {
-    width: 60vw;
-    left: 0;
-    top: -50%;
-    position: absolute;
-    
-}
-.php_view_btn div:nth-child(1){
-    background: #000C42;
-    border-radius: 50%;
-    font-size: 1.8vw;
-    padding: 20px 30px;
-    margin-right: 20px;
-    
-}
-.php_view_btn div:nth-child(2){
-    background: #000C42;
-    border-radius: 50%;
-    font-size: 1.8vw;
-    padding: 20px 30px;
 }
 
 
