@@ -147,7 +147,7 @@
     height: 40vw;
 }
 .react .site_right1 .img1 {
-    background-image: url(../img/web_standard.png);
+    background-image: url(../img/react_site.png);
     position: absolute;
     top: -50%;
     right: 0;
@@ -186,7 +186,46 @@
     height: 40vw;
 }
 .react2 .site_right1 .img1 {
-    background-image: url(../img/web_standard.png);
+    background-image: url(../img/react_youtube.png);
+    position: absolute;
+    top: -50%;
+    right: 0;
+    width: 100%;
+    height: 110%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/* php */
+.php .site_left1 {
+    width:30%;
+    position: relative;
+    z-index: 100;
+    text-align: right;
+}
+.php .site_left1 h3 {
+    font-size: 8vw;
+    line-height: 0.8;
+    margin-left: 6vw;
+    display: inline-block;
+}
+.php .site_left1 .site_p1 {
+    margin-right: 1vw;
+    font-size: 1.1vw;
+    word-break: keep-all;
+    font-family: 'NexonLv2Gothic';
+    line-height: 1.5;
+    font-weight: 300;
+    padding-top: 40vh;
+}
+.php .site_right1 {
+    overflow: hidden;
+    position: relative;
+    width: 70%;
+    height: 40vw;
+}
+.php .site_right1 .img1 {
+    background-image: url(../img/php_site.png);
     position: absolute;
     top: -50%;
     right: 0;
@@ -201,6 +240,7 @@
 
 
 /* 왼쪽으로 붙이기 */
+/* responsive */
 .responsive .site_left2 {
     overflow: hidden;
     position: relative;
@@ -242,6 +282,48 @@
     padding-top: 40vh;
 }
 
+/* vue */
+
+.vue .site_left2 {
+    overflow: hidden;
+    position: relative;
+    width: 70%;
+    height: 40vw;
+}
+.vue .site_left2 .img1 {
+    background-image: url(../img/vue_site.png);
+    position: absolute;
+    top: -50%;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.vue .site_right2 {
+    width:30%;
+    position: relative;
+    z-index: 100;
+    text-align: left;
+}
+.vue .site_right2 h3 {
+    font-size: 8vw;
+    line-height: 0.8;
+    position: relative;
+    display: inline-block;
+    margin-left: -11vw;
+
+}
+.vue .site_right2 .site_p2 {
+    margin-left: 1vw;
+    font-size: 1.1vw;
+    word-break: keep-all;
+    font-family: 'NexonLv2Gothic';
+    line-height: 1.5;
+    font-weight: 300;
+    padding-top: 40vh;
+}
 
 
 
