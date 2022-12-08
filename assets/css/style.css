@@ -200,7 +200,7 @@
 .work-wrap .responsive .left .img {
     position: absolute;
     left: 0;
-    top: -10%;
+    top: 80%;
     background: url(../img/web_responsive.png) no-repeat center center;
     background-size: cover;
     width: 110%;
@@ -323,7 +323,7 @@
 .work-wrap .vue .left .img {
     position: absolute;
     left: 0;
-    top: -10%;
+    top: 80%;
     background: url(../img/vue_site.png) no-repeat center center;
     background-size: cover;
     width: 110%;
