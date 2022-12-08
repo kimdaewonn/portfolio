@@ -172,7 +172,7 @@
     color: #000C42;
     padding-left: 2vw;
     padding-right: 2vw;
-    padding-top: 40vh;
+    padding-top: 20vw;
 }
 .work-wrap .standard .right {
     width: 70%;
@@ -192,20 +192,61 @@
 
 /* responsive */
 .work-wrap .responsive .left {
+    width: 70%;
+    height: 40vw;
+    position: relative;
+    overflow: hidden;
+}
+.work-wrap .responsive .left .img {
+    position: absolute;
+    left: 0;
+    top: -10%;
+    background: url(../img/web_responsive.png) no-repeat center center;
+    background-size: cover;
+    width: 110%;
+    height: 120%;
+}
+.work-wrap .responsive .right {
     width: 30%;
-    text-align: right;
+    text-align: left;
     position: relative;
     z-index: 100;
 }
-.work-wrap .responsive .left h3 {
+.work-wrap .responsive .right h3 {
     color: #000C42;
-    margin-right: -4vw;
+    margin-left: -5vw;
     margin-top: -2vw;
     font-family: 'Migra-Extrabold';
     font-size: 7vw;
     line-height: 1;
 }
-.work-wrap .responsive .left .desc {
+.work-wrap .responsive .right .desc {
+    font-family: 'GmarketSans';
+    text-align: left;
+    font-size: 1vw;
+    word-break: keep-all;
+    line-height: 1.4;
+    color: #000C42;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 20vw;
+}
+/* react */
+.work-wrap .react .left {
+    width: 30%;
+    text-align: right;
+    position: relative;
+    z-index: 100;
+}
+.work-wrap .react .left h3 {
+    color: #000C42;
+    margin-right: -6vw;
+    margin-top: -2vw;
+    font-family: 'Migra-Extrabold';
+    font-size: 7vw;
+    line-height: 1;
+}
+.work-wrap .react .left .desc {
     font-family: 'GmarketSans';
     text-align: right;
     font-size: 1vw;
@@ -214,19 +255,142 @@
     color: #000C42;
     padding-left: 2vw;
     padding-right: 2vw;
-    padding-top: 40vh;
+    padding-top: 20vw;
 }
-.work-wrap .responsive .right {
+.work-wrap .react .right {
     width: 70%;
     height: 40vw;
     position: relative;
     overflow: hidden;
 }
-.work-wrap .responsive .right .img {
+.work-wrap .react .right .img {
     position: absolute;
     left: 0;
     top: 80%;
-    background: url(../img/web_responsive.png) no-repeat center center;
+    background: url(../img/react_site.png) no-repeat center center;
+    background-size: cover;
+    width: 110%;
+    height: 120%;
+}
+/* youtube */
+.work-wrap .youtube .left {
+    width: 30%;
+    text-align: right;
+    position: relative;
+    z-index: 100;
+}
+.work-wrap .youtube .left h3 {
+    color: #000C42;
+    margin-right: -4vw;
+    margin-top: -2vw;
+    font-family: 'Migra-Extrabold';
+    font-size: 7vw;
+    line-height: 1;
+}
+.work-wrap .youtube .left .desc {
+    font-family: 'GmarketSans';
+    text-align: right;
+    font-size: 1vw;
+    word-break: keep-all;
+    line-height: 1.4;
+    color: #000C42;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 30vw;
+}
+.work-wrap .youtube .right {
+    width: 70%;
+    height: 40vw;
+    position: relative;
+    overflow: hidden;
+}
+.work-wrap .youtube .right .img {
+    position: absolute;
+    left: 0;
+    top: 80%;
+    background: url(../img/react_youtube.png) no-repeat center center;
+    background-size: cover;
+    width: 110%;
+    height: 120%;
+}
+/* vue */
+.work-wrap .vue .left {
+    width: 70%;
+    height: 40vw;
+    position: relative;
+    overflow: hidden;
+}
+.work-wrap .vue .left .img {
+    position: absolute;
+    left: 0;
+    top: -10%;
+    background: url(../img/vue_site.png) no-repeat center center;
+    background-size: cover;
+    width: 110%;
+    height: 120%;
+}
+.work-wrap .vue .right {
+    width: 30%;
+    text-align: left;
+    position: relative;
+    z-index: 100;
+}
+.work-wrap .vue .right h3 {
+    color: #000C42;
+    margin-left: -5vw;
+    margin-top: -2vw;
+    font-family: 'Migra-Extrabold';
+    font-size: 7vw;
+    line-height: 1;
+}
+.work-wrap .vue .right .desc {
+    font-family: 'GmarketSans';
+    text-align: left;
+    font-size: 1vw;
+    word-break: keep-all;
+    line-height: 1.4;
+    color: #000C42;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 20vw;
+}
+/* php */
+.work-wrap .php .left {
+    width: 30%;
+    text-align: right;
+    position: relative;
+    z-index: 100;
+}
+.work-wrap .php .left h3 {
+    color: #000C42;
+    margin-right: -6vw;
+    margin-top: -2vw;
+    font-family: 'Migra-Extrabold';
+    font-size: 7vw;
+    line-height: 1;
+}
+.work-wrap .php .left .desc {
+    font-family: 'GmarketSans';
+    text-align: right;
+    font-size: 1vw;
+    word-break: keep-all;
+    line-height: 1.4;
+    color: #000C42;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 20vw;
+}
+.work-wrap .php .right {
+    width: 70%;
+    height: 40vw;
+    position: relative;
+    overflow: hidden;
+}
+.work-wrap .php .right .img {
+    position: absolute;
+    left: 0;
+    top: 80%;
+    background: url(../img/php_site.png) no-repeat center center;
     background-size: cover;
     width: 110%;
     height: 120%;
