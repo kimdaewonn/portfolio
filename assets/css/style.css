@@ -79,9 +79,9 @@
     margin-bottom: 3vw;
 } 
 .sec2 .about h3 em {
-    font-size: 20px;
+    font-size: 0.9vw;
     font-family: 'NexonLv2Gothic';
-    padding-right: 10px;
+    padding-right: 0.5vw;
     opacity: 0.5;
     vertical-align: 2px;
 }
@@ -103,7 +103,7 @@
     padding-left: 5%;
     font-family: 'GmarketSans';
     text-align: right;
-    font-size: 20px;
+    font-size: 1vw;
     word-break: keep-all;
 }
 .sec2 .about1 .right {
@@ -135,7 +135,7 @@
     font-family: 'Migra-Extrabold';
 }
 #section3 h2 em {
-    font-size: 20px;
+    font-size: 0.9vw;
     font-family: 'NexonLv2Gothic';
     padding-right: 10px;
     opacity: 0.5;
@@ -148,13 +148,14 @@
     display: flex;
     margin-top: 20vw;
 }
-.work-wrap .work .left {
+/* standard */
+.work-wrap .standard .left {
     width: 30%;
     text-align: right;
     position: relative;
     z-index: 100;
 }
-.work-wrap .work .left h3 {
+.work-wrap .standard .left h3 {
     color: #000C42;
     margin-right: -4vw;
     margin-top: -2vw;
@@ -162,10 +163,10 @@
     font-size: 7vw;
     line-height: 1;
 }
-.work-wrap .work .left .desc {
+.work-wrap .standard .left .desc {
     font-family: 'GmarketSans';
     text-align: right;
-    font-size: 20px;
+    font-size: 1vw;
     word-break: keep-all;
     line-height: 1.4;
     color: #000C42;
@@ -173,18 +174,59 @@
     padding-right: 2vw;
     padding-top: 40vh;
 }
-.work-wrap .work .right {
+.work-wrap .standard .right {
     width: 70%;
     height: 40vw;
-    background: #fff;
     position: relative;
     overflow: hidden;
 }
-.work-wrap .work .right .img {
+.work-wrap .standard .right .img {
     position: absolute;
     left: 0;
     top: 80%;
-    background: url(https://kimdaewonn.github.io/portfolio/assets/img/web_standard.png) no-repeat center center;
+    background: url(../img/web_standard.png) no-repeat center center;
+    background-size: cover;
+    width: 110%;
+    height: 120%;
+}
+
+/* responsive */
+.work-wrap .responsive .left {
+    width: 30%;
+    text-align: right;
+    position: relative;
+    z-index: 100;
+}
+.work-wrap .responsive .left h3 {
+    color: #000C42;
+    margin-right: -4vw;
+    margin-top: -2vw;
+    font-family: 'Migra-Extrabold';
+    font-size: 7vw;
+    line-height: 1;
+}
+.work-wrap .responsive .left .desc {
+    font-family: 'GmarketSans';
+    text-align: right;
+    font-size: 1vw;
+    word-break: keep-all;
+    line-height: 1.4;
+    color: #000C42;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 40vh;
+}
+.work-wrap .responsive .right {
+    width: 70%;
+    height: 40vw;
+    position: relative;
+    overflow: hidden;
+}
+.work-wrap .responsive .right .img {
+    position: absolute;
+    left: 0;
+    top: 80%;
+    background: url(../img/web_responsive.png) no-repeat center center;
     background-size: cover;
     width: 110%;
     height: 120%;
