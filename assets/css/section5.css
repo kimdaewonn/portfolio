@@ -24,20 +24,20 @@
 
 
 
-.php {
+.phpT {
     display: flex;
     flex-direction: column;
     margin-top: 300px;
 }
-.web_php_img {
+.web_phpT_img {
     position: relative;
 
 }
-.web_php_img img {
+.web_phpT_img img {
     width: 65vw;
     float: right;
 }
-.web_php_p {
+.web_phpT_p {
     font-size: 1vw;
     font-family: 'NexonLv2Gothic';
     line-height: 1.4;
@@ -45,7 +45,7 @@
     margin-top: 50px;
     margin-left: 200px;
 }
-.web_php_h {
+.web_phpT_h {
     position: absolute;
     top: -10%;
     left: 15.5%;
@@ -56,7 +56,7 @@
 }
 
 
-.php_view_btn {
+.phpT_view_btn {
     display: flex;
     color: #fff;
     margin-top: 150px;
@@ -71,7 +71,7 @@
     position: absolute;
     
 }
-.php_view_btn div:nth-child(1){
+.phpT_view_btn div:nth-child(1){
     background: #000C42;
     border-radius: 50%;
     font-size: 1.8vw;
@@ -79,7 +79,7 @@
     margin-right: 20px;
     
 }
-.php_view_btn div:nth-child(2){
+.phpT_view_btn div:nth-child(2){
     background: #000C42;
     border-radius: 50%;
     font-size: 1.8vw;
