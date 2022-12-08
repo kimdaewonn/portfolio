@@ -78,18 +78,18 @@
     margin-top: 10vw;
     display: flex;
 }
-/* 왼쪽 붙이기 */
+/* 오른쪽으로 붙이기 */
 .site_left1 {
     width:30%;
     position: relative;
     z-index: 100;
     text-align: right;
-    margin-left: 3vw;
 }
 .site_left1 h3 {
     font-size: 8vw;
     line-height: 0.8;
-    margin-left: 5vw;
+    margin-left: 6vw;
+    display: inline-block;
 }
 .site_p1 {
     margin-right: 1vw;
@@ -104,7 +104,7 @@
     overflow: hidden;
     position: relative;
     width: 70%;
-    height: 100vh;
+    height: 40vw;
 }
 .site_right1 .img1 {
     background-image: url(../img/web_standard.png);
@@ -118,12 +118,12 @@
     background-position: center center;
 }
 
-/* 오른쪽 붙이기 */
+/* 왼쪽으로 붙이기 */
 .site_left2 {
     overflow: hidden;
     position: relative;
     width: 70%;
-    height: 100vh;
+    height: 40vw;
 }
 .site_left2 .img1 {
     background-image: url(../img/web_responsive.png);
@@ -141,13 +141,13 @@
     position: relative;
     z-index: 100;
     text-align: left;
-    margin-right: 3vw;
 }
 .site_right2 h3 {
     font-size: 8vw;
     line-height: 0.8;
     position: relative;
-    margin-right: 5vw;
+    display: inline-block;
+    margin-left: -11vw;
 
 }
 .site_p2 {
