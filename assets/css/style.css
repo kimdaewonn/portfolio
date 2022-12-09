@@ -143,6 +143,7 @@
 }
 .work-wrap {
     margin-top: 15vw;
+    padding-bottom: 10vw;
 }
 .work-wrap .work {
     display: flex;
@@ -397,7 +398,6 @@
 }
 #section4 {
     background: #6C90EE;
-    padding-top: 10vw;
 }
 #section4 h3 {
     color: #fff;
