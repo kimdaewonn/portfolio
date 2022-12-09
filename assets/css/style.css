@@ -423,7 +423,6 @@
 }
 .script_wrap .game .game_flex {
     display: flex;
-    /* overflow: hidden; */
 }
 .script_wrap .game .top {
     width: 100%;
@@ -442,30 +441,32 @@
 }
 
 .script_wrap .game .game_flex .left {
-    width: 30%;
-    height: 20vw;
+    width: 60%;
+    /* height: 20vw; */
     z-index: 100;
+    display: flex;
+    
 }
 .script_wrap .game .game_flex .left h4 {
     color: #fff;
-    margin-right: -6vw;
-    margin-top: -2vw;
+    margin-left: 6vw;
+    margin-top: -4.5vw;
     font-family: 'Migra-Extrabold';
     font-size: 7vw;
     line-height: 1;
 }
-.script_wrap .game .game_flex .left desc {
+.script_wrap .game .game_flex .left .desc {
     font-family: 'GmarketSans';
-    text-align: right;
+    text-align: left;
     font-size: 1vw;
     word-break: keep-all;
     line-height: 1.4;
     color: #000C42;
     padding-left: 2vw;
     padding-right: 2vw;
-    padding-top: 20vw;
+    /* padding-top: 20vw; */
 }
 .script_wrap .game .game_flex .right {
-    width: 70%;
-    height: 20vw;
+    width: 40%;
+    /* height: 20vw; */
 }
