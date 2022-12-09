@@ -10,7 +10,7 @@ gsap.to(".tx2", {
         scrub: 1,
     }
 })
-gsap.to(".sec1 .img .img1, .work-wrap .work .right .img, .work-wrap .work .left .img, .script_wrap .script .top .img", {
+gsap.to(".sec1 .img .img1, .work-wrap .work .right .img, .work-wrap .work .left .img",{
     yPercent: -80,
     scrollTrigger: {
         scrub: 1,
@@ -22,6 +22,28 @@ gsap.to(".sec1 .img .img2", {
         scrub: 1,
     }
 })
+
+//가로모드
+const sections = gsap.utils.toArray(".section");
+ScrollTrigger.matchMedia({
+	"(min-width: 1000px)": function () {
+		gsap.to(sections, {
+			xPercent: -100 * (sections.length - 1),
+			ease: "none",
+			scrollTrigger: {
+				trigger: "#section4",
+				pin: true,
+				scrub: 1,
+				end: "+=3600",
+				markers: true,
+			},
+		});
+	},
+});
+
+
+
+
         // setTimeout(() => {
 //     let mainTl = gsap.timeline();
    
