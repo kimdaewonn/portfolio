@@ -10,7 +10,7 @@ gsap.to(".tx2", {
         scrub: 1,
     }
 })
-gsap.to(".sec1 .img .img1, .work-wrap .work .right .img, .work-wrap .work .left .img ", {
+gsap.to(".sec1 .img .img1, .work-wrap .work .right .img, .work-wrap .work .left .img, .script_wrap .script .top .img", {
     yPercent: -80,
     scrollTrigger: {
         scrub: 1,
