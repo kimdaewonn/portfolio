@@ -184,7 +184,7 @@
 .work-wrap .standard .right .img {
     position: absolute;
     left: 0;
-    top: 80%;
+    top: 45%;
     background: url(../img/web_standard.png) no-repeat center center;
     background-size: cover;
     width: 110%;
@@ -201,7 +201,7 @@
 .work-wrap .responsive .left .img {
     position: absolute;
     left: 0;
-    top: 80%;
+    top: 55%;
     background: url(../img/web_responsive.png) no-repeat center center;
     background-size: cover;
     width: 110%;
@@ -267,7 +267,7 @@
 .work-wrap .react .right .img {
     position: absolute;
     left: 0;
-    top: 80%;
+    top: 62%;
     background: url(../img/react_site.png) no-repeat center center;
     background-size: cover;
     width: 110%;
@@ -308,7 +308,7 @@
 .work-wrap .youtube .right .img {
     position: absolute;
     left: 0;
-    top: 80%;
+    top: 70%;
     background: url(../img/react_youtube.png) no-repeat center center;
     background-size: cover;
     width: 110%;
@@ -324,7 +324,7 @@
 .work-wrap .vue .left .img {
     position: absolute;
     left: 0;
-    top: 80%;
+    top: 75%;
     background: url(../img/vue_site.png) no-repeat center center;
     background-size: cover;
     width: 110%;
