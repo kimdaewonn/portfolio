@@ -34,12 +34,98 @@ ScrollTrigger.matchMedia({
 				trigger: "#section4",
 				pin: true,
 				scrub: 1,
-				end: "+=3600",
+				end: "+=3000",
 				markers: true,
 			},
 		});
 	},
 });
+
+ScrollTrigger.matchMedia({
+	"(min-width: 900px)": function () {
+		ScrollTrigger.create({
+			trigger: ".section3",
+			scrub: 1,
+			animation: gsap.fromTo(
+				".section_flex .one",
+				{
+					opacity: 0,
+				},
+				{
+					opacity: 1,
+				}
+			),
+		});
+    },
+});
+
+
+
+
+
+
+
+// gsap.to(".section_flex .one", {
+// 	scrollTrigger: {
+// 		trigger: ".section2",
+// 		scrub: 1,
+// 	},
+// 	    opacity: 1,
+// });
+
+
+// ScrollTrigger.create({
+// 	trigger: ".section_flex .one",
+// 	scrub: 1,
+// 	delay: 1,
+//     opacity: 1,
+// });
+
+
+
+// gsap.to(".section_flex .one", {
+//     scrollTrigger: {
+//         trigger: ".section_flex .one",
+//         scrub: 1,
+//         opacity: 1,
+//         start: "top top",
+//         end: "top 20%",
+//         markers: true,
+//     },
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

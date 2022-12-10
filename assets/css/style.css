@@ -466,7 +466,7 @@
 .work-wrap .php .right .img {
     position: absolute;
     left: 0;
-    top: 80%;
+    top: 85%;
     background: url(../img/php_site.png) no-repeat center center;
     background-size: cover;
     width: 110%;
@@ -487,6 +487,25 @@
     line-height: 1;
     padding-top: 5vw;
     font-family: 'Migra-Extrabold';
+    padding-left: 3vw;
+}
+.section_flex {
+    display: flex;
+    align-items: center;
+    background: #5D8CF3;
+}
+.section_flex .one {
+    font-size: 5vw;
+    margin-left: 2vw;
+    margin-top: 2vw;
+    opacity: 0;
+
+}
+.section_flex .two {
+    font-size: 5vw;
+    opacity: 1;
+    margin-left: 2vw;
+    margin-top: 2vw;
 }
 /* 가로모드 */
 .horizontalWrap {
@@ -494,7 +513,7 @@
     height: 100vh;
 }
 .horizontalSection  {
-    width: 500%;
+    width: 300%;
     overscroll-behavior: none;
     display: flex;
     flex-wrap: nowrap;
@@ -506,6 +525,7 @@
     z-index: 10;
 }
 .section1 {
+    width: 100%;
     display: flex;
 	position: relative;
 	box-sizing: border-box;
@@ -515,26 +535,28 @@
 }
 .script_wrap {}
 .script_wrap .script {
-    /* margin-top: 3vw; */
+    margin-top: 2vw;
     position: relative;
 }
 /* game */
 .script_wrap .game {}
-.script_wrap .game .game_flex {
-    display: flex;
-}
+
 .script_wrap .game .top {
     width: 100%;
     height: 25vw;
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 .script_wrap .game .top h4 {
     color: #fff;
-    margin-left: 20vw;
+    /* margin-top: 6vw; */
+    margin-left: 41vw;
     font-family: 'Migra-Extrabold';
-    font-size: 6vw;
+    font-size: 5vw;
     line-height: 1;
+    text-align: left;
 }
 .script_wrap .game .top .img {
     position: absolute;
@@ -545,6 +567,9 @@
     width: 100%;
     height: 100%;
     z-index: -1;
+}
+.script_wrap .game .game_flex {
+    display: flex;
 }
 .script_wrap .game .game_flex .left {
     width: 65%;
@@ -558,8 +583,8 @@
     word-break: keep-all;
     line-height: 1.4;
     color: #000C42;
-    padding-left: 10vw;
-    padding-top: 4vw;
+    padding-top: 1vw;
+    margin-left: 26vw;
 }
 .script_wrap .game .game_flex .right {
     width: 35%;
@@ -572,11 +597,77 @@
     border-radius: 50%;
     padding: 1vw 2vw;
     font-family: 'Migra-Extrabold';
-    margin-top: 4vw;
+    margin-top: 2vw;
     text-align: center;
-    margin-left: 10vw;
+    margin-left: 1vw;
 }
+/* parallax */
 .section2 {
+    width: 100%;
+	height: 100vh;
+}
+.script_wrap .parallax {}
+.script_wrap .parallax .top {
+    width: 100%;
+    height: 25vw;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.script_wrap .parallax .top h4 {
+    color: #fff;
+    /* margin-top: 6vw; */
+    margin-left: 41vw;
+    font-family: 'Migra-Extrabold';
+    font-size: 5vw;
+    line-height: 1;
+    text-align: left;
+}
+.script_wrap .parallax .top .img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../img/parallax_img.png) no-repeat center center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.script_wrap .parallax .parallax_flex {
+    display: flex;
+}
+.script_wrap .parallax .parallax_flex .left {
+    width: 65%;
+    z-index: 100;
+    display: flex;
+}
+.script_wrap .parallax .parallax_flex .left .desc {
+    font-family: 'GmarketSans';
+    text-align: left;
+    font-size: 1vw;
+    word-break: keep-all;
+    line-height: 1.4;
+    color: #000C42;
+    padding-top: 1vw;
+    margin-left: 26vw;
+}
+.script_wrap .parallax .parallax_flex .right {
+    width: 35%;
+}
+.script_wrap .parallax .parallax_flex .right .code1 {
+    background: #000C42;
+    color: #fff;
+    display:inline-block;
+    font-size: 1.5vw;
+    border-radius: 50%;
+    padding: 1vw 2vw;
+    font-family: 'Migra-Extrabold';
+    margin-top: 2vw;
+    text-align: center;
+    margin-left: 1vw;
+}
+.section3 {
     width: 100%;
 	height: 100vh;
 }
