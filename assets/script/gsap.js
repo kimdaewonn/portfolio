@@ -55,7 +55,7 @@ ScrollTrigger.matchMedia({
 					rotation:-20,
 				},
                 {
-					xPercent:400,
+					xPercent:500,
 					rotation:-50,
 
 				},
@@ -78,7 +78,7 @@ ScrollTrigger.matchMedia({
 					rotation:0,
 				},
                 {
-					xPercent:400,
+					xPercent:500,
 					rotation:50,
 
 				},
