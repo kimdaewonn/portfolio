@@ -34,107 +34,92 @@ ScrollTrigger.matchMedia({
 				trigger: "#section4",
 				pin: true,
 				scrub: 1,
-				end: "+=3000",
+				end: "+=3600",
 				markers: true,
 			},
 		});
 	},
 });
-
+// 아래다리
 ScrollTrigger.matchMedia({
 	"(min-width: 900px)": function () {
 		ScrollTrigger.create({
-			trigger: ".section3",
-			scrub: 1,
+			trigger: ".section2",
+			scrub: 9,
+            start:"top top",
+			end: "+=3600",
 			animation: gsap.fromTo(
-				".section_flex .one",
+				".script_wrap .js_intro .right .img1",
 				{
-					opacity: 0,
+					xPercent:0,
+					rotation:-20,
 				},
+                {
+					xPercent:400,
+					rotation:-50,
+
+				},
+			),
+		});
+    },
+});
+// 위 다리
+ScrollTrigger.matchMedia({
+	"(min-width: 900px)": function () {
+		ScrollTrigger.create({
+			trigger: ".section2",
+			scrub: 9,
+            start:"top top",
+			end: "+=3600",
+			animation: gsap.fromTo(
+				".script_wrap .js_intro .right .img2",
 				{
-					opacity: 1,
-				}
+					xPercent:0,
+					rotation:0,
+				},
+                {
+					xPercent:400,
+					rotation:50,
+
+				},
 			),
 		});
     },
 });
 
-
-
-
-
-
-
-// gsap.to(".section_flex .one", {
+// 가로모드 - 제목 나타내기
+// game
+// gsap.to(".gameH", {
 // 	scrollTrigger: {
-// 		trigger: ".section2",
+// 		trigger: ".section1",
 // 		scrub: 1,
+//         start: "top 90%",
 // 	},
 // 	    opacity: 1,
 // });
-
-
-// ScrollTrigger.create({
-// 	trigger: ".section_flex .one",
-// 	scrub: 1,
-// 	delay: 1,
-//     opacity: 1,
+// gsap.to(".gameH", {
+// 	scrollTrigger: {
+// 		trigger: ".section1",
+// 		scrub: 1,
+//         start: "top 10%",
+// 	},
+// 	    opacity: 0,
 // });
 
-
-
-// gsap.to(".section_flex .one", {
-//     scrollTrigger: {
-//         trigger: ".section_flex .one",
-//         scrub: 1,
-//         opacity: 1,
-//         start: "top top",
-//         end: "top 20%",
-//         markers: true,
-//     },
+// // parallax
+// gsap.to(".parallaxH", {
+// 	scrollTrigger: {
+// 		trigger: ".section2",
+// 		scrub: 1,
+//         start: "top",
+// 	},
+// 	    opacity: 1,
 // });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        // setTimeout(() => {
-//     let mainTl = gsap.timeline();
-   
-//     mainTl.to(".txt1 span", {duration: 0.4, y: 0, opacity:1, stagger: 0.1, ease: Circ.easeOut})
-//     mainTl.to(".txt2 span", {duration: 0.4, y: 0, opacity:1, stagger: 0.1, ease: Circ.easeOut})
-//     mainTl.to("#section1 .img", {duration: 0.7, opacity:1, ease: Power1.easeOut})
-//     mainTl.to("#header", {duration: 0.7, top:0, ease: Power1.easeOut})
-// }, 2000);
+// gsap.to(".parallaxH", {
+// 	scrollTrigger: {
+// 		trigger: ".section2",
+// 		scrub: 1,
+//         start: "bottom",
+// 	},
+// 	    opacity: 0,
+// });
