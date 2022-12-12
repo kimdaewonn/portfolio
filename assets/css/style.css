@@ -988,3 +988,115 @@
     padding-top: 4vw;
     font-family: 'Migra-Extrabold';
 }
+.team-wrap .team {
+    display: flex;
+    margin-top: 15vw;
+}
+/* phpT */
+.team-wrap .phpT .left {
+    width: 30%;
+    text-align: right;
+    position: relative;
+    z-index: 100;
+}
+.team-wrap .phpT .left h4 {
+    color: #6C90EE;
+    margin-right: -6vw;
+    margin-top: 1vw;
+    font-family: 'Migra-Extrabold';
+    font-size: 7vw;
+    line-height: 1;
+}
+.team-wrap .phpT .left .desc {
+    font-family: 'GmarketSans';
+    text-align: right;
+    font-size: 1vw;
+    word-break: keep-all;
+    line-height: 1.4;
+    color: #fff;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 7vw;
+}
+.team-wrap .phpT .left .code {
+    background: #000C42;
+    color: #fff;
+    display:inline-block;
+    font-size: 1.5vw;
+    border-radius: 50%;
+    padding: 1vw 2vw;
+    font-family: 'Migra-Extrabold';
+    margin-top: 2vw;
+    text-align: center;
+    margin-right: 6vw;
+}
+.team-wrap .phpT .right {
+    width: 70%;
+    height: 40vw;
+    position: relative;
+    overflow: hidden;
+}
+.team-wrap .phpT .right .img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../img/team1_img.png) no-repeat center center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+/* reactT */
+/* responsive */
+.team-wrap .reactT .left {
+    width: 70%;
+    height: 40vw;
+    position: relative;
+    overflow: hidden;
+}
+.team-wrap .reactT .left .img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../img/team2_img.png) no-repeat center center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+.team-wrap .reactT .right {
+    width: 30%;
+    text-align: left;
+    position: relative;
+    z-index: 100;
+}
+.team-wrap .reactT .right h4 {
+    color: #6C90EE;
+    margin-left: -5vw;
+    margin-top: 0.5vw;
+    font-family: 'Migra-Extrabold';
+    font-size: 7vw;
+    line-height: 1;
+}
+.team-wrap .reactT .right .desc {
+    font-family: 'GmarketSans';
+    text-align: left;
+    font-size: 1vw;
+    word-break: keep-all;
+    line-height: 1.4;
+    color: #fff;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 7vw;
+}
+
+.team-wrap .reactT .right .code {
+    background: #000C42;
+    color: #fff;
+    display:inline-block;
+    font-size: 1.5vw;
+    border-radius: 50%;
+    padding: 1vw 2vw;
+    font-family: 'Migra-Extrabold';
+    margin-top: 2vw;
+    text-align: center;
+    margin-left: 6vw;
+}
