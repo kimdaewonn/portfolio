@@ -53,10 +53,12 @@ ScrollTrigger.matchMedia({
 				{
 					xPercent:0,
 					rotation:-20,
+					yPercent:60,
 				},
                 {
 					xPercent:500,
 					rotation:-50,
+					yPercent:-60,
 
 				},
 			),
@@ -67,7 +69,7 @@ ScrollTrigger.matchMedia({
 ScrollTrigger.matchMedia({
 	"(min-width: 900px)": function () {
 		ScrollTrigger.create({
-			trigger: ".section4",
+			trigger: ".section2",
 			scrub: 11,
             start:"top top",
 			end: "+=3600",
@@ -76,11 +78,12 @@ ScrollTrigger.matchMedia({
 				{
 					xPercent:0,
 					rotation:0,
+					yPercent:-40,
 				},
                 {
 					xPercent:500,
 					rotation:50,
-
+					yPercent:60,
 				},
 			),
 		});

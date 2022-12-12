@@ -565,7 +565,13 @@
     top: -40%;
     z-index: 101;
 }
-
+.script_wrap .js_intro .right .img3 {
+    width: 20vw;
+    position: absolute;
+    left: 70%;
+    top: 35%;
+    z-index: 101;
+}
 /* game */
 .section2 {
     width: 100%;
