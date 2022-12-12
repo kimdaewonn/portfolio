@@ -52,13 +52,11 @@ ScrollTrigger.matchMedia({
 				".script_wrap .js_intro .right .img1",
 				{
 					xPercent:0,
-					rotation:-20,
-					yPercent:60,
+					skew:-20,
 				},
                 {
 					xPercent:500,
-					rotation:-50,
-					yPercent:-60,
+					skew:-50,
 
 				},
 			),
@@ -84,6 +82,7 @@ ScrollTrigger.matchMedia({
 					xPercent:500,
 					rotation:50,
 					yPercent:60,
+
 				},
 			),
 		});
