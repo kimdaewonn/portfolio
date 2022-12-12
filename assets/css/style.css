@@ -180,13 +180,21 @@
     background: #000C42;
     color: #fff;
     display:inline-block;
-    font-size: 1.5vw;
-    border-radius: 50%;
+    font-size: 2vw;
     padding: 1vw 2vw;
     font-family: 'Migra-Extrabold';
     margin-top: 2vw;
     text-align: center;
     margin-right: 6vw;
+}
+.standard .left .view {
+    background: #fff;
+    display: inline-block;
+    color: #000C42;
+    font-family: 'Migra-Extrabold';
+    padding: 1vw 2vw;
+    position: absolute;
+    font-size: 2vw;
 }
 .work-wrap .standard .right {
     width: 70%;
@@ -203,6 +211,7 @@
     width: 110%;
     height: 120%;
 }
+
 
 /* responsive */
 .work-wrap .responsive .left {

@@ -22,7 +22,6 @@ gsap.to(".sec1 .img .img2", {
         scrub: 1,
     }
 })
-
 //가로모드
 const sections = gsap.utils.toArray(".section");
 ScrollTrigger.matchMedia({
@@ -40,11 +39,6 @@ ScrollTrigger.matchMedia({
 		});
 	},
 });
-if (window.matchMedia("(min-width: 400px)").matches) {
-	/* 뷰포트 너비가 400 픽셀 이상 */
-  } else {
-	/* 뷰포트 너비가 400 픽셀 미만 */
-  }
 // 아래 다리
 ScrollTrigger.matchMedia({
 	"(min-width: 300px)": function () {
@@ -93,4 +87,3 @@ ScrollTrigger.matchMedia({
 		});
     },
 });
-// 
