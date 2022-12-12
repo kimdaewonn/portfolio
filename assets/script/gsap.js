@@ -26,7 +26,7 @@ gsap.to(".sec1 .img .img2", {
 //가로모드
 const sections = gsap.utils.toArray(".section");
 ScrollTrigger.matchMedia({
-	"(min-width: 1000px)": function () {
+	"(min-width: 300px)": function () {
 		gsap.to(sections, {
 			xPercent: -100 * (sections.length - 1),
 			ease: "none",
@@ -40,9 +40,14 @@ ScrollTrigger.matchMedia({
 		});
 	},
 });
+if (window.matchMedia("(min-width: 400px)").matches) {
+	/* 뷰포트 너비가 400 픽셀 이상 */
+  } else {
+	/* 뷰포트 너비가 400 픽셀 미만 */
+  }
 // 아래 다리
 ScrollTrigger.matchMedia({
-	"(min-width: 900px)": function () {
+	"(min-width: 300px)": function () {
 		ScrollTrigger.create({
 			trigger: ".section2",
 			scrub: 11,
@@ -65,7 +70,7 @@ ScrollTrigger.matchMedia({
 });
 // 위 다리
 ScrollTrigger.matchMedia({
-	"(min-width: 900px)": function () {
+	"(min-width: 300px)": function () {
 		ScrollTrigger.create({
 			trigger: ".section2",
 			scrub: 11,
@@ -88,3 +93,4 @@ ScrollTrigger.matchMedia({
 		});
     },
 });
+// 
