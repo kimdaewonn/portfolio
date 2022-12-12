@@ -40,7 +40,7 @@ ScrollTrigger.matchMedia({
 		});
 	},
 });
-// 아래다리
+// 아래 다리
 ScrollTrigger.matchMedia({
 	"(min-width: 900px)": function () {
 		ScrollTrigger.create({
@@ -68,7 +68,7 @@ ScrollTrigger.matchMedia({
 	"(min-width: 900px)": function () {
 		ScrollTrigger.create({
 			trigger: ".section2",
-			scrub: 9,
+			scrub: 11,
             start:"top top",
 			end: "+=3600",
 			animation: gsap.fromTo(
@@ -86,7 +86,28 @@ ScrollTrigger.matchMedia({
 		});
     },
 });
+ScrollTrigger.matchMedia({
+	"(min-width: 900px)": function () {
+		ScrollTrigger.create({
+			trigger: ".section2",
+			scrub: 11,
+            start:"top top",
+			end: "+=3600",
+			animation: gsap.fromTo(
+				".script_wrap .js_intro .right .img2",
+				{
+					xPercent:0,
+					rotation:0,
+				},
+                {
+					xPercent:500,
+					rotation:50,
 
+				},
+			),
+		});
+    },
+});
 // 가로모드 - 제목 나타내기
 // game
 // gsap.to(".gameH", {
