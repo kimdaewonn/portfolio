@@ -45,7 +45,7 @@ ScrollTrigger.matchMedia({
 	"(min-width: 900px)": function () {
 		ScrollTrigger.create({
 			trigger: ".section2",
-			scrub: 9,
+			scrub: 11,
             start:"top top",
 			end: "+=3600",
 			animation: gsap.fromTo(
@@ -67,7 +67,7 @@ ScrollTrigger.matchMedia({
 ScrollTrigger.matchMedia({
 	"(min-width: 900px)": function () {
 		ScrollTrigger.create({
-			trigger: ".section2",
+			trigger: ".section4",
 			scrub: 11,
             start:"top top",
 			end: "+=3600",
@@ -86,61 +86,3 @@ ScrollTrigger.matchMedia({
 		});
     },
 });
-ScrollTrigger.matchMedia({
-	"(min-width: 900px)": function () {
-		ScrollTrigger.create({
-			trigger: ".section2",
-			scrub: 11,
-            start:"top top",
-			end: "+=3600",
-			animation: gsap.fromTo(
-				".script_wrap .js_intro .right .img2",
-				{
-					xPercent:0,
-					rotation:0,
-				},
-                {
-					xPercent:500,
-					rotation:50,
-
-				},
-			),
-		});
-    },
-});
-// 가로모드 - 제목 나타내기
-// game
-// gsap.to(".gameH", {
-// 	scrollTrigger: {
-// 		trigger: ".section1",
-// 		scrub: 1,
-//         start: "top 90%",
-// 	},
-// 	    opacity: 1,
-// });
-// gsap.to(".gameH", {
-// 	scrollTrigger: {
-// 		trigger: ".section1",
-// 		scrub: 1,
-//         start: "top 10%",
-// 	},
-// 	    opacity: 0,
-// });
-
-// // parallax
-// gsap.to(".parallaxH", {
-// 	scrollTrigger: {
-// 		trigger: ".section2",
-// 		scrub: 1,
-//         start: "top",
-// 	},
-// 	    opacity: 1,
-// });
-// gsap.to(".parallaxH", {
-// 	scrollTrigger: {
-// 		trigger: ".section2",
-// 		scrub: 1,
-//         start: "bottom",
-// 	},
-// 	    opacity: 0,
-// });
