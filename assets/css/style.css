@@ -1743,3 +1743,6 @@
     width: 30vw;
     margin-left: 1vw;
 }
+
+/* 모바일 */
+@media(max-width: 960px){}
