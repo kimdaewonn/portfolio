@@ -95,8 +95,16 @@ ScrollTrigger.matchMedia({
         const study = document.querySelectorAll(".study_btn");
 
 		// click
+        const Box1 = document.querySelector(".skill_top .img1");
+        const Box2 = document.querySelector(".skill_top .img2");
+        const Box3 = document.querySelector(".skill_top .img3");
+        const Box4 = document.querySelector(".skill_top .img4");
         const Box5 = document.querySelector(".skill_bot .img1");
         const Box6 = document.querySelector(".skill_bot .img2");
+        const text1 = document.querySelector(".skill_top .text1");
+        const text2 = document.querySelector(".skill_top .text2");
+        const text3 = document.querySelector(".skill_top .text3");
+        const text4 = document.querySelector(".skill_top .text4");
         const text5 = document.querySelector(".skill_bot .text1");
         const text6 = document.querySelector(".skill_bot .text2");
 
@@ -104,12 +112,41 @@ ScrollTrigger.matchMedia({
             gsap.to(cursor, {duration: 0.3, left: e.pageX -5, top: e.pageY -5});
 
 			// click
+			Box1.addEventListener("click",()=>{
+				text1.style.display="block"
+			})
+			text1.addEventListener("click",()=>{
+				text1.style.display="none"
+			})
+
+			Box2.addEventListener("click",()=>{
+				text2.style.display="block"
+			})
+			text2.addEventListener("click",()=>{
+				text2.style.display="none"
+			})
+
+			Box3.addEventListener("click",()=>{
+				text3.style.display="block"
+			})
+			text3.addEventListener("click",()=>{
+				text3.style.display="none"
+			})
+
+			Box4.addEventListener("click",()=>{
+				text4.style.display="block"
+			})
+			text4.addEventListener("click",()=>{
+				text4.style.display="none"
+			})
+
 			Box5.addEventListener("click",()=>{
 				text5.style.display="block"
 			})
 			text5.addEventListener("click",()=>{
 				text5.style.display="none"
 			})
+
 			Box6.addEventListener("click",()=>{
 				text6.style.display="block"
 			})

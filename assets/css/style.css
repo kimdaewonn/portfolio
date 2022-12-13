@@ -1538,11 +1538,13 @@
 
 .skill_list img {
     width: 20vw;
+    cursor: pointer;
 }
 .skill_list .skill_top {
     display: flex;
     justify-content: space-between;
     margin-bottom: 5vw;
+    position: relative;
 }
 .skill_top .text1 {
     display: inline-block;
@@ -1551,8 +1553,56 @@
     font-size: 5vw;
     font-family: 'Migra-Extrabold';
     position: absolute;
+    left: 1%;
+    top: 0;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    translate: transition 0.6s;
+    cursor: pointer;
+    display: none;
+}
+.skill_top .text2 {
+    display: inline-block;
+    background: #BF431C;
+    padding: 2vw 5.5vw;
+    font-size: 5vw;
+    font-family: 'Migra-Extrabold';
+    position: absolute;
     left: 26.5%;
-    top: -3%;
+    top: 0;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    translate: transition 0.6s;
+    cursor: pointer;
+    display: none;
+}
+.skill_top .text3 {
+    display: inline-block;
+    background: #BF431C;
+    padding: 2vw 5.5vw;
+    font-size: 5vw;
+    font-family: 'Migra-Extrabold';
+    position: absolute;
+    left: 52.5%;
+    top: 0;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    translate: transition 0.6s;
+    cursor: pointer;
+    display: none;
+}
+.skill_top .text4 {
+    display: inline-block;
+    background: #BF431C;
+    padding: 2vw 5.5vw;
+    font-size: 5vw;
+    font-family: 'Migra-Extrabold';
+    position: absolute;
+    left: 78.5%;
+    top: 0;
     color: #fff;
     border-radius: 10px;
     text-align: center;
