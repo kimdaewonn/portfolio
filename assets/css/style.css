@@ -8,6 +8,11 @@
     z-index: 10000;
     background: #000;
 }
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 #header h1 {
     color: #fff;
     font-size: 14px;
@@ -17,6 +22,12 @@
     padding: 20px 20px 20px 70px;
     background: url(../img/logo.png) no-repeat;
     background-size: contain;
+}
+.menu {
+    font-size: 1vw;
+    font-family: 'Migra-Extrabold';
+    color: #fff;
+    margin-right: 2vw;
 }
 
 /* section1 */
@@ -1706,7 +1717,6 @@
     margin-left: 8vw;
     font-family: "MigraItalic-ExtralightItalic";
 }
-
 .contact_inner .left .bot {
     background: #E6E5FA;
     height: 27.5vw;

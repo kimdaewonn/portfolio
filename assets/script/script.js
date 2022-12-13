@@ -112,45 +112,45 @@ ScrollTrigger.matchMedia({
             gsap.to(cursor, {duration: 0.3, left: e.pageX -5, top: e.pageY -5});
 
 			// click
-			Box1.addEventListener("click",()=>{
+			Box1.addEventListener("mouseover",()=>{
 				text1.style.display="block"
 			})
-			text1.addEventListener("click",()=>{
+			text1.addEventListener("mouseleave",()=>{
 				text1.style.display="none"
 			})
 
-			Box2.addEventListener("click",()=>{
+			Box2.addEventListener("mouseover",()=>{
 				text2.style.display="block"
 			})
-			text2.addEventListener("click",()=>{
+			text2.addEventListener("mouseleave",()=>{
 				text2.style.display="none"
 			})
 
-			Box3.addEventListener("click",()=>{
+			Box3.addEventListener("mouseover",()=>{
 				text3.style.display="block"
 			})
-			text3.addEventListener("click",()=>{
+			text3.addEventListener("mouseleave",()=>{
 				text3.style.display="none"
 			})
 
-			Box4.addEventListener("click",()=>{
+			Box4.addEventListener("mouseover",()=>{
 				text4.style.display="block"
 			})
-			text4.addEventListener("click",()=>{
+			text4.addEventListener("mouseleave",()=>{
 				text4.style.display="none"
 			})
 
-			Box5.addEventListener("click",()=>{
+			Box5.addEventListener("mouseover",()=>{
 				text5.style.display="block"
 			})
-			text5.addEventListener("click",()=>{
+			text5.addEventListener("mouseleave",()=>{
 				text5.style.display="none"
 			})
 
-			Box6.addEventListener("click",()=>{
+			Box6.addEventListener("mouseover",()=>{
 				text6.style.display="block"
 			})
-			text6.addEventListener("click",()=>{
+			text6.addEventListener("mouseleave",()=>{
 				text6.style.display="none"
 			})
 	
