@@ -251,7 +251,7 @@ select {
   background: #fff;
   color: #000C42;
   transform: scale(10);
-  opacity: 1;
+  opacity: 0.5;
   transition: all ease 0.6s;
 }
 .mouse__cursor.viewactive {
@@ -262,7 +262,7 @@ select {
   background: #000C42;
   color: #fff;
   transform: scale(10);
-  opacity: 1;
+  opacity: 0.5;
   transition: all ease 0.6s;
 }
 .mouse__cursor.studyactive {
@@ -273,7 +273,7 @@ select {
   background: #000C42;
   color: #fff;
   transform: scale(10);
-  opacity: 1;
+  opacity: 0.5;
   transition: all ease 0.6s;
 }
 
