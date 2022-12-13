@@ -1570,7 +1570,6 @@
     border-radius: 10px;
     text-align: center;
     translate: transition 0.6s;
-    cursor: pointer;
     display: none;
 }
 .skill_top .text2 {
@@ -1586,7 +1585,6 @@
     border-radius: 10px;
     text-align: center;
     translate: transition 0.6s;
-    cursor: pointer;
     display: none;
 }
 .skill_top .text3 {
@@ -1602,7 +1600,6 @@
     border-radius: 10px;
     text-align: center;
     translate: transition 0.6s;
-    cursor: pointer;
     display: none;
 }
 .skill_top .text4 {
@@ -1618,7 +1615,6 @@
     border-radius: 10px;
     text-align: center;
     translate: transition 0.6s;
-    cursor: pointer;
     display: none;
 }
 
@@ -1651,7 +1647,6 @@
     border-radius: 10px;
     text-align: center;
     translate: transition 0.6s;
-    cursor: pointer;
     display: none;
 }
 .skill_bot .text2 {
@@ -1667,7 +1662,6 @@
     border-radius: 10px;
     text-align: center;
     translate: transition 0.6s;
-    cursor: pointer;
     display: none;
 }
 .contact-wrap {
