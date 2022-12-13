@@ -1544,6 +1544,30 @@
     justify-content: space-between;
     margin-bottom: 5vw;
 }
+.skill_top .text1 {
+    display: inline-block;
+    background: #BF431C;
+    padding: 2vw 5.5vw;
+    font-size: 5vw;
+    font-family: 'Migra-Extrabold';
+    position: absolute;
+    left: 26.5%;
+    top: -3%;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    translate: transition 0.6s;
+    cursor: pointer;
+    display: none;
+}
+
+
+.skill_list .skill_top .img1 {
+    margin-left: 1vw;
+}
+.skill_list .skill_top .img4 {
+    margin-right: 1vw;
+}
 .skill_list .skill_bot {
     display: flex;
     justify-content: center;
@@ -1565,8 +1589,9 @@
     color: #fff;
     border-radius: 10px;
     text-align: center;
-    display: none;
     translate: transition 0.6s;
+    cursor: pointer;
+    display: none;
 }
 .skill_bot .text2 {
     display: inline-block;
@@ -1580,6 +1605,8 @@
     color: #fff;
     border-radius: 10px;
     text-align: center;
+    translate: transition 0.6s;
+    cursor: pointer;
     display: none;
 }
 .contact-wrap {

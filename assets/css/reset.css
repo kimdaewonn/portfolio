@@ -231,15 +231,51 @@ select {
   transition: transform 0.3s, opacity 0.2s;
   
 }
-.mouse__cursor.active {
+/* over */
+.mouse__cursor.codeactive {
   transform: scale(0);
   opacity: 0;
 }
-.mouse__cursor.active {
-  background: #BF431C;
+.mouse__cursor.codeactive {
+  background: #fff;
+  color: #000C42;
+  transform: scale(10);
+  opacity: 1;
+  transition: all ease 0.6s;
+}
+.mouse__cursor.codeactive {
+  transform: scale(0);
+  opacity: 0;
+}
+.mouse__cursor.codeactive {
+  background: #fff;
+  color: #000C42;
+  transform: scale(10);
+  opacity: 1;
+  transition: all ease 0.6s;
+}
+.mouse__cursor.viewactive {
+  transform: scale(0);
+  opacity: 0;
+}
+.mouse__cursor.viewactive {
+  background: #000C42;
   color: #fff;
   transform: scale(10);
   opacity: 1;
-  transition: all ease 0.5s;
+  transition: all ease 0.6s;
 }
+.mouse__cursor.studyactive {
+  transform: scale(0);
+  opacity: 0;
+}
+.mouse__cursor.studyactive {
+  background: #000C42;
+  color: #fff;
+  transform: scale(10);
+  opacity: 1;
+  transition: all ease 0.6s;
+}
+
+
 

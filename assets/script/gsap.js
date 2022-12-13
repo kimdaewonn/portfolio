@@ -87,41 +87,61 @@ ScrollTrigger.matchMedia({
 		});
     },
 });
-// 마우스over
+// 마우스
+		// over
 		const cursor = document.querySelector(".mouse__cursor");
-        // const Box = document.querySelectorAll(".skill_list img");
+        const code = document.querySelectorAll(".code");
+        const view = document.querySelectorAll(".view");
+        const study = document.querySelectorAll(".study_btn");
 
+		// click
         const Box5 = document.querySelector(".skill_bot .img1");
-        const text1 = document.querySelector(".skill_bot .text1");
-        // const Btn = document.querySelector(".modal__btn");
-        // const dd = document.querySelector(".modal__btn");
+        const Box6 = document.querySelector(".skill_bot .img2");
+        const text5 = document.querySelector(".skill_bot .text1");
+        const text6 = document.querySelector(".skill_bot .text2");
 
         window.addEventListener("mousemove", e=>{
             gsap.to(cursor, {duration: 0.3, left: e.pageX -5, top: e.pageY -5});
 
-
-			Box5.addEventListener("mouseenter",()=>{
-				text1.style.display="block"
+			// click
+			Box5.addEventListener("click",()=>{
+				text5.style.display="block"
 			})
-			Box5.addEventListener("mouseleave",()=>{
-				text1.style.display="none"
+			text5.addEventListener("click",()=>{
+				text5.style.display="none"
 			})
-			// Box.forEach(Box => {
-            //     Box.addEventListener("mouseenter", () =>{
-            //         text1.style.display="block"
-            //     });
-            //     Box.addEventListener("mouseleave", () =>{
-			// 		text1.style.display="none"
-            //     });
-            // });
+			Box6.addEventListener("click",()=>{
+				text6.style.display="block"
+			})
+			text6.addEventListener("click",()=>{
+				text6.style.display="none"
+			})
+	
 
-
-			// Btn.addEventListener("mouseenter", () =>{
-			// 	cursor.classList.add("Btnactive");
-			// });
-			// Btn.addEventListener("mouseleave", () =>{
-			// 	cursor.classList.remove("Btnactive");
-			// });
-			
+			// over
+			code.forEach(code => {
+                code.addEventListener("mouseenter", () =>{
+                    cursor.classList.add("codeactive");
+                });
+                code.addEventListener("mouseleave", () =>{
+                    cursor.classList.remove("codeactive");
+                });
+            });
+			view.forEach(view => {
+                view.addEventListener("mouseenter", () =>{
+                    cursor.classList.add("viewactive");
+                });
+                view.addEventListener("mouseleave", () =>{
+                    cursor.classList.remove("viewactive");
+                });
+            });
+			study.forEach(study => {
+                study.addEventListener("mouseenter", () =>{
+                    cursor.classList.add("studyactive");
+                });
+                study.addEventListener("mouseleave", () =>{
+                    cursor.classList.remove("studyactive");
+                });
+            });
 
 		});
