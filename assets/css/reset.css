@@ -215,3 +215,31 @@ select {
   line-height: 0;
   text-indent: -9999px;
 }
+/* 마우스 */
+
+.mouse__cursor {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  z-index: 9999;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.3);
+  user-select: none;
+  pointer-events: none;
+  transition: transform 0.3s, opacity 0.2s;
+  
+}
+.mouse__cursor.active {
+  transform: scale(0);
+  opacity: 0;
+}
+.mouse__cursor.active {
+  background: #BF431C;
+  color: #fff;
+  transform: scale(10);
+  opacity: 1;
+  transition: all ease 0.5s;
+}
+

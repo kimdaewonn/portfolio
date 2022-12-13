@@ -1535,6 +1535,7 @@
     font-family: 'Migra-Extrabold';
     margin-bottom: 3vw;
 }
+
 .skill_list img {
     width: 20vw;
 }
@@ -1547,9 +1548,39 @@
     display: flex;
     justify-content: center;
     padding-bottom: 3vw;
+    position: relative;
 }
 .skill_list .skill_bot .img1 {
     margin-right: 6vw;
+}
+.skill_bot .text1 {
+    display: inline-block;
+    background: #BF431C;
+    padding: 2vw 5.5vw;
+    font-size: 5vw;
+    font-family: 'Migra-Extrabold';
+    position: absolute;
+    left: 26.5%;
+    top: -3%;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+    translate: transition 0.6s;
+}
+.skill_bot .text2 {
+    display: inline-block;
+    background: #BF431C;
+    padding: 2vw 5.5vw;
+    font-size: 5vw;
+    font-family: 'Migra-Extrabold';
+    position: absolute;
+    left: 52.5%;
+    top: -3%;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
 }
 .contact-wrap {
     background: #020E37;

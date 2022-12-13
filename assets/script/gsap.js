@@ -87,3 +87,41 @@ ScrollTrigger.matchMedia({
 		});
     },
 });
+// 마우스over
+		const cursor = document.querySelector(".mouse__cursor");
+        // const Box = document.querySelectorAll(".skill_list img");
+
+        const Box5 = document.querySelector(".skill_bot .img1");
+        const text1 = document.querySelector(".skill_bot .text1");
+        // const Btn = document.querySelector(".modal__btn");
+        // const dd = document.querySelector(".modal__btn");
+
+        window.addEventListener("mousemove", e=>{
+            gsap.to(cursor, {duration: 0.3, left: e.pageX -5, top: e.pageY -5});
+
+
+			Box5.addEventListener("mouseenter",()=>{
+				text1.style.display="block"
+			})
+			Box5.addEventListener("mouseleave",()=>{
+				text1.style.display="none"
+			})
+			// Box.forEach(Box => {
+            //     Box.addEventListener("mouseenter", () =>{
+            //         text1.style.display="block"
+            //     });
+            //     Box.addEventListener("mouseleave", () =>{
+			// 		text1.style.display="none"
+            //     });
+            // });
+
+
+			// Btn.addEventListener("mouseenter", () =>{
+			// 	cursor.classList.add("Btnactive");
+			// });
+			// Btn.addEventListener("mouseleave", () =>{
+			// 	cursor.classList.remove("Btnactive");
+			// });
+			
+
+		});
