@@ -2,18 +2,19 @@
 body {
     overflow-x: hidden
 }
-#header {
+#header {}
+.header__inner {
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     z-index: 10000;
     background: #000;
-}
-.header__inner {
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: 'Migra-Extralight';
 }
 #header h1 {
     color: #fff;
@@ -25,11 +26,81 @@ body {
     background: url(../img/logo.png) no-repeat;
     background-size: contain;
 }
-/* .menu {
-    font-size: 1vw;
-    font-family: 'Migra-Extrabold';
+.header__menu li {
+    display: inline;
+}
+.header__menu li a {
+    padding: 13px 30px;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+.header__menu li a.active {
     color: #fff;
-    margin-right: 2vw;
+}
+.header__menu li a:hover{
+    background-color: #F1F1F1;
+    color: #000;
+    border-radius: 5px;
+}
+
+/* hambuger */
+/* .header__ham {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1000;
+    width: 50px;
+    height: 50px;
+    display: none;
+    cursor: pointer;
+}
+.header__ham span {
+    display: block;
+    background: #fff;
+    width: 30px;
+    height: 2px;
+    border-radius: 3px;
+    margin-left: 10px;
+    margin-top: 5px;
+    transition: 0.25s margin 0.25s, 0.25s transform;
+}
+.header__ham span:nth-child(1){
+    margin-top: 18px;
+}
+.header__ham.active span {
+    transition: 0.25s margin, 0.25s transform 0.25s;
+}
+.header__ham.active span:nth-child(1){
+    margin-top: 25px;
+    margin-bottom: -7px;
+    transform: rotate(45deg);
+}
+.header__ham.active span:nth-child(2){
+    transform: rotate(45deg);
+}
+.header__ham.active span:nth-child(3){
+    margin-top: -2px;
+    transform: rotate(135deg);
+} */
+/* @media(max-width: 1300px) {
+    .header__menu {
+        position: fixed;
+        right: -100%;
+        top: 69px;
+        background: #fff;
+        width: 60%;
+        height: 100vh;
+        padding: 20px;
+        text-align: right;
+        transition: right 0.4s ease-in;
+    }
+    .header__menu ul li {
+        display: block;
+        margin: 20px;
+    }
+    .header__ham {
+        display: block;
+    }
 } */
 /* section1 */
 #section1 {
@@ -101,7 +172,8 @@ body {
 .sec2 .about .img {
     width: 15vw;
     position: absolute;
-    right: 12vw; top: -3vw;
+    right: 4vw; top: 5vw;
+    transform-style: preserve-3d;
 }
 .sec2 .about1 {
     display: flex;
@@ -1692,7 +1764,8 @@ body {
     background: #C7C6E3;
     height: 10vw;
 }
-.contact_inner .left .top {}
+.contact_inner .left .top {
+}
 .contact_inner .left .top .t {
     display: flex;
     justify-content: flex-end;
