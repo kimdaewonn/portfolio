@@ -1355,7 +1355,7 @@ body {
 /* js */
 .study_list_js .left {
     font-size: 2vw;
-    width: 37%;
+    width: 33%;
     margin-left: 1vw;
 }
 .study_list_js .center {
@@ -1747,4 +1747,12 @@ body {
 }
 
 /* 모바일 */
-@media(max-width: 960px){}
+/* @media(max-width: 800px){
+    .team-wrap .phpT .left h4 {
+        font-size: 5vw;
+    }
+    .team-wrap .phpT .left .desc {
+        padding-top: 1vw;
+
+    }
+} */
