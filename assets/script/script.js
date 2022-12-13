@@ -1,3 +1,5 @@
+
+// main
 gsap.to(".sec2 .load span, .tx1", {
     xPercent: -40,
     scrollTrigger: {
@@ -180,5 +182,4 @@ ScrollTrigger.matchMedia({
                     cursor.classList.remove("studyactive");
                 });
             });
-
 		});

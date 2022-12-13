@@ -1,3 +1,77 @@
+
+// hamburger
+// const btnHam = document.querySelector(".header__ham");
+// const btnMenu = document.querySelector(".header__menu");
+// const btnMenuList = btnMenu.querySelectorAll("ul li a");
+
+// btnHam.addEventListener("click", () => {
+// 	btnHam.classList.toggle("active");
+// 	btnMenu.classList.toggle("active");
+// 	document.body.classList.toggle("fixed");
+// });
+
+// btnMenuList.forEach((list)=>{
+// 	list.addEventListener("click", ()=>{
+// 		document.body.classList.remove("fixed");
+// 		btnMenu.classList.remove("active");
+// 		btnHam.classList.remove("active");
+// 	});
+// })
+
+// window.addEventListener("resize", ()=>{
+// 	let width = window.innerWidth;
+// 	if(width > 1300){
+// 		document.body.classList.remove("fixed");
+// 		btnMenu.classList.remove("active");
+// 		btnHam.classList.remove("active");
+// 	} 
+// });
+// mouseover
+const mouse3DWrap = document.querySelector('.about .img');
+const speed = 1;
+let x = 0;
+let y = 0;
+let followX = 0;
+let followY = 0;
+
+function mouse3Danimate1() {
+  x += (followX - x) * speed;
+  y += (followY - y) * speed;
+  mouse3DWrap.style.transform = `translate(-50%,-50%) perspective(1000px) rotateX(${-y}deg) rotateY(${-x}deg)`;
+  requestAnimationFrame(mouse3Danimate1);
+}
+
+window.addEventListener('mousemove', (e) => {
+  let mouseX = Math.max(-100, Math.min(100,window.innerWidth / 2 - e.clientX));
+  let mouseY = Math.max(-100, Math.min(100,window.innerHeight / 2 - e.clientY));
+  
+   followX = (12 * mouseX) / 100;
+   followY = (10 * mouseY) / 100;
+});
+
+window.addEventListener('keydown', (e)=>{
+  switch(e.keyCode) {
+    case 37:
+      followX = 12;
+      break;
+    case 38:
+      followY = 10;
+      break;
+    case 39:
+      followX = -12;
+      break;
+    case 40:
+      followY = -10;
+      break;
+    default:
+      break;
+  }
+});
+
+mouse3Danimate1();
+
+
+// main
 gsap.to(".sec2 .load span, .tx1", {
     xPercent: -40,
     scrollTrigger: {
