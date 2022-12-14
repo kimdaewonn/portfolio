@@ -692,21 +692,135 @@ body {
 }
 /* site 반응형 */
 @media(max-width: 560px) {
+    .work-wrap .work {
+        margin-top: 10vw;
+    }
     .work-wrap .standard {
         flex-direction: column-reverse;
         align-items: center;
     }
     .work-wrap .standard .left h3 {
         text-align: left;
+        margin-left: -5vw;
     }
     .work-wrap .standard .left .desc {
          padding-top: 2vw;
+         text-align: left;
     }
     .work-wrap .standard .right {
         width: 80%;
     }
     .work-wrap .standard .left {
         width: 70%;
+    }
+
+    .work-wrap .responsive {
+        flex-direction: column;
+        align-items: center;
+    }
+    .work-wrap .responsive .left h3 {
+        text-align: left;
+    }
+    .work-wrap .responsive .right .desc {
+        padding-top: 3vw;
+    }
+    .work-wrap .responsive .right {
+        width: 70%;
+    }
+    .work-wrap .responsive .left {
+        width: 80%;
+    }
+    .responsive .right .btn_con {
+        margin-right: 2vw;
+        justify-content: flex-end;
+    }
+
+    .work-wrap .react {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .work-wrap .react .left h3 {
+        text-align: left;
+        margin-left: -5vw;
+    }
+    .work-wrap .react .left .desc {
+         padding-top: 2vw;
+         text-align: left;
+    }
+    .work-wrap .react .right {
+        width: 80%;
+    }
+    .work-wrap .react .left {
+        width: 70%;
+    }
+
+    .work-wrap .youtube {
+        flex-direction: column;
+        align-items: center;
+    }
+    .work-wrap .youtube .left h3 {
+        text-align: left;
+    }
+    .work-wrap .youtube .right .desc {
+        padding-top: 3vw;
+    }
+    .work-wrap .youtube .right {
+        width: 70%;
+    }
+    .work-wrap .youtube .left {
+        width: 80%;
+    }
+    .youtube .right .btn_con {
+        margin-right: 2vw;
+        justify-content: flex-end;
+    }
+    .work-wrap .youtube .right h3 {
+        margin-left: -5vw;
+    }
+
+    .work-wrap .vue {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .work-wrap .vue .left h3 {
+        text-align: left;
+        margin-left: -5vw;
+    }
+    .work-wrap .vue .left .desc {
+         padding-top: 2vw;
+         text-align: left;
+    }
+    .work-wrap .vue .right {
+        width: 80%;
+    }
+    .work-wrap .vue .left {
+        width: 70%;
+    }
+    .work-wrap .php .right h3 {
+    }
+
+    .work-wrap .php {
+        flex-direction: column;
+        align-items: center;
+    }
+    .work-wrap .php .left h3 {
+        text-align: left;
+    }
+    .work-wrap .php .right .desc {
+        padding-top: 3vw;
+    }
+    .work-wrap .php .right {
+        width: 70%;
+    }
+    .work-wrap .php .left {
+        width: 80%;
+    }
+    .php .right .btn_con {
+        margin-right: 2vw;
+        justify-content: flex-end;
+    }
+    .work-wrap .php .right h3 {
+        margin-left: -5vw;
     }
 }
 
