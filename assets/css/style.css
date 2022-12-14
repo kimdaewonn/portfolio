@@ -1773,24 +1773,27 @@ body {
     height: 10vw;
 }
 .contact_inner .left .top {
-}
-.contact_inner .left .top .t {
     display: flex;
-    justify-content: flex-end;
-    padding-top: 1vw;
-}
-.contact_inner .left .top .t .img1 {
-    width: 1vw;
-    margin-right: 1vw;
-}
-.contact_inner .left .top .t .img2 {
-    width: 1vw;
-    margin-right: 1vw;
-}
-.contact_inner .left .top .b {
-    font-size: 4vw;
-    margin-left: 8vw;
+    align-items: center;
+    justify-content: center;
     font-family: "MigraItalic-ExtralightItalic";
+    font-size: 4vw;
+    position: relative;
+}
+.contact_inner .left .top .img1 {
+    position:absolute;
+    top: 1vw;right: 1vw;
+    width: 1vw;
+}
+.contact_inner .left .top .img2 {
+    position:absolute;
+    top: 1vw;right: 3vw;
+    width: 1vw;
+}
+.contact_inner .left .top .img3 {
+    position:absolute;
+    top: 1vw;right: 5vw;
+    width: 1vw;
 }
 .contact_inner .left .bot {
     background: #E6E5FA;
