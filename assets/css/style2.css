@@ -1844,6 +1844,9 @@ body {
 .study_list_svg .right .study_btn_flex .study_btn:nth-child(1) {
     margin-right: 1vw;
 }
+
+/* study 반응형 */
+
 .skill-wrap {
     margin-top: 2vw;
 }
@@ -1928,6 +1931,18 @@ body {
     text-align: center;
     translate: transition 0.6s;
     display: none;
+}
+@media(max-width: 560px) {
+    .study-wrap .hcont {
+        justify-content: space-around;
+    }
+    .study_list_js .center {
+        width: 39%;
+    }
+    .study_list_js .right {
+        width: 40%;
+    }
+
 }
 
 
