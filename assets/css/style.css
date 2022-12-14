@@ -1426,10 +1426,18 @@ body {
 
 @media(max-width: 560px) {
     .script_wrap .js_intro .right .img2 {
-        top: -160%;
+        top: -210%;
     }
     .script_wrap .js_intro .right .img1 {
         top: 205%;
+    }
+}
+@media(max-width: 400px) {
+    .script_wrap .js_intro .right .img2 {
+        display: none;
+    }
+    .script_wrap .js_intro .right .img1 {
+        display: none;
     }
 }
 
