@@ -82,6 +82,7 @@ body {
     margin-top: -2px;
     transform: rotate(135deg);
 }
+/* header 반응형 */
 @media(max-width: 830px) {
     .header__menu {
         position: fixed;
@@ -211,7 +212,44 @@ body {
     height: 50vh;
     overflow: hidden;
 }
-
+/* about 반응형 */
+@media(max-width: 560px) {
+    .sec2 .about1 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .sec2 .about1 .left {
+        width: 100%;
+        margin-top: 5vw;
+        padding-left: 15vw;
+        padding-right: 15vw;
+        font-family: 'GmarketSans';
+        text-align: left;
+        font-size: 1vw;
+        word-break: keep-all;
+    }
+    .sec2 .about1.reverse {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 5vw;
+    }
+    .sec2 .about1.reverse .left {
+        text-align: left;
+        padding-left: -1px;
+        padding-right: 18vw;
+        padding-left: 14vw;
+    }
+    .sec2 .about1.reverse .right {
+        height: 21vw;
+    }
+    #section2 {
+        padding-bottom: 10vw;
+    }
+    .sec2 .about .img {
+        right: 7vw;
+    }
+}
 
 /* section3 */
 #section3 {
@@ -648,6 +686,11 @@ body {
     margin-top: 2vw;
     text-align: center;
 }
+/* site 반응형 */
+@media(max-width: 830px) {}
+
+
+
 #section4 {
     background: #6C90EE;
     width: 100%;
