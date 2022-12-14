@@ -44,7 +44,7 @@ body {
 }
 
 /* hambuger */
-/* .header__ham {
+.header__ham {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -81,8 +81,8 @@ body {
 .header__ham.active span:nth-child(3){
     margin-top: -2px;
     transform: rotate(135deg);
-} */
-/* @media(max-width: 1300px) {
+}
+@media(max-width: 830px) {
     .header__menu {
         position: fixed;
         right: -100%;
@@ -101,7 +101,7 @@ body {
     .header__ham {
         display: block;
     }
-} */
+}
 /* section1 */
 #section1 {
     height: 100vh;
