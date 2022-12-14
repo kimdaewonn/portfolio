@@ -44,7 +44,7 @@ body {
 }
 
 /* hambuger */
-/* .header__ham {
+.header__ham {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -81,27 +81,35 @@ body {
 .header__ham.active span:nth-child(3){
     margin-top: -2px;
     transform: rotate(135deg);
-} */
-/* @media(max-width: 1300px) {
+}
+@media(max-width: 830px) {
     .header__menu {
         position: fixed;
         right: -100%;
-        top: 69px;
-        background: #fff;
-        width: 60%;
+        top: 5%;
+        color: #fff;
+        /* width: 60%; */
         height: 100vh;
-        padding: 20px;
+        padding: 1vw;
         text-align: right;
         transition: right 0.4s ease-in;
     }
     .header__menu ul li {
         display: block;
-        margin: 20px;
+        margin: 1vw;
+    }
+    .header__menu ul li a {
+        padding: 1vw;
+        white-space: nowrap;
+    }
+    .header__menu.active {
+        right: -1%;
+        margin-top: 7%;
     }
     .header__ham {
         display: block;
     }
-} */
+}
 /* section1 */
 #section1 {
     height: 100vh;

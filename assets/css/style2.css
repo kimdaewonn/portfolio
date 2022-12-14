@@ -86,17 +86,25 @@ body {
     .header__menu {
         position: fixed;
         right: -100%;
-        top: 69px;
-        background: #fff;
-        width: 60%;
+        top: 5%;
+        color: #fff;
+        /* width: 60%; */
         height: 100vh;
-        padding: 20px;
+        padding: 1vw;
         text-align: right;
         transition: right 0.4s ease-in;
     }
     .header__menu ul li {
         display: block;
-        margin: 20px;
+        margin: 1vw;
+    }
+    .header__menu ul li a {
+        padding: 1vw;
+        white-space: nowrap;
+    }
+    .header__menu.active {
+        right: -1%;
+        margin-top: 7%;
     }
     .header__ham {
         display: block;

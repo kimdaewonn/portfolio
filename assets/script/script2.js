@@ -26,6 +26,7 @@ window.addEventListener("resize", ()=>{
 		btnHam.classList.remove("active");
 	} 
 });
+
 // mouseover
 const mouse3DWrap = document.querySelector('.about .img');
 const speed = 1;
