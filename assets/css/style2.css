@@ -796,8 +796,6 @@ body {
     .work-wrap .vue .left {
         width: 70%;
     }
-    .work-wrap .php .right h3 {
-    }
 
     .work-wrap .php {
         flex-direction: column;
@@ -1412,6 +1410,7 @@ body {
 /* section5 */
 #section5 {
     background: #090994;
+    padding-bottom: 5vw;
 }
 #section5 h3 {
     color: #6C90EE;
@@ -1560,6 +1559,60 @@ body {
     padding: 1vw 2vw;
     margin-top: 2vw;
     text-align: center;
+}
+/* team 반응형 */
+@media(max-width: 560px) {
+    .team-wrap .phpT {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .team-wrap .phpT .left h3 {
+        text-align: left;
+        margin-left: -5vw;
+    }
+    .team-wrap .phpT .left .desc {
+         padding-top: 2vw;
+         text-align: left;
+    }
+    .team-wrap .phpT .right {
+        width: 80%;
+    }
+    .team-wrap .phpT .left {
+        width: 70%;
+    }
+    .team-wrap .phpT .left h4 {
+        color: #6C90EE;
+        margin-left: -6vw;
+        margin-top: -9vw;
+        font-family: 'Migra-Extrabold';
+        font-size: 7vw;
+        line-height: 1;
+        text-align: left;
+    }
+
+    .team-wrap .reactT {
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-wrap .reactT .left h3 {
+        text-align: left;
+    }
+    .team-wrap .reactT .right .desc {
+        padding-top: 3vw;
+    }
+    .team-wrap .reactT .right {
+        width: 70%;
+    }
+    .team-wrap .reactT .left {
+        width: 80%;
+    }
+    .reactT .right .btn_con {
+        margin-right: 2vw;
+        justify-content: flex-end;
+    }
+    .team-wrap .reactT .right h4 {
+        margin-top: -8vw;
+    }
 }
 /* section6 */
 #section6 {
@@ -2005,14 +2058,3 @@ body {
     width: 30vw;
     margin-left: 1vw;
 }
-
-/* 모바일 */
-/* @media(max-width: 800px){
-    .team-wrap .phpT .left h4 {
-        font-size: 5vw;
-    }
-    .team-wrap .phpT .left .desc {
-        padding-top: 1vw;
-
-    }
-} */
