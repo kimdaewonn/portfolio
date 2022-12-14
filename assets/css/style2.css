@@ -916,7 +916,7 @@ body {
     width: 100%;
     position: absolute;
     left: 40%;
-    top: -40%;
+    top: -70%;
     z-index: 101;
 }
 .script_wrap .js_intro .right .img3 {
@@ -1406,6 +1406,33 @@ body {
     padding: 1vw 2vw;
     text-align: center;
 }
+/* script 반응형 */
+@media(max-width: 1540px) {
+    .script_wrap .js_intro .right .img2 {
+        top: -120%;
+    }
+    .script_wrap .js_intro .right .img1 {
+        top: 120%;
+    }
+}
+@media(max-width: 800px) {
+    .script_wrap .js_intro .right .img2 {
+        top: -160%;
+    }
+    .script_wrap .js_intro .right .img1 {
+        top: 205%;
+    }
+}
+
+@media(max-width: 560px) {
+    .script_wrap .js_intro .right .img2 {
+        top: -160%;
+    }
+    .script_wrap .js_intro .right .img1 {
+        top: 205%;
+    }
+}
+
 
 /* section5 */
 #section5 {
