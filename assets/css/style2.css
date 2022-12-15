@@ -1662,7 +1662,8 @@ html, body { max-width: 100%; overflow-x: hidden; }
     }
     .script_wrap .game .game_flex .right .btn_con {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
+        margin-right: 20vw;
     }
     .script_wrap .game .game_flex .right .btn_con .code a {
         background: #000C42;
@@ -1708,13 +1709,13 @@ html, body { max-width: 100%; overflow-x: hidden; }
     .script_wrap .parallax .parallax_flex .left .desc {
         font-family: 'GmarketSans';
         text-align: left;
-        font-size: 5.5vw;
+        font-size: 4.5vw;
         word-break:break-all;
         line-height: 1.4;
         color: #000C42;
         /* padding-top: 1.5vw; */
         padding: 8vw 0;
-        margin: 0 5vw;
+        margin: 0 15vw;
     }
     .script_wrap .parallax .parallax_flex .right {
         width: 100%;
@@ -1722,7 +1723,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     .script_wrap .parallax .parallax_flex .right .btn_con {
         display: flex;
         justify-content: flex-end;
-        margin-right: 7vw;
+        margin-right: 20vw;
     }
     .script_wrap .parallax .parallax_flex .right .btn_con .code a {
         background: #000C42;
@@ -1768,13 +1769,13 @@ html, body { max-width: 100%; overflow-x: hidden; }
     .script_wrap .mouse .mouse_flex .left .desc {
         font-family: 'GmarketSans';
         text-align: left;
-        font-size: 5.5vw;
+        font-size: 4.5vw;
         word-break:break-all;
         line-height: 1.4;
         color: #000C42;
         /* padding-top: 1.5vw; */
         padding: 8vw 0;
-        margin: 0 5vw;
+        margin: 0 15vw;
     }
     .script_wrap .mouse .mouse_flex .right {
         width: 100%;
@@ -1782,7 +1783,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     .script_wrap .mouse .mouse_flex .right .btn_con {
         display: flex;
         justify-content: flex-end;
-        margin-right: 7vw;
+        margin-right: 20vw;
     }
     .script_wrap .mouse .mouse_flex .right .btn_con .code a {
         background: #000C42;
@@ -1828,13 +1829,13 @@ html, body { max-width: 100%; overflow-x: hidden; }
     .script_wrap .slider .slider_flex .left .desc {
         font-family: 'GmarketSans';
         text-align: left;
-        font-size: 5.5vw;
+        font-size: 4.5vw;
         word-break:break-all;
         line-height: 1.4;
         color: #000C42;
         /* padding-top: 1.5vw; */
         padding: 8vw 0;
-        margin: 0 5vw;
+        margin: 0 15vw;
     }
     .script_wrap .slider .slider_flex .right {
         width: 100%;
@@ -1842,7 +1843,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     .script_wrap .slider .slider_flex .right .btn_con {
         display: flex;
         justify-content: flex-end;
-        margin-right: 7vw;
+        margin-right: 20vw;
     }
     .script_wrap .slider .slider_flex .right .btn_con .code a {
         background: #000C42;
@@ -1888,13 +1889,13 @@ html, body { max-width: 100%; overflow-x: hidden; }
     .script_wrap .search .search_flex .left .desc {
         font-family: 'GmarketSans';
         text-align: left;
-        font-size: 5.5vw;
+        font-size: 4.5vw;
         word-break:break-all;
         line-height: 1.4;
         color: #000C42;
         /* padding-top: 1.5vw; */
         padding: 8vw 0;
-        margin: 0 5vw;
+        margin: 0 15vw;
     }
     .script_wrap .search .search_flex .right {
         width: 100%;
@@ -1902,7 +1903,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     .script_wrap .search .search_flex .right .btn_con {
         display: flex;
         justify-content: flex-end;
-        margin-right: 7vw;
+        margin-right: 20vw;
     }
     .script_wrap .search .search_flex .right .btn_con .code a {
         background: #000C42;
@@ -1948,13 +1949,13 @@ html, body { max-width: 100%; overflow-x: hidden; }
     .script_wrap .quiz .quiz_flex .left .desc {
         font-family: 'GmarketSans';
         text-align: left;
-        font-size: 5.5vw;
+        font-size: 4.5vw;
         word-break:break-all;
         line-height: 1.4;
         color: #000C42;
         /* padding-top: 1.5vw; */
-        padding: 5vw 0;
-        margin: 0 5vw;
+        padding: 5.5vw 0;
+        margin: 0 15vw;
     }
     .script_wrap .quiz .quiz_flex .right {
         width: 100%;
@@ -1962,7 +1963,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     .script_wrap .quiz .quiz_flex .right .btn_con {
         display: flex;
         justify-content: flex-end;
-        margin-right: 7vw;
+        margin-right: 20vw;
     }
     .script_wrap .quiz .quiz_flex .right .btn_con .code a {
         background: #000C42;
