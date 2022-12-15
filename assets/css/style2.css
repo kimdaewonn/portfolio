@@ -302,7 +302,7 @@ body {
 .work-wrap .standard .left .desc {
     font-family: 'GmarketSans';
     text-align: right;
-    font-size: 1vw;
+    font-size: 1vmax;
     word-break: keep-all;
     line-height: 1.4;
     color: #000C42;
