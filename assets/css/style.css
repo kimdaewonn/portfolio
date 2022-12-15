@@ -1741,70 +1741,57 @@ html, body { max-width: 100%; overflow-x: hidden; }
 }
 .contact_inner {
     display: flex;
-    justify-content: center;
-    margin-left: 6vw;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .contact_inner .left {
-    width: 60%;
+    width: 48%;
+    font-size: 2vw;
+    font-family: "Migra-Extralight";
+}
+.contact_inner .left img {
+    width: 4vw;
 }
 .contact_inner .left .top {
-    background: #C7C6E3;
+    background: #bad0ff;
+    width: 100%;
     height: 10vw;
-}
-.contact_inner .left .top {
+    margin-bottom: 2vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "MigraItalic-ExtralightItalic";
-    font-size: 4vw;
-    position: relative;
 }
-.contact_inner .left .top .img1 {
-    position:absolute;
-    top: 1vw;right: 1vw;
-    width: 1vw;
+.contact_inner .left .top div {
+    margin-left: 5vw;
 }
-.contact_inner .left .top .img2 {
-    position:absolute;
-    top: 1vw;right: 3vw;
-    width: 1vw;
+.contact_inner .left .center {
+    background: #bad0ff;
+    width: 100%;
+    height: 10vw;
+    margin-bottom: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.contact_inner .left .top .img3 {
-    position:absolute;
-    top: 1vw;right: 5vw;
-    width: 1vw;
+.contact_inner .left .center div {
+    margin-left: 9vw;
 }
 .contact_inner .left .bot {
-    background: #E6E5FA;
-    height: 27.5vw;
-    margin-top: 1vw;
-    position: relative;
+    background: #bad0ff;
+    width: 100%;
+    height: 10vw;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.contact_inner .left .bot .tx {
-    font-size: 6vw;
-    font-family: 'Migra-Extrabold';
-}
-.contact_inner .left .bot .mail_btn a {
-    position: absolute;
-    bottom: 1%;
-    right: 1%;
-    display: inline-block;
-    background: #C5C4E8;
-    color: #060680;
-    padding: 1vw 2vw;
-    border-radius: 20px;
-    font-size: 1vw;
-
+.contact_inner .left .bot div {
+    margin-left: 11vw;
 }
 .contact_inner .right {
-    width: 40%;
+    width: inherit;
 }
 .contact_inner .right img {
-    width: 30vw;
-    margin-left: 1vw;
+    width: 25vw;
 }
 
 /* 반응형 시작 */
