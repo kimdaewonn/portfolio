@@ -1657,6 +1657,66 @@ body {
         text-align: center;
     }
 
+    .script_wrap .parallax .top h4 {
+        color: #fff;
+        /* margin-top: 6vw; */
+        /* margin-left: 41vw; */
+        font-family: 'Migra-Extrabold';
+        font-size: 12vw;
+        line-height: 1;
+        text-align: left;
+    }
+    .script_wrap .parallax .parallax_flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .script_wrap .parallax .parallax_flex .left {
+        width: 100%;
+        z-index: 100;
+        display: flex;
+    }
+    .script_wrap .parallax .parallax_flex .left .desc {
+        font-family: 'GmarketSans';
+        text-align: left;
+        font-size: 6vw;
+        word-break: keep-all;
+        line-height: 1.4;
+        color: #000C42;
+        /* padding-top: 1.5vw; */
+        padding: 8vw 0;
+        margin-left: 8vw;
+    }
+    .script_wrap .parallax .parallax_flex .right {
+        margin-top: 1vh;
+        width: 100%;
+    }
+    .script_wrap .parallax .parallax_flex .right .btn_con {
+        display: flex;
+        /* margin-left: 1vw; */
+        justify-content: flex-end;
+        margin-top: 1.5vw;
+        margin-right: 20vw;
+    }
+    .script_wrap .parallax .parallax_flex .right .btn_con .code a {
+        background: #000C42;
+        color: #fff;
+        display: inline-block;
+        font-size: 6vw;
+        font-family: 'Migra-Extrabold';
+        padding: 3vw 6vw;
+        text-align: center;
+        margin-right: 0.5vw;
+    }
+    .script_wrap .parallax .parallax_flex .right .btn_con .view a {
+        background: #fff;
+        color: #000C42;
+        display: inline-block;
+        font-size: 6vw;
+        font-family: 'Migra-Extrabold';
+        padding: 3vw 6vw;
+        text-align: center;
+    }
+
 
 
 
