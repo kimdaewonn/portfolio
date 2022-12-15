@@ -141,6 +141,35 @@ body {
     left: 0; bottom: 10%;
     width: 50vw;
 }
+/* main 반응형 */
+@media(max-width: 560px) {
+    #main {
+        background: #000;
+    }
+    #section1 {
+        height: 100vh;
+        background-image: url(../img/main.jpg);
+        background-position: center center;
+        background-size: 100vh;
+        background-repeat: no-repeat;
+    }
+    .sec1 .text {
+        font-size: 12vw;
+    }
+    .sec1 .img .img2 {
+        position: absolute;
+        right: 0;
+        bottom: 33%;
+        width: 60vw;
+    }
+    .sec1 .img .img2 {
+        position: absolute;
+        left: 0;
+        bottom: 27%;
+        width: 60vw;
+    }
+}
+
 
 /* section2 */
 #section2 {
@@ -197,7 +226,7 @@ body {
     padding-left: 5%;
     font-family: 'GmarketSans';
     text-align: right;
-    font-size: 1vmax;
+    font-size: 3vw;
     word-break: keep-all;
 }
 .sec2 .about1 .right {
@@ -214,6 +243,9 @@ body {
 }
 /* about 반응형 */
 @media(max-width: 560px) {
+    .sec2 .about h3 {
+        font-size: 12vw;
+    }
     .sec2 .about1 {
         display: flex;
         flex-direction: column-reverse;
