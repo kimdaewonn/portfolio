@@ -1412,6 +1412,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
 .study_list_js .center {
     width: 50%;
     font-size: 1vw;
+    font-family: 'GmarketSans';
 }
 .study_list_js .right {
     width: 30%;
@@ -1443,6 +1444,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
 .study_list_blog .center {
     width: 31%;
     font-size: 1vw;
+    font-family: 'GmarketSans';
 }
 .study_list_blog .right {
     width: 33.5%;
@@ -1467,6 +1469,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
 .study_list_codepen .center {
     width: 31%;
     font-size: 1vw;
+    font-family: 'GmarketSans';
 }
 .study_list_codepen .right {
     width: 33.5%;
@@ -1491,6 +1494,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
 .study_list_mysql .center {
     width: 31%;
     font-size: 1vw;
+    font-family: 'GmarketSans';
 }
 .study_list_mysql .right {
     width: 33.5%;
@@ -1515,6 +1519,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
 .study_list_notion .center {
     width: 31%;
     font-size: 1vw;
+    font-family: 'GmarketSans';
 }
 .study_list_notion .right {
     width: 33.5%;
@@ -1539,6 +1544,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
 .study_list_figma .center {
     width: 31%;
     font-size: 1vw;
+    font-family: 'GmarketSans';
 }
 .study_list_figma .right {
     width: 33.5%;
@@ -1566,6 +1572,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
 .study_list_svg .center {
     width: 50%;
     font-size: 1vw;
+    font-family: 'GmarketSans';
 }
 .study_list_svg .right {
     width: 30%;
@@ -2633,13 +2640,185 @@ html, body { max-width: 100%; overflow-x: hidden; }
     }
 
     /* 스터디 반응형 */
-        .study-wrap .hcont {
-            justify-content: space-around;
-        }
-        .study_list_js .center {
-            width: 39%;
-        }
-        .study_list_js .right {
-            width: 40%;
-        }
+    .study_common  {
+        flex-direction: column;
+    }
+    .study-wrap .hcont{
+        display: inline-block;
+    }
+    .study-wrap .hcont h3 {
+        width: 100%;
+        font-size: 22vw;
+    }
+    .study-wrap .hcont .desc {
+        font-size: 4vw;
+        width: 100%;
+        padding-top: 3vw;
+    }
+    .study_list_js .left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 5vw;
+    }
+    .study_list_js .center {
+        width: 89%;
+        display: flex;
+        justify-content: center;
+        font-size: 4vw;
+        padding-top: 1vw;
+    }
+    .study_list_js .right {
+        width: 100%;
+        font-size: 3vw;
+    }
+    .study_list_js .right .study_btn_flex {
+        margin-right: 0;
+    }
+    .study_list_js .right .study_btn_flex .study_btn a {
+        padding: 2vw 4vw;
+        margin-bottom: 1vw;
+    }
+
+    .study_list_blog .left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 5vw;
+    }
+    .study_list_blog .center {
+        width: 89%;
+        display: flex;
+        justify-content: center;
+        font-size: 4vw;
+        padding-top: 2vw;
+    }
+    .study_list_blog .right {
+        width: 100%;
+        font-size: 3vw;
+    }
+    .study_list_blog .right .study_btn_flex .study_btn a {
+        padding: 2vw 4vw;
+        margin-bottom: 1vw;
+        margin: 1vw 0;
+    }
+
+    .study_list_codepen .left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 5vw;
+    }
+    .study_list_codepen .center {
+        width: 93%;
+        display: flex;
+        justify-content: center;
+        font-size: 4vw;
+        padding-top: 2vw;
+    }
+    .study_list_codepen .right {
+        width: 100%;
+        font-size: 3vw;
+    }
+    .study_list_codepen .right .study_btn_flex .study_btn a {
+        padding: 2vw 4vw;
+        margin-bottom: 1vw;
+        margin: 1vw 0;
+    }
+
+    .study_list_mysql .left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 5vw;
+    }
+    .study_list_mysql .center {
+        width: 93%;
+        display: flex;
+        justify-content: center;
+        font-size: 4vw;
+        padding-top: 2vw;
+    }
+    .study_list_mysql .right {
+        width: 100%;
+        font-size: 3vw;
+    }
+    .study_list_mysql .right .study_btn_flex .study_btn a {
+        padding: 2vw 4vw;
+        margin-bottom: 1vw;
+        margin: 1vw 0;
+    }
+
+    .study_list_notion .left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 5vw;
+    }
+    .study_list_notion .center {
+        width: 93%;
+        display: flex;
+        justify-content: center;
+        font-size: 4vw;
+        padding-top: 2vw;
+    }
+    .study_list_notion .right {
+        width: 100%;
+        font-size: 3vw;
+    }
+    .study_list_notion .right .study_btn_flex .study_btn a {
+        padding: 2vw 4vw;
+        margin-bottom: 1vw;
+        margin: 1vw 0;
+    }
+
+    .study_list_figma .left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 5vw;
+    }
+    .study_list_figma .center {
+        width: 93%;
+        display: flex;
+        justify-content: center;
+        font-size: 4vw;
+        padding-top: 2vw;
+    }
+    .study_list_figma .right {
+        width: 100%;
+        font-size: 3vw;
+    }
+    .study_list_figma .right .study_btn_flex .study_btn a {
+        padding: 2vw 4vw;
+        margin-bottom: 1vw;
+        margin: 1vw 0;
+    }
+
+    .study_list_svg .left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 5vw;
+    }
+    .study_list_svg .center {
+        width: 93%;
+        display: flex;
+        justify-content: center;
+        font-size: 4vw;
+        padding-top: 2vw;
+    }
+    .study_list_svg .right {
+        width: 100%;
+        font-size: 3vw;
+    }
+    .study_list_svg .right .study_btn_flex {
+        margin-right: 0;
+    }
+    .study_list_svg .right .study_btn_flex .study_btn a {
+        padding: 2vw 4vw;
+        margin-bottom: 1vw;
+        margin: 1vw 0;
+    }
+
 }
