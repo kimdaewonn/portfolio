@@ -767,14 +767,27 @@ body {
         flex-direction: column;
         align-items: center;
     }
-    .work-wrap .responsive .left h3 {
-        text-align: left;
+    .work-wrap .responsive .right h3 {
+        color: #000C42;
+        margin-left: -5vw;
+        margin-top: -5vw;
+        font-family: 'Migra-Extrabold';
+        font-size: 12vw;
+        line-height: 0.9;
     }
     .work-wrap .responsive .right .desc {
+        font-family: 'GmarketSans';
+        text-align: left;
+        font-size: 4vw;
+        word-break: keep-all;
+        line-height: 1.4;
+        color: #000C42;
+        padding-left: 2vw;
+        padding-right: 2vw;
         padding-top: 3vw;
     }
     .work-wrap .responsive .right {
-        width: 70%;
+        width: 80%;
     }
     .work-wrap .responsive .left {
         width: 80%;
@@ -782,6 +795,14 @@ body {
     .responsive .right .btn_con {
         margin-right: 2vw;
         justify-content: flex-end;
+    }
+    .responsive .right .btn_con .view a {
+        padding: 3vw 6vw;
+        font-size: 4vw;
+    }
+    .responsive .right .btn_con .code a {
+        padding: 3vw 6vw;
+        font-size: 4vw;
     }
 
     .work-wrap .react {
