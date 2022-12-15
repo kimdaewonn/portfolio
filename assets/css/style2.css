@@ -856,7 +856,11 @@ body {
 	box-sizing: border-box;
 	/* padding: 7.5vw 6vw; */
 }
-.script_wrap {}
+.script_wrap {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
 .script_wrap .script {}
 .script_wrap .js_intro {
     position: relative;
