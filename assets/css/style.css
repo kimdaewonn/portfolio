@@ -1863,7 +1863,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
         display: none;
     }
 }
-
+/* 모바일 */
 @media(max-width: 768px) {
     /* 메인 반응형 */
     #main {
