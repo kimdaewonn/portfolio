@@ -1864,7 +1864,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     }
 }
 
-@media(max-width: 560px) {
+@media(max-width: 768px) {
     /* 메인 반응형 */
     #main {
         background: #000;
