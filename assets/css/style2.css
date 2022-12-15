@@ -1653,15 +1653,14 @@ body {
         color: #000C42;
         /* padding-top: 1.5vw; */
         padding: 8vw 0;
-        margin: 0 5vw;
+        margin: 0 15vw;
     }
     .script_wrap .game .game_flex .right {
         width: 100%;
     }
     .script_wrap .game .game_flex .right .btn_con {
         display: flex;
-        justify-content: flex-end;
-        margin-right: 7vw;
+        justify-content: center;
     }
     .script_wrap .game .game_flex .right .btn_con .code a {
         background: #000C42;
