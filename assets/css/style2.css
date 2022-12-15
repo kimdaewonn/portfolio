@@ -941,11 +941,12 @@ body {
     overflow: hidden;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .script_wrap .game .top h4 {
     color: #fff;
     /* margin-top: 6vw; */
-    margin-left: 41vw;
+    /* margin-left: 41vw; */
     font-family: 'Migra-Extrabold';
     font-size: 5vw;
     line-height: 1;
@@ -1021,11 +1022,11 @@ body {
     overflow: hidden;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .script_wrap .parallax .top h4 {
     color: #fff;
     /* margin-top: 6vw; */
-    margin-left: 40vw;
     font-family: 'Migra-Extrabold';
     font-size: 5vw;
     line-height: 1;
@@ -1099,12 +1100,13 @@ body {
     position: relative;
     overflow: hidden;
     display: flex;
+    justify-content: center;
 }
 .script_wrap .mouse .top h4 {
     margin-top: 3vw;
     color: #fff;
     /* margin-top: 6vw; */
-    margin-left: 41vw;
+    /* margin-left: 41vw; */
     font-family: 'Migra-Extrabold';
     font-size: 5vw;
     line-height: 1;
@@ -1180,11 +1182,12 @@ body {
     overflow: hidden;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .script_wrap .slider .top h4 {
     color: #fff;
     /* margin-top: 6vw; */
-    margin-left: 41vw;
+    /* margin-left: 41vw; */
     font-family: 'Migra-Extrabold';
     font-size: 5vw;
     line-height: 1;
@@ -1260,11 +1263,12 @@ body {
     overflow: hidden;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .script_wrap .search .top h4 {
     color: #000C42;
     /* margin-top: 6vw; */
-    margin-left: 41vw;
+    /* margin-left: 41vw; */
     font-family: 'Migra-Extrabold';
     font-size: 5vw;
     line-height: 1;
@@ -1340,11 +1344,12 @@ body {
     overflow: hidden;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .script_wrap .quiz .top h4 {
     color: #000C42;
     /* margin-top: 6vw; */
-    margin-left: 41vw;
+    /* margin-left: 41vw; */
     font-family: 'Migra-Extrabold';
     font-size: 5vw;
     line-height: 1;
@@ -1438,6 +1443,70 @@ body {
     }
     .script_wrap .js_intro .right .img1 {
         display: none;
+    }
+}
+@media(max-width: 560px) {
+    .horizontalSection {
+        width: 800%;
+    }
+    .script_wrap .game .top {
+        height: 50vw;
+    }
+    .script_wrap .game .game_flex .left {
+        margin-top: 1vh;
+    }
+    .script_wrap .game .game_flex .right {
+        margin-top: 1vh;
+    }
+
+    .script_wrap .parallax .top {
+        height: 50vw;
+    }
+    .script_wrap .parallax .parallax_flex .left {
+        margin-top: 1vh;
+    }
+    .script_wrap .parallax .parallax_flex .right {
+        margin-top: 1vh;
+    }
+    
+    .script_wrap .mouse .top {
+        height: 50vw;
+    }
+    .script_wrap .mouse .mouse_flex .left {
+        margin-top: 1vh;
+    }
+    .script_wrap .mouse .mouse_flex .right {
+        margin-top: 1vh;
+    }
+
+    .script_wrap .slider .top {
+        height: 50vw;
+    }
+    .script_wrap .slider .slider_flex .left {
+        margin-top: 1vh;
+    }
+    .script_wrap .slider .slider_flex .right {
+        margin-top: 1vh;
+    }
+
+    .script_wrap .search .top {
+        height: 50vw;
+    }
+    .script_wrap .search .search_flex .left {
+        margin-top: 1vh;
+    }
+    .script_wrap .search .search_flex .right {
+        margin-top: 1vh;
+    }
+
+    .script_wrap .quiz .top {
+        height: 50vw;
+    }
+    .script_wrap .quiz .quiz_flex .left {
+        margin-top: 1vh;
+    }
+    .script_wrap .quiz .quiz_flex .right {
+        margin-top: 1vh;
     }
 }
 
