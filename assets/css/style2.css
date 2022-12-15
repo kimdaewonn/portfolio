@@ -197,7 +197,7 @@ body {
     padding-left: 5%;
     font-family: 'GmarketSans';
     text-align: right;
-    font-size: 1vw;
+    font-size: 1vmax;
     word-break: keep-all;
 }
 .sec2 .about1 .right {
@@ -226,7 +226,7 @@ body {
         padding-right: 15vw;
         font-family: 'GmarketSans';
         text-align: left;
-        font-size: 1vw;
+        /* font-size: 1vw; */
         word-break: keep-all;
     }
     .sec2 .about1 .right {
@@ -522,7 +522,7 @@ body {
 .work-wrap .youtube .right .desc {
     font-family: 'GmarketSans';
     text-align: left;
-    font-size: 1em;
+    font-size: 1vmax;
     word-break: keep-all;
     line-height: 1.4;
     color: #000C42;
@@ -574,7 +574,7 @@ body {
 .work-wrap .vue .left .desc {
     font-family: 'GmarketSans';
     text-align: right;
-    font-size: 1rem;
+    font-size: 1vmax;
     word-break: keep-all;
     line-height: 1.4;
     color: #000C42;
@@ -656,7 +656,7 @@ body {
 .work-wrap .php .right .desc {
     font-family: 'GmarketSans';
     text-align: left;
-    font-size: 1vw;
+    font-size: 1vmax;
     word-break: keep-all;
     line-height: 1.4;
     color: #000C42;
@@ -870,7 +870,7 @@ body {
     margin-left: 5vw;
 }
 .script_wrap .js_intro .left .desc {
-    font-size: 1.5vw;
+    font-size: 1.5vmax;
     color: #000C42;
     font-family: 'GmarketSans';
     width:50%;
@@ -885,7 +885,7 @@ body {
 .script_wrap .js_intro .left .list {
     margin-left: 5vw;
     width: 20%;
-    font-size:1.5vw;
+    font-size:1.5vmax;
     color: #fff;
     line-height: 1.4;
     word-break: keep-all;
@@ -972,7 +972,7 @@ body {
 .script_wrap .game .game_flex .left .desc {
     font-family: 'GmarketSans';
     text-align: left;
-    font-size: 1vw;
+    font-size: 1vmax;
     word-break: keep-all;
     line-height: 1.4;
     color: #000C42;
@@ -1052,7 +1052,7 @@ body {
 .script_wrap .parallax .parallax_flex .left .desc {
     font-family: 'GmarketSans';
     text-align: left;
-    font-size: 1vw;
+    font-size: 1vmax;
     word-break: keep-all;
     line-height: 1.4;
     color: #000C42;
@@ -1131,7 +1131,7 @@ body {
 .script_wrap .mouse .mouse_flex .left .desc {
     font-family: 'GmarketSans';
     text-align: left;
-    font-size: 1vw;
+    font-size: 1vmax;
     word-break: keep-all;
     line-height: 1.4;
     color: #000C42;
@@ -1211,7 +1211,7 @@ body {
 .script_wrap .slider .slider_flex .left .desc {
     font-family: 'GmarketSans';
     text-align: left;
-    font-size: 1vw;
+    font-size: 1vmax;
     word-break: keep-all;
     line-height: 1.4;
     color: #000C42;
@@ -1291,7 +1291,7 @@ body {
 .script_wrap .search .search_flex .left .desc {
     font-family: 'GmarketSans';
     text-align: left;
-    font-size: 1vw;
+    font-size: 1vmax;
     word-break: keep-all;
     line-height: 1.4;
     color: #000C42;
@@ -1371,7 +1371,7 @@ body {
 .script_wrap .quiz .quiz_flex .left .desc {
     font-family: 'GmarketSans';
     text-align: left;
-    font-size: 1vw;
+    font-size: 1vmax;
     word-break: keep-all;
     line-height: 1.4;
     color: #000C42;
@@ -1478,7 +1478,7 @@ body {
 .team-wrap .phpT .left .desc {
     font-family: 'GmarketSans';
     text-align: right;
-    font-size: 1vw;
+    font-size: 1vmax;
     word-break: keep-all;
     line-height: 1.4;
     color: #fff;
@@ -1561,7 +1561,7 @@ body {
 .team-wrap .reactT .right .desc {
     font-family: 'GmarketSans';
     text-align: left;
-    font-size: 1vw;
+    font-size: 1vmax;
     word-break: keep-all;
     line-height: 1.4;
     color: #fff;
@@ -1676,7 +1676,7 @@ body {
 .study-wrap .hcont .desc {
     font-family: 'GmarketSans';
     text-align: left;
-    font-size: 1vw;
+    font-size: 1vmax;
     word-break: keep-all;
     line-height: 1.4;
     color: #fff;
@@ -1699,17 +1699,17 @@ body {
 }
 /* js */
 .study_list_js .left {
-    font-size: 2vw;
+    font-size: 2vmax;
     width: 33%;
     margin-left: 1vw;
 }
 .study_list_js .center {
     width: 50%;
-    font-size: 1vw;
+    font-size: 1vmax;
 }
 .study_list_js .right {
     width: 30%;
-    font-size: 1vw;
+    font-size: 1vmax;
 }
 .study_list_js .right .study_btn_flex {
     display: flex;
@@ -1730,17 +1730,17 @@ body {
 }
 /* blog */
 .study_list_blog .left {
-    font-size: 2vw;
+    font-size: 2vmax;
     width: 29%;
     margin-left: 1vw;
 }
 .study_list_blog .center {
     width: 31%;
-    font-size: 1vw;
+    font-size: 1vmax;
 }
 .study_list_blog .right {
     width: 33.5%;
-    font-size: 1vw;
+    font-size: 1vmax;
 }
 .study_list_blog .right {
     display: flex;
@@ -1754,17 +1754,17 @@ body {
 }
 /* codepen */
 .study_list_codepen .left {
-    font-size: 2vw;
+    font-size: 2vmax;
     width: 29%;
     margin-left: 1vw;
 }
 .study_list_codepen .center {
     width: 31%;
-    font-size: 1vw;
+    font-size: 1vmax;
 }
 .study_list_codepen .right {
     width: 33.5%;
-    font-size: 1vw;
+    font-size: 1vmax;
 }
 .study_list_codepen .right {
     display: flex;
@@ -1778,17 +1778,17 @@ body {
 }
 /* mysql */
 .study_list_mysql .left {
-    font-size: 2vw;
+    font-size: 2vmax;
     width: 29%;
     margin-left: 1vw;
 }
 .study_list_mysql .center {
     width: 31%;
-    font-size: 1vw;
+    font-size: 1vmax;
 }
 .study_list_mysql .right {
     width: 33.5%;
-    font-size: 1vw;
+    font-size: 1vmax;
 }
 .study_list_mysql .right {
     display: flex;
@@ -1802,17 +1802,17 @@ body {
 }
 /* notion */
 .study_list_notion .left {
-    font-size: 2vw;
+    font-size: 2vmax;
     width: 29%;
     margin-left: 1vw;
 }
 .study_list_notion .center {
     width: 31%;
-    font-size: 1vw;
+    font-size: 1vmax;
 }
 .study_list_notion .right {
     width: 33.5%;
-    font-size: 1vw;
+    font-size: 1vmax;
 }
 .study_list_notion .right {
     display: flex;
@@ -1826,17 +1826,17 @@ body {
 }
 /* figma */
 .study_list_figma .left {
-    font-size: 2vw;
+    font-size: 2vmax;
     width: 29%;
     margin-left: 1vw;
 }
 .study_list_figma .center {
     width: 31%;
-    font-size: 1vw;
+    font-size: 1vmax;
 }
 .study_list_figma .right {
     width: 33.5%;
-    font-size: 1vw;
+    font-size: 1vmax;
 }
 .study_list_figma .right {
     display: flex;
@@ -1853,17 +1853,17 @@ body {
     border-bottom:  1px dashed #fff;
 }
 .study_list_svg .left {
-    font-size: 2vw;
+    font-size: 2vmax;
     width: 33%;
-    margin-left: 1vw;
+    margin-left: 1vmax;
 }
 .study_list_svg .center {
     width: 50%;
-    font-size: 1vw;
+    font-size: 1vmax;
 }
 .study_list_svg .right {
     width: 30%;
-    font-size: 1vw;
+    font-size: 1vmax;
 }
 .study_list_svg .right .study_btn_flex {
     display: flex;
@@ -2098,7 +2098,7 @@ body {
     color: #060680;
     padding: 1vw 2vw;
     border-radius: 20px;
-    font-size: 1vw;
+    font-size: 1vmax;
 
 }
 .contact_inner .right {
