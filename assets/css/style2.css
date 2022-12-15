@@ -962,8 +962,6 @@ body {
     }
 }
 
-
-
 #section4 {
     background: #6C90EE;
     width: 100%;
@@ -1556,6 +1554,12 @@ body {
     text-align: center;
 }
 /* script 반응형 */
+@media(max-width: 560px) {
+    .script_wrap .js_intro {
+        /* height: 100vh; */
+    }
+
+}
 @media(max-width: 1540px) {
     .script_wrap .js_intro .right .img2 {
         top: -120%;
