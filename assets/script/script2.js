@@ -26,6 +26,14 @@ window.addEventListener("resize", ()=>{
 		btnHam.classList.remove("active");
 	} 
 });
+	// 부드러운 메뉴이동
+	document.querySelectorAll(".header__menu a").forEach(el => {
+	el.addEventListener("click", e => {
+		e.preventDefault();
+		// 이동 막음
+	document.querySelector(el.getAttribute("href")).scrollIntoView({behavior: "smooth"});
+	})
+});
 
 // mouseover
 const mouse3DWrap = document.querySelector('.about .img');
