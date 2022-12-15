@@ -1649,7 +1649,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     .script_wrap .game .game_flex .left .desc {
         font-family: 'GmarketSans';
         text-align: left;
-        font-size: 5.5vw;
+        font-size: 4.5vw;
         word-break:break-all;
         line-height: 1.4;
         color: #000C42;
