@@ -104,27 +104,6 @@ html, body { max-width: 100%; overflow-x: hidden; }
 .header__inner {
     animation: loadingY45 7s;
 }
-@keyframes loadingY {
-    0%                      
-    {
-        transform: translateY(100%);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-@keyframes loadingY45 {
-    0%                      
-    {
-      transform: translateY(100%) rotate(45deg);
-    }
-    100% {
-      transform: translateY(0%);
-
-    }
-}
-
-
 .sec1 .text {
     color: #fff;
     font-family: 'Migra-Extrabold';
@@ -1660,6 +1639,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     text-align: center;
     translate: transition 0.6s;
     display: none;
+    animation: loadingY45 1s;
 }
 .skill_top .text2 {
     display: inline-block;
@@ -1675,6 +1655,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     text-align: center;
     translate: transition 0.6s;
     display: none;
+    animation: loadingYr 1s;
 }
 .skill_top .text3 {
     display: inline-block;
@@ -1690,6 +1671,8 @@ html, body { max-width: 100%; overflow-x: hidden; }
     text-align: center;
     translate: transition 0.6s;
     display: none;
+    animation: loadingYr 1s;
+
 }
 .skill_top .text4 {
     display: inline-block;
@@ -1705,6 +1688,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     text-align: center;
     translate: transition 0.6s;
     display: none;
+    animation: loadingY45r 1s;
 }
 
 .skill_list .skill_top .img1 {
@@ -1736,6 +1720,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     text-align: center;
     translate: transition 0.6s;
     display: none;
+    animation: loadingX 1s;
 }
 .skill_bot .text2 {
     display: inline-block;
@@ -1751,6 +1736,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     text-align: center;
     translate: transition 0.6s;
     display: none;
+    animation: loadingXr 1s;
 }
 .contact-wrap {
     background: #020E37;
@@ -2838,10 +2824,63 @@ html, body { max-width: 100%; overflow-x: hidden; }
 
 }
 
+/* keyframe */
+@keyframes loadingY {
+    0%                      
+    {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes loadingYr {
+    0%                      
+    {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes loadingY45 {
+    0%                      
+    {
+      transform: translateY(100%) rotate(45deg);
+    }
+    100% {
+      transform: translateY(0%);
 
+    }
+}
+@keyframes loadingY45r {
+    0%                      
+    {
+      transform: translateY(100%) rotate(-45deg);
+    }
+    100% {
+      transform: translateY(0%);
 
-/* loading */
+    }
+}
+@keyframes loadingX {
+    0%                      
+    {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
 
+    }
+}
+@keyframes loadingXr {
+    0%                      
+    {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
 
-
+    }
+}
 
