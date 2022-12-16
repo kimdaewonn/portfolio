@@ -268,12 +268,18 @@ ScrollTrigger.matchMedia({
 // 타임라인
 
 // 메인
-// const tl = gsap.timeline({repeat: 2, yoyo: true});
 
-//         tl.to(".square", {x: 1000, duration: 5, rotation: 300, skewY: 1,  borderRadius: 0})
-//         .to(".square", {y: 500, duration: 5, rotation: 0, skewY: 3,  borderRadius: 100})
-//         .to(".square", {x: 0, duration: 5, rotation: 300, skewY: 1,  width: 400})
-//         .to(".square", {y: 0, duration: 5, rotation: 0,  width: 200})
+// 오른쪽 다리
+const tl2 = gsap.timeline({repeat: 10, yoyo: true});
+        tl2.to(".sec1 .img .img1", {x: 1000, duration: 2,})
+        .to(".sec1 .img .img1", {x: 0 ,y:-200, duration: 2,})
+
+// 왼쪽 다리
+const tl1 = gsap.timeline({repeat: 10, yoyo: true});
+        tl1.to(".sec1 .img .img2", {x: -1000, duration: 2,})
+        .to(".sec1 .img .img2", {x: 0 ,y:-200, duration: 2,})
+
+
 
 
 
@@ -303,6 +309,7 @@ ScrollTrigger.matchMedia({
         })
         reactT.to(".reactT .left .img", {x: -1000,scale:0, duration: 0.1,})
         .to(".reactT .left .img", {x:0 ,scale:1, duration: 1,})
+// contact
 
 
 
