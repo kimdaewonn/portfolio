@@ -270,14 +270,14 @@ ScrollTrigger.matchMedia({
 // 메인
 
 // 오른쪽 다리
-const tl2 = gsap.timeline({repeat: 10, yoyo: true});
-        tl2.to(".sec1 .img .img1", {x: 1000, duration: 2,})
-        .to(".sec1 .img .img1", {x: 0 ,y:-200, duration: 2,})
+// const tl2 = gsap.timeline({repeat: 10, yoyo: true});
+//         tl2.to(".sec1 .img .img1", {x: 1000, duration: 2,})
+//         .to(".sec1 .img .img1", {x: 0 ,y:-200, duration: 2,})
 
-// 왼쪽 다리
-const tl1 = gsap.timeline({repeat: 10, yoyo: true});
-        tl1.to(".sec1 .img .img2", {x: -1000, duration: 2,})
-        .to(".sec1 .img .img2", {x: 0 ,y:-200, duration: 2,})
+// // 왼쪽 다리
+// const tl1 = gsap.timeline({repeat: 10, yoyo: true});
+//         tl1.to(".sec1 .img .img2", {x: -1000, duration: 2,})
+//         .to(".sec1 .img .img2", {x: 0 ,y:-200, duration: 2,})
 
 
 
