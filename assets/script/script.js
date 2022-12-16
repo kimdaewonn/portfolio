@@ -265,3 +265,86 @@ ScrollTrigger.matchMedia({
             });
 
 		});
+// 타임라인
+
+// 메인
+// const tl = gsap.timeline({repeat: 2, yoyo: true});
+
+//         tl.to(".square", {x: 1000, duration: 5, rotation: 300, skewY: 1,  borderRadius: 0})
+//         .to(".square", {y: 500, duration: 5, rotation: 0, skewY: 3,  borderRadius: 100})
+//         .to(".square", {x: 0, duration: 5, rotation: 300, skewY: 1,  width: 400})
+//         .to(".square", {y: 0, duration: 5, rotation: 0,  width: 200})
+
+
+
+// 팀
+			const phpT = gsap.timeline({
+			yoyo:true,
+            scrollTrigger : {
+                trigger: "#section5 h3",
+                markers: true,
+                start: "top top",
+				end: "top 90%",
+                scrub: 5,
+            }
+        })
+        phpT.to(".phpT .right .img", {x: 1000,scale:0, duration: 0.1,})
+        .to(".phpT .right .img", {x:0 ,scale:1, duration: 1,})
+
+		const reactT = gsap.timeline({
+			yoyo:true,
+            scrollTrigger : {
+                trigger: ".phpT .right .img",
+                markers: true,
+                start: "bottom bottom",
+				// end: "top 90%",
+                scrub: 5,
+            }
+        })
+        reactT.to(".reactT .left .img", {x: -1000,scale:0, duration: 0.1,})
+        .to(".reactT .left .img", {x:0 ,scale:1, duration: 1,})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // const tl = gsap.timeline({
+		// 	yoyo:true,
+		// 	repeat:50,
+        //     scrollTrigger : {
+        //         trigger: ".square",
+        //         markers: true,
+        //         start: "top top",
+		// 		end: "top 100%",
+        //         scrub: 100,
+        //     }
+        // })
+        // tl.to(".square", {x: 1000, duration: 2, rotation: 100,borderRadius: 0})
+        // .to(".square", {y: 500, duration: 2, rotation: 0, borderRadius: 100})
+        // .to(".square", {x: 0, duration: 2, rotation: 300, width: 400})
+        // .to(".square", {y: 0, duration: 2, rotation: 0, width: 200})
+
+        // tl.to(".square", {x: 1000, duration: 2, rotation: 100, skewY: 1, borderRadius: 0})
+        // .to(".square", {y: 500, duration: 2, rotation: 0, skewY: 3, borderRadius: 100})
+        // .to(".square", {x: 0, duration: 2, rotation: 300, skewY: 1, width: 400})
+        // .to(".square", {y: 0, duration: 2, rotation: 0, width: 200})
+
+
+
+
+
+		// const tl = gsap.timeline({repeat: 2, yoyo: true});
+
+        // tl.to(".square", {x: 1000, duration: 5, rotation: 300, skewY: 1,  borderRadius: 0})
+        // .to(".square", {y: 500, duration: 5, rotation: 0, skewY: 3,  borderRadius: 100})
+        // .to(".square", {x: 0, duration: 5, rotation: 300, skewY: 1,  width: 400})
+        // .to(".square", {y: 0, duration: 5, rotation: 0,  width: 200})

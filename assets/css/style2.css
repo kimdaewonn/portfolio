@@ -2813,9 +2813,3 @@ html, body { max-width: 100%; overflow-x: hidden; }
 
 
 
-/*  */
-.square {
-    width: 100px;
-    height: 100px;
-    background: rgb(33, 144, 214);
-}
