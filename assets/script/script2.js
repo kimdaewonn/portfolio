@@ -270,29 +270,40 @@ ScrollTrigger.matchMedia({
 // 메인
 
 // 오른쪽 다리
-const tl2 = gsap.timeline({repeat: 10, yoyo: true});
+const tl2 = gsap.timeline({repeat: 5, yoyo: true});
         tl2.to(".sec1 .img .img1", {x: 1000, duration: 2,})
         .to(".sec1 .img .img1", {x: 0 ,y:-200, duration: 2,})
 
 // 왼쪽 다리
-const tl1 = gsap.timeline({repeat: 10, yoyo: true});
+const tl1 = gsap.timeline({repeat: 5, yoyo: true});
         tl1.to(".sec1 .img .img2", {x: -1000, duration: 2,})
         .to(".sec1 .img .img2", {x: 0 ,y:-200, duration: 2,})
 
-
-
+// 어바웃
+const aboutH = gsap.timeline({
+	yoyo:true,
+	scrollTrigger : {
+		trigger: ".load ",
+		markers: true,
+		start: "center",
+		end: "top 90%",
+		scrub: 5,
+	}
+})
+aboutH.to(".about h3", {x: 1000,scale:0, duration: 0.1,})
+.to(".about h3", {x:0 ,scale:1, duration: 1,})
 
 
 // 팀
-			const phpT = gsap.timeline({
+		const phpT = gsap.timeline({
 			yoyo:true,
-            scrollTrigger : {
-                trigger: "#section5 h3",
-                markers: true,
-                start: "top top",
+			scrollTrigger : {
+				trigger: "#section5 h3",
+				markers: true,
+				start: "top top",
 				end: "top 90%",
-                scrub: 5,
-            }
+				scrub: 5,
+			}
         })
         phpT.to(".phpT .right .img", {x: 1000,scale:0, duration: 0.1,})
         .to(".phpT .right .img", {x:0 ,scale:1, duration: 1,})
