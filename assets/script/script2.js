@@ -270,28 +270,34 @@ ScrollTrigger.matchMedia({
 // 메인
 
 // 오른쪽 다리
-const tl2 = gsap.timeline({repeat: 5, yoyo: true});
+const tl2 = gsap.timeline({ yoyo: true});
         tl2.to(".sec1 .img .img1", {x: 1000, duration: 2,})
         .to(".sec1 .img .img1", {x: 0 ,y:-200, duration: 2,})
 
 // 왼쪽 다리
-const tl1 = gsap.timeline({repeat: 5, yoyo: true});
+const tl1 = gsap.timeline({yoyo: true});
         tl1.to(".sec1 .img .img2", {x: -1000, duration: 2,})
         .to(".sec1 .img .img2", {x: 0 ,y:-200, duration: 2,})
 
 // 어바웃
-const aboutH = gsap.timeline({
-	yoyo:true,
-	scrollTrigger : {
-		trigger: ".load ",
-		markers: true,
-		start: "center",
-		end: "top 90%",
-		scrub: 5,
-	}
-})
-aboutH.to(".about h3", {x: 1000,scale:0, duration: 0.1,})
-.to(".about h3", {x:0 ,scale:1, duration: 1,})
+
+// matchMedia({
+// 	"(min-width: 300px)": function () {
+
+
+
+// const aboutH = gsap.timeline({
+// 	yoyo:true,
+// 	scrollTrigger : {
+// 		trigger: ".load ",
+// 		markers: true,
+// 		start: "top 90%",
+// 		// end: "top 90%",
+// 		scrub: 5,
+// 	}
+// })
+// aboutH.to(".about h3", {x: 1000,scale:0, duration: 0.01,})
+// .to(".about h3", {x:0 ,scale:1, duration: 1,})
 
 
 // 팀
@@ -366,3 +372,5 @@ aboutH.to(".about h3", {x: 1000,scale:0, duration: 0.1,})
         // .to(".square", {y: 500, duration: 5, rotation: 0, skewY: 3,  borderRadius: 100})
         // .to(".square", {x: 0, duration: 5, rotation: 300, skewY: 1,  width: 400})
         // .to(".square", {y: 0, duration: 5, rotation: 0,  width: 200})
+
+// loading

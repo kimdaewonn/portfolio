@@ -98,11 +98,39 @@ html, body { max-width: 100%; overflow-x: hidden; }
     justify-content: center;
     text-align: center;
 }
+#section1 {
+    animation: loadingY 5s;
+}
+.header__inner {
+    animation: loadingY45 7s;
+}
+@keyframes loadingY {
+    0%                      
+    {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes loadingY45 {
+    0%                      
+    {
+      transform: translateY(100%) rotate(45deg);
+    }
+    100% {
+      transform: translateY(0%);
+
+    }
+}
+
+
 .sec1 .text {
     color: #fff;
     font-family: 'Migra-Extrabold';
     font-size: 8vw;
     line-height: 0.9;
+    animation-delay: 0.2s;
 }
 .sec1 .img .img1 {
     position: absolute;
@@ -2809,6 +2837,10 @@ html, body { max-width: 100%; overflow-x: hidden; }
     }
 
 }
+
+
+
+/* loading */
 
 
 
