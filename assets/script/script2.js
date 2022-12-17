@@ -311,9 +311,6 @@ about1Desc.to(".about1 .left", {rotation:-5, duration: 1,})
 .to(".about .left", {rotation:5, duration: 1,})
 .to(".about .left", {rotation:0, duration: 1,})
 
-
-
-
 // 팀
 const phpT = gsap.timeline({
 	yoyo:true,
@@ -342,8 +339,6 @@ reactT.to(".reactT .left .img", {x: -1000,scale:0, duration: 0,})
 .to(".reactT .left .img", {x:0 ,scale:1, duration: 1,})
 // contatct
 
-
-
 const contactH = gsap.timeline({
 	scrollTrigger : {
 		trigger: ".skill-wrap h3",
@@ -355,8 +350,36 @@ const contactH = gsap.timeline({
 contactH.to(".contact-wrap h3", {x: -1000, y: 1000, duration: 0,})
 .to(".contact-wrap h3", {x:0 , y : 0, duration: 1,})
 
+// Limg
+ScrollTrigger.matchMedia({
+	"(min-width: 300px)": function () {
+		ScrollTrigger.create({
+			trigger: ".reverse .right img",
+			scrub: 10,
+            start:"top 50%",
+			animation: gsap.fromTo(
+				".Limg .whale1",
+				{
+					xPercent:-100,
+				},
+                {
+					xPercent:300,
+				},
+			),
+		});
+    },
+});
 
-
+// const whale1 = gsap.timeline({
+// 	scrollTrigger : {
+// 		trigger: ".about1 .right img",
+// 		markers: true,
+// 		start: "top top",
+// 		scrub:10,
+// 	}
+// })
+// whale1.to(".Limg .whale1", {x: 1000, duration: 1,})
+// .to(".Limg .whale1", {x:-300 , duration: 1,})
 
 
 

@@ -85,6 +85,16 @@ html, body { max-width: 100%; overflow-x: hidden; }
     margin-top: -2px;
     transform: rotate(135deg);
 }
+/* 이미지 */
+.Limg {
+    position: relative;
+}
+.Limg .whale1 {
+    position: absolute;
+    left: 0;
+    top: 24%;
+    width: 45vw;
+}
 /* section1 */
 #section1 {
     height: 100vh;
