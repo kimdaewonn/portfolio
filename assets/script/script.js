@@ -340,12 +340,20 @@ const reactT = gsap.timeline({
 })
 reactT.to(".reactT .left .img", {x: -1000,scale:0, duration: 0,})
 .to(".reactT .left .img", {x:0 ,scale:1, duration: 1,})
-// skill
+// contatct
 
 
 
-
-
+const contactH = gsap.timeline({
+	scrollTrigger : {
+		trigger: ".skill-wrap h3",
+		markers: true,
+		start: "center",
+		scrub: 3,
+	}
+})
+contactH.to(".contact-wrap h3", {x: -1000, y: 1000, duration: 0,})
+.to(".contact-wrap h3", {x:0 , y : 0, duration: 1,})
 
 
 
