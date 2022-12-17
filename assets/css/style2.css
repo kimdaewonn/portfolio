@@ -91,7 +91,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
 }
 .Limg .whale1 {
     position: absolute;
-    left: 0;
+    left: -100%;
     top: 24%;
     width: 45vw;
 }

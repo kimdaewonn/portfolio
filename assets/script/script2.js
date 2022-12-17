@@ -352,18 +352,18 @@ contactH.to(".contact-wrap h3", {x: -1000, y: 1000, duration: 0,})
 
 // Limg
 ScrollTrigger.matchMedia({
-	"(min-width: 300px)": function () {
+	"(min-width: 800px)": function () {
 		ScrollTrigger.create({
 			trigger: ".reverse .right img",
-			scrub: 10,
-            start:"top 50%",
+			scrub: 30,
+            start:"top 70%",
 			animation: gsap.fromTo(
 				".Limg .whale1",
 				{
 					xPercent:-100,
 				},
                 {
-					xPercent:300,
+					xPercent:660,
 				},
 			),
 		});
