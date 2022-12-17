@@ -267,7 +267,14 @@ ScrollTrigger.matchMedia({
 		});
 // 타임라인
 
-// 메인
+//  메인
+const header__inner = gsap.timeline({duration:0});
+header__inner.to(".header__inner", {rotation:45, yPercent:100, duration: 0,})
+        .to(".header__inner", {rotation:0, yPercent:0, duration: 5,})
+
+const section1 = gsap.timeline({duration:0});
+section1.to("#section1", {skew:45, yPercent:100, duration: 0,})
+		.to("#section1", {skew:0, yPercent:0, duration: 2,})
 
 // 오른쪽 다리
 const tl2 = gsap.timeline({ yoyo: true});
@@ -280,24 +287,31 @@ const tl1 = gsap.timeline({yoyo: true});
         .to(".sec1 .img .img2", {x: 0 ,y:-200, duration: 2,})
 
 // 어바웃
+const aboutH = gsap.timeline({
+	scrollTrigger : {
+		trigger: ".load ",
+		markers: true,
+		start: "top 90%",
+		scrub: 3,
+	}
+})
+aboutH.to(".about h3", {xPercent:-100, duration: 0,})
+.to(".about h3", {xPercent:0, duration: 1,})
 
-// matchMedia({
-// 	"(min-width: 300px)": function () {
+const about1Desc = gsap.timeline({
+	yoyo:true,
+	repeat: 5,
+	scrollTrigger : {
+		trigger: ".load",
+		markers: true,
+		start: "top 90%",
+		scrub: 10,
+	}
+})
+about1Desc.to(".about1 .left", {rotation:5, duration: 0,})
+.to(".about .left", {rotation:-5, duration: 1,})
 
 
-
-// const aboutH = gsap.timeline({
-// 	yoyo:true,
-// 	scrollTrigger : {
-// 		trigger: ".load ",
-// 		markers: true,
-// 		start: "top 90%",
-// 		// end: "top 90%",
-// 		scrub: 5,
-// 	}
-// })
-// aboutH.to(".about h3", {x: 1000,scale:0, duration: 0.01,})
-// .to(".about h3", {x:0 ,scale:1, duration: 1,})
 
 
 // 팀
@@ -311,7 +325,7 @@ const tl1 = gsap.timeline({yoyo: true});
 				scrub: 5,
 			}
         })
-        phpT.to(".phpT .right .img", {x: 1000,scale:0, duration: 0.1,})
+        phpT.to(".phpT .right .img", {x: 1000,scale:0, duration: 0,})
         .to(".phpT .right .img", {x:0 ,scale:1, duration: 1,})
 
 		const reactT = gsap.timeline({
@@ -321,56 +335,29 @@ const tl1 = gsap.timeline({yoyo: true});
                 markers: true,
                 start: "bottom bottom",
 				// end: "top 90%",
-                scrub: 5,
+                scrub: 1,
             }
         })
-        reactT.to(".reactT .left .img", {x: -1000,scale:0, duration: 0.1,})
+        reactT.to(".reactT .left .img", {x: -1000,scale:0, duration: 0,})
         .to(".reactT .left .img", {x:0 ,scale:1, duration: 1,})
 // contact
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-        // const tl = gsap.timeline({
-		// 	yoyo:true,
-		// 	repeat:50,
-        //     scrollTrigger : {
-        //         trigger: ".square",
-        //         markers: true,
-        //         start: "top top",
-		// 		end: "top 100%",
-        //         scrub: 100,
-        //     }
-        // })
-        // tl.to(".square", {x: 1000, duration: 2, rotation: 100,borderRadius: 0})
-        // .to(".square", {y: 500, duration: 2, rotation: 0, borderRadius: 100})
-        // .to(".square", {x: 0, duration: 2, rotation: 300, width: 400})
-        // .to(".square", {y: 0, duration: 2, rotation: 0, width: 200})
-
-        // tl.to(".square", {x: 1000, duration: 2, rotation: 100, skewY: 1, borderRadius: 0})
-        // .to(".square", {y: 500, duration: 2, rotation: 0, skewY: 3, borderRadius: 100})
-        // .to(".square", {x: 0, duration: 2, rotation: 300, skewY: 1, width: 400})
-        // .to(".square", {y: 0, duration: 2, rotation: 0, width: 200})
-
-
-
-
-
-		// const tl = gsap.timeline({repeat: 2, yoyo: true});
-
-        // tl.to(".square", {x: 1000, duration: 5, rotation: 300, skewY: 1,  borderRadius: 0})
-        // .to(".square", {y: 500, duration: 5, rotation: 0, skewY: 3,  borderRadius: 100})
-        // .to(".square", {x: 0, duration: 5, rotation: 300, skewY: 1,  width: 400})
-        // .to(".square", {y: 0, duration: 5, rotation: 0,  width: 200})
-
-// loading
+// ScrollTrigger.create({
+// 	trigger: ".rail__effect",
+// 	scrub: 1,
+// 	animation: gsap.fromTo(
+// 		".v2",
+// 		{
+// 			scale: 1.35,
+// 			opacity: 0,
+// 			transform: "translate3d(-20px,0,0)",
+// 		},
+// 		{
+// 			scale: 0.96,
+// 			opacity: 1,
+// 			transform: "translate3d(-20px,-20px,0)",
+// 		}
+// 	),
+// });

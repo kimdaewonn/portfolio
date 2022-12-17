@@ -1,6 +1,7 @@
 /* header */
 body {
-    overflow-x: hidden
+    overflow-x: hidden;
+    background: #000;
 }
 /* 모바일 수평 스크롤 금지 */ 
 html, body { max-width: 100%; overflow-x: hidden; }
@@ -17,6 +18,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     align-items: center;
     justify-content: space-between;
     font-family: 'Migra-Extralight';
+    animation: loadingY45 7s;
 }
 #header h1 {
     color: #fff;
@@ -90,6 +92,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     background-image: url(../img/main.jpg);
     background-position: center center;
     background-size: cover;
+    animation: loadingY 5s;
 }
 .sec1 {
     height: 100vh;
@@ -97,12 +100,6 @@ html, body { max-width: 100%; overflow-x: hidden; }
     align-items: center;
     justify-content: center;
     text-align: center;
-}
-#section1 {
-    animation: loadingY 5s;
-}
-.header__inner {
-    animation: loadingY45 7s;
 }
 .sec1 .text {
     color: #fff;
@@ -1720,7 +1717,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     text-align: center;
     translate: transition 0.6s;
     display: none;
-    animation: loadingX 1s;
+    animation: loadingXr 1s;
 }
 .skill_bot .text2 {
     display: inline-block;
@@ -1736,7 +1733,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     text-align: center;
     translate: transition 0.6s;
     display: none;
-    animation: loadingXr 1s;
+    animation: loadingX 1s;
 }
 .contact-wrap {
     background: #020E37;
@@ -2825,7 +2822,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
 }
 
 /* keyframe */
-@keyframes loadingY {
+/* @keyframes loadingY {
     0%                      
     {
         transform: translateY(100%);
@@ -2866,7 +2863,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
 @keyframes loadingX {
     0%                      
     {
-      transform: translateX(-100%);
+      transform: translateX(100%);
     }
     100% {
       transform: translateX(0%);
@@ -2876,11 +2873,11 @@ html, body { max-width: 100%; overflow-x: hidden; }
 @keyframes loadingXr {
     0%                      
     {
-      transform: translateX(100%);
+      transform: translateX(-100%);
     }
     100% {
       transform: translateX(0%);
 
     }
-}
+} */
 
