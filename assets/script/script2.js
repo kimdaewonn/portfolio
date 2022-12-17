@@ -270,7 +270,7 @@ ScrollTrigger.matchMedia({
 //  메인
 const header__inner = gsap.timeline({duration:0});
 header__inner.to(".header__inner", {rotation:45, yPercent:100, duration: 0,})
-        .to(".header__inner", {rotation:0, yPercent:0, duration: 5,})
+        .to(".header__inner", {rotation:0, yPercent:0, duration: 4,})
 
 const section1 = gsap.timeline({duration:0});
 section1.to("#section1", {skew:45, yPercent:100, duration: 0,})
@@ -285,7 +285,6 @@ const tl2 = gsap.timeline({ yoyo: true});
 const tl1 = gsap.timeline({yoyo: true});
         tl1.to(".sec1 .img .img2", {x: -1000, duration: 2,})
         .to(".sec1 .img .img2", {x: 0 ,y:-200, duration: 2,})
-
 // 어바웃
 const aboutH = gsap.timeline({
 	scrollTrigger : {
@@ -300,47 +299,66 @@ aboutH.to(".about h3", {xPercent:-100, duration: 0,})
 
 const about1Desc = gsap.timeline({
 	yoyo:true,
-	repeat: 5,
+	repeat:5,
 	scrollTrigger : {
 		trigger: ".load",
 		markers: true,
 		start: "top 90%",
-		scrub: 10,
+		scrub: 50,
 	}
 })
-about1Desc.to(".about1 .left", {rotation:5, duration: 0,})
-.to(".about .left", {rotation:-5, duration: 1,})
+about1Desc.to(".about1 .left", {rotation:-5, duration: 1,})
+.to(".about .left", {rotation:5, duration: 1,})
+.to(".about .left", {rotation:0, duration: 1,})
 
 
 
 
 // 팀
-		const phpT = gsap.timeline({
-			yoyo:true,
-			scrollTrigger : {
-				trigger: "#section5 h3",
-				markers: true,
-				start: "top top",
-				end: "top 90%",
-				scrub: 5,
-			}
-        })
-        phpT.to(".phpT .right .img", {x: 1000,scale:0, duration: 0,})
-        .to(".phpT .right .img", {x:0 ,scale:1, duration: 1,})
+const phpT = gsap.timeline({
+	yoyo:true,
+	scrollTrigger : {
+		trigger: "#section5 h3",
+		markers: true,
+		start: "top top",
+		end: "top 90%",
+		scrub: 5,
+	}
+})
+phpT.to(".phpT .right .img", {x: 1000,scale:0, duration: 0,})
+.to(".phpT .right .img", {x:0 ,scale:1, duration: 1,})
 
-		const reactT = gsap.timeline({
-			yoyo:true,
-            scrollTrigger : {
-                trigger: ".phpT .right .img",
-                markers: true,
-                start: "bottom bottom",
-				// end: "top 90%",
-                scrub: 1,
-            }
-        })
-        reactT.to(".reactT .left .img", {x: -1000,scale:0, duration: 0,})
-        .to(".reactT .left .img", {x:0 ,scale:1, duration: 1,})
-// contact
+const reactT = gsap.timeline({
+	yoyo:true,
+	scrollTrigger : {
+		trigger: ".phpT .right .img",
+		markers: true,
+		start: "bottom bottom",
+		// end: "top 90%",
+		scrub: 1,
+	}
+})
+reactT.to(".reactT .left .img", {x: -1000,scale:0, duration: 0,})
+.to(".reactT .left .img", {x:0 ,scale:1, duration: 1,})
+// skill
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
