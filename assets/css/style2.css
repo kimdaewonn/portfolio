@@ -333,9 +333,8 @@ html, body { max-width: 100%; overflow-x: hidden; }
     word-break: keep-all;
     line-height: 1.4;
     color: #000C42;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    padding-top: 12vw;
+    padding: 12vw 2vw 0;
+ 
 }
 .responsive .right .btn_con {
     display: flex;
@@ -387,9 +386,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     word-break: keep-all;
     line-height: 1.4;
     color: #000C42;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    padding-top: 11vw;
+    padding: 11vw 2vw 0;
 }
 .react .left .btn_con {
     display: flex;
