@@ -114,7 +114,11 @@ gsap.to(".sec1 .img .img2", {
         scrub: 1,
     },
 });
+
+
 //가로모드
+
+// 아래 다리
 const sections = gsap.utils.toArray(".section");
 ScrollTrigger.matchMedia({
     "(min-width: 300px)": function () {
@@ -139,7 +143,7 @@ ScrollTrigger.matchMedia({
             start: "top top",
             end: "+=3600",
             animation: gsap.fromTo(
-                ".script_wrap .js_intro .right .img1",
+                ".script_wrap .js_intro .img1",
                 {
                     xPercent: 0,
                     rotation: -60,
@@ -161,7 +165,7 @@ ScrollTrigger.matchMedia({
             start: "top top",
             end: "+=3600",
             animation: gsap.fromTo(
-                ".script_wrap .js_intro .right .img2",
+                ".script_wrap .js_intro .img2",
                 {
                     xPercent: 0,
                     rotation: 0,
@@ -201,42 +205,42 @@ window.addEventListener("mousemove", (e) => {
     gsap.to(cursor, { duration: 0.3, left: e.pageX - 5, top: e.pageY - 5 });
 
     // click
-    Box1.addEventListener("mouseover", () => {
+    Box1.addEventListener("mouseenter", () => {
         text1.style.display = "block";
     });
     text1.addEventListener("mouseleave", () => {
         text1.style.display = "none";
     });
 
-    Box2.addEventListener("mouseover", () => {
+    Box2.addEventListener("mouseenter", () => {
         text2.style.display = "block";
     });
     text2.addEventListener("mouseleave", () => {
         text2.style.display = "none";
     });
 
-    Box3.addEventListener("mouseover", () => {
+    Box3.addEventListener("mouseenter", () => {
         text3.style.display = "block";
     });
     text3.addEventListener("mouseleave", () => {
         text3.style.display = "none";
     });
 
-    Box4.addEventListener("mouseover", () => {
+    Box4.addEventListener("mouseenter", () => {
         text4.style.display = "block";
     });
     text4.addEventListener("mouseleave", () => {
         text4.style.display = "none";
     });
 
-    Box5.addEventListener("mouseover", () => {
+    Box5.addEventListener("mouseenter", () => {
         text5.style.display = "block";
     });
     text5.addEventListener("mouseleave", () => {
         text5.style.display = "none";
     });
 
-    Box6.addEventListener("mouseover", () => {
+    Box6.addEventListener("mouseenter", () => {
         text6.style.display = "block";
     });
     text6.addEventListener("mouseleave", () => {
@@ -297,6 +301,7 @@ tl1.to(".sec1 .img .img2", { x: -1000, duration: 2 }).to(".sec1 .img .img2", {
     y: -200,
     duration: 2,
 });
+
 // 어바웃
 const aboutH = gsap.timeline({
     scrollTrigger: {
@@ -322,6 +327,7 @@ about1Desc
     .to(".about1 .left", { rotation: -5, duration: 1 })
     .to(".about .left", { rotation: 5, duration: 1 })
     .to(".about .left", { rotation: 0, duration: 1 });
+
 
 // 팀
 const phpT = gsap.timeline({

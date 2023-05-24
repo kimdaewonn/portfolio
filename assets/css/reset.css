@@ -216,7 +216,6 @@ select {
   text-indent: -9999px;
 }
 /* 마우스 */
-
 .mouse__cursor {
   position: absolute;
   left: 0;
@@ -228,54 +227,34 @@ select {
   background: rgba(255,255,255,0.3);
   user-select: none;
   pointer-events: none;
-  transition: transform 0.3s, opacity 0.2s;
-  
+  transition: all 0.3s;
+  transform: scale(1);
+  opacity: 1;
 }
 /* over */
-.mouse__cursor.codeactive {
-  transform: scale(0);
-  opacity: 0;
-}
-.mouse__cursor.codeactive {
-  background: #fff;
-  color: #000C42;
-  transform: scale(10);
-  opacity: 1;
-  transition: all ease 0.6s;
-}
-.mouse__cursor.codeactive {
-  transform: scale(0);
-  opacity: 0;
-}
+
 .mouse__cursor.codeactive {
   background: #fff;
   color: #000C42;
   transform: scale(10);
   opacity: 0.5;
-  transition: all ease 0.6s;
-}
-.mouse__cursor.viewactive {
-  transform: scale(0);
-  opacity: 0;
-}
-.mouse__cursor.viewactive {
-  background: #000C42;
-  color: #fff;
-  transform: scale(10);
-  opacity: 0.5;
-  transition: all ease 0.6s;
-}
-.mouse__cursor.studyactive {
-  transform: scale(0);
-  opacity: 0;
-}
-.mouse__cursor.studyactive {
-  background: #000C42;
-  color: #fff;
-  transform: scale(10);
-  opacity: 0.5;
-  transition: all ease 0.6s;
 }
 
+.mouse__cursor.viewactive {
+  background: #000C42;
+  color: #fff;
+  transform: scale(10);
+  opacity: 0.5;
+}
+
+.mouse__cursor.studyactive {
+  background: #000C42;
+  color: #fff;
+  transform: scale(10);
+  opacity: 0.5;
+}
+.mt1 {
+  margin-top: 1vw;
+}
 
 
