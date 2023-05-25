@@ -5,7 +5,6 @@ body {
 }
 /* 모바일 수평 스크롤 금지 */ 
 html, body { max-width: 100%; overflow-x: hidden; }
-#header {}
 .header__inner {
     position: fixed;
     left: 0;
@@ -549,6 +548,16 @@ html, body { max-width: 100%; overflow-x: hidden; }
     align-items: center;
     height: 100vh;
 }
+.script_wrap .top {
+    width: 100%;
+    height: 27vw;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .script_wrap .js_intro {
     position: relative;
 }
@@ -585,6 +594,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
 .script_wrap .js_intro .list li {
     background: #000C42;
     margin-bottom: 1vw;
+    cursor: pointer;
 }
 .script_wrap .js_intro .list li:last-child {
     margin: 0;
@@ -608,7 +618,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
 .script_wrap .js_intro .img3 {
     width: 20vw;
     position: absolute;
-    left: 70%;
+    left: 74%;
     top: 35%;
     z-index: 101;
 }
@@ -620,15 +630,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
 .script_wrap .script {
     margin-top: 5vw;
 }
-.script_wrap .game .top {
-    width: 100%;
-    height: 35vw;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .script_wrap .game .top h4 {
     color: #fff;
     font-family: 'Migra-Extrabold';
@@ -648,11 +650,12 @@ html, body { max-width: 100%; overflow-x: hidden; }
 }
 .script_wrap .game .game_flex {
     display: flex;
+    justify-content: center;
+    margin-top: 1.5vw;
 }
 .script_wrap .game .game_flex .left {
-    width: 65%;
+    width: 30%;
     z-index: 100;
-    display: flex;
 }
 .script_wrap .game .game_flex .left .desc {
     font-family: 'GmarketSans';
@@ -661,17 +664,15 @@ html, body { max-width: 100%; overflow-x: hidden; }
     word-break: keep-all;
     line-height: 1.4;
     color: #000C42;
-    padding-top: 1.5vw;
-    margin-left: 17vw;
 }
 .script_wrap .game .game_flex .right {
-    width: 35%;
+    width: auto;
 }
 .script_wrap .game .game_flex .right .btn_con {
     display: flex;
     margin-left: 2vw;
     justify-content: start;
-    margin-top: 1.5vw;
+    /* margin-top: 1.5vw; */
 }
 .script_wrap .game .game_flex .right .btn_con .code a {
     background: #000C42;
@@ -698,16 +699,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     width: 100%;
 	height: 100vh;
 }
-.script_wrap .parallax {}
-.script_wrap .parallax .top {
-    width: 100%;
-    height: 35vw;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .script_wrap .parallax .top h4 {
     color: #fff;
     font-family: 'Migra-Extrabold';
@@ -776,15 +768,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     width: 100%;
 	height: 100vh;
 }
-.script_wrap .mouse {}
-.script_wrap .mouse .top {
-    width: 100%;
-    height: 35vw;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-}
+
 .script_wrap .mouse .top h4 {
     margin-top: 3vw;
     color: #fff;
@@ -855,16 +839,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     width: 100%;
 	height: 100vh;
 }
-.script_wrap .slider {}
-.script_wrap .slider .top {
-    width: 100%;
-    height: 35vw;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .script_wrap .slider .top h4 {
     color: #fff;
     font-family: 'Migra-Extrabold';
@@ -934,16 +909,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     width: 100%;
 	height: 100vh;
 }
-.script_wrap .search {}
-.script_wrap .search .top {
-    width: 100%;
-    height: 35vw;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .script_wrap .search .top h4 {
     color: #000C42;
     font-family: 'Migra-Extrabold';
@@ -1013,16 +979,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     width: 100%;
 	height: 100vh;
 }
-.script_wrap .quiz {}
-.script_wrap .quiz .top {
-    width: 100%;
-    height: 35vw;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .script_wrap .quiz .top h4 {
     color: #000C42;
     font-family: 'Migra-Extrabold';
@@ -1112,50 +1069,50 @@ html, body { max-width: 100%; overflow-x: hidden; }
     position: relative;
     z-index: 100;
 }
-.team-wrap .phpT .left h4 {
-    color: #6C90EE;
-    margin-right: -6vw;
-    margin-top: 1vw;
+.team-wrap h4 {
     font-family: 'Migra-Extrabold';
     font-size: 7vw;
     line-height: 1;
+    color: #6C90EE;
 }
-.team-wrap .phpT .left .desc {
+.team-wrap .desc {
     font-family: 'GmarketSans';
-    text-align: right;
     font-size: 1vw;
     word-break: keep-all;
     line-height: 1.4;
     color: #fff;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    padding-top: 7vw;
+    padding: 7vw 2vw 0;
 }
-.team-wrap .phpT .left .btn_con {
+
+.team-wrap .phpT .left h4 {
+    margin: 1vw -6vw 0 0;
+}
+
+.team-wrap .phpT .left .desc {
+    text-align: right;
+}
+.team-wrap .phpT .btn_con {
     display: flex;
-    margin-right: 2vw;
     justify-content: flex-end;
+    margin-top: 2vw;
+    margin-right: 2vw;
 }
-.team-wrap .left .btn_con .code a {
-    background: #000C42;
-    color: #fff;
+.team-wrap .btn_con a {
     display:inline-block;
     font-size: 1.5vw;
     font-family: 'Migra-Extrabold';
     padding: 1vw 2vw;
-    margin-top: 2vw;
     text-align: center;
+}
+
+.team-wrap .left .btn_con .code a {
+    background: #000C42;
+    color: #fff;
     margin-right: 0.5vw;
 }
 .team-wrap .left .btn_con .view a {
     background: #fff;
     color: #000C42;
-    display: inline-block;
-    font-size: 1.5vw;
-    font-family: 'Migra-Extrabold';
-    padding: 1vw 2vw;
-    margin-top: 2vw;
-    text-align: center;
 }
 .team-wrap .phpT .right {
     width: 70%;
@@ -1196,49 +1153,25 @@ html, body { max-width: 100%; overflow-x: hidden; }
     z-index: 100;
 }
 .team-wrap .reactT .right h4 {
-    color: #6C90EE;
-    margin-left: -5vw;
-    margin-top: 0.5vw;
-    font-family: 'Migra-Extrabold';
-    font-size: 7vw;
-    line-height: 1;
+    margin: 0.5vw 0 0 -5vw;
 }
 .team-wrap .reactT .right .desc {
-    font-family: 'GmarketSans';
     text-align: left;
-    font-size: 1vw;
-    word-break: keep-all;
-    line-height: 1.4;
-    color: #fff;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    padding-top: 7vw;
 }
 .team-wrap .reactT .btn_con {
     display: flex;
     margin-left: 2vw;
     justify-content: start;
+    margin-top: 2vw;
 }
 .team-wrap .reactT .btn_con .code a {
     background: #000C42;
     color: #fff;
-    display:inline-block;
-    font-size: 1.5vw;
-    font-family: 'Migra-Extrabold';
-    padding: 1vw 2vw;
-    margin-top: 2vw;
-    text-align: center;
     margin-right: 0.5vw;
 }
 .team-wrap .reactT .btn_con .view a {
     background: #fff;
     color: #000C42;
-    display: inline-block;
-    font-size: 1.5vw;
-    font-family: 'Migra-Extrabold';
-    padding: 1vw 2vw;
-    margin-top: 2vw;
-    text-align: center;
 }
 /* section6 */
 #section6 {
@@ -1246,13 +1179,14 @@ html, body { max-width: 100%; overflow-x: hidden; }
     overflow: hidden;
 }
 .study-wrap {
-    margin-left: 2vw;
-    margin-right: 2vw;
+    margin: 0 2vw;
 }
 .study-wrap .hcont {
     display: flex;
     align-items: center;
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
+    margin-left: 3vw;
+    gap: 6vw;
 }
 .study-wrap .hcont h3 {
     color: #6C90EE;
@@ -1261,9 +1195,8 @@ html, body { max-width: 100%; overflow-x: hidden; }
     font-size: 12vw;
     line-height: 0.9;
     padding-top: 4vw;
-    margin-left: 3vw;
     font-family: 'Migra-Extrabold';
-    width: 40%;
+    width: 50%;
 }
 .study-wrap .hcont .desc {
     font-family: 'GmarketSans';
@@ -1272,212 +1205,161 @@ html, body { max-width: 100%; overflow-x: hidden; }
     word-break: keep-all;
     line-height: 1.4;
     color: #fff;
-    margin-left: 3vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    padding-top: 7vw;
+    padding-top: 5vw;
     width: 35%;   
 }
 .study_list_wrap {
-    font-family: 'Migra-Extrabold';
     color: #fff;
-
 }
+.study_list_wrap .study_btn a {
+        background: #fff;
+        color: #000C42;
+        width: 8vw;
+        height: 4vw;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5vw;
+}
+
 .study_common {
     display: flex;
     border-top: 1px dashed #fff;
     padding: 1vw 0;
     align-items: center;
+    justify-content: space-between;
+}
+.study_common .left {
+    font-size: 2vw;
+    margin-left: 1vw;
+    font-family: 'Migra-Extrabold';
+}
+.study_common .center {
+    font-size: 1vw;
+    font-family: 'GmarketSans';
+}
+.study_common .right {
+    font-family: 'Migra-Extrabold';
 }
 /* js */
 .study_list_js .left {
-    font-size: 2vw;
-    width: 33%;
-    margin-left: 1vw;
+    width: 39%;
 }
 .study_list_js .center {
     width: 50%;
-    font-size: 1vw;
-    font-family: 'GmarketSans';
 }
 .study_list_js .right {
-    width: 30%;
-    font-size: 1vw;
+    width: auto;
 }
 .study_list_js .right .study_btn_flex {
     display: flex;
+    gap: 1vw;
     justify-content: flex-end;
-    margin-right: 5vw;
 }
-.study_list_js .right .study_btn_flex .study_btn a {
-    display: inline-block;
-    background: #fff;
-    color: #000C42;
-    padding: 1vw 2vw;
-}
-.study_list_js .right .study_btn_flex .study_btn:nth-child(1) {
-    margin-right: 1vw;
-}
-.study_list_js .right .study_btn_flex .study_btn:nth-child(2) {
-    margin-right: 1vw;
-}
+
 /* blog */
 .study_list_blog .left {
-    font-size: 2vw;
     width: 29%;
-    margin-left: 1vw;
 }
 .study_list_blog .center {
     width: 31%;
-    font-size: 1vw;
-    font-family: 'GmarketSans';
-}
-.study_list_blog .right {
-    width: 33.5%;
-    font-size: 1vw;
 }
 .study_list_blog .right {
     display: flex;
     justify-content: flex-end;
+    width: 33.5%;
 }
-.study_list_blog .right .study_btn a {
-    display: inline-block;
-    background: #fff;
-    color: #000C42;
-    padding: 1vw 2vw;
-}
+
 /* codepen */
 .study_list_codepen .left {
-    font-size: 2vw;
     width: 29%;
-    margin-left: 1vw;
 }
 .study_list_codepen .center {
     width: 31%;
-    font-size: 1vw;
-    font-family: 'GmarketSans';
-}
-.study_list_codepen .right {
-    width: 33.5%;
-    font-size: 1vw;
 }
 .study_list_codepen .right {
     display: flex;
     justify-content: flex-end;
+    width: 33.5%;
 }
-.study_list_codepen .right .study_btn a {
-    display: inline-block;
-    background: #fff;
-    color: #000C42;
-    padding: 1vw 2vw;
-}
+
 /* mysql */
 .study_list_mysql .left {
-    font-size: 2vw;
     width: 29%;
-    margin-left: 1vw;
 }
 .study_list_mysql .center {
     width: 31%;
-    font-size: 1vw;
-    font-family: 'GmarketSans';
-}
-.study_list_mysql .right {
-    width: 33.5%;
-    font-size: 1vw;
 }
 .study_list_mysql .right {
     display: flex;
     justify-content: flex-end;
+    width: 33.5%;
 }
-.study_list_mysql .right .study_btn a {
-    display: inline-block;
-    background: #fff;
-    color: #000C42;
-    padding: 1vw 2vw;
-}
+
 /* notion */
 .study_list_notion .left {
-    font-size: 2vw;
     width: 29%;
-    margin-left: 1vw;
 }
 .study_list_notion .center {
     width: 31%;
-    font-size: 1vw;
-    font-family: 'GmarketSans';
-}
-.study_list_notion .right {
-    width: 33.5%;
-    font-size: 1vw;
 }
 .study_list_notion .right {
     display: flex;
     justify-content: flex-end;
+    width: 33.5%;
 }
-.study_list_notion .right .study_btn a {
-    display: inline-block;
-    background: #fff;
-    color: #000C42;
-    padding: 1vw 2vw;
-}
+
 /* figma */
 .study_list_figma .left {
-    font-size: 2vw;
     width: 29%;
-    margin-left: 1vw;
 }
 .study_list_figma .center {
     width: 31%;
-    font-size: 1vw;
-    font-family: 'GmarketSans';
-}
-.study_list_figma .right {
-    width: 33.5%;
-    font-size: 1vw;
 }
 .study_list_figma .right {
     display: flex;
     justify-content: flex-end;
+    width: 33.5%;
 }
-.study_list_figma .right .study_btn a {
-    display: inline-block;
-    background: #fff;
-    color: #000C42;
-    padding: 1vw 2vw;
-}
+
 /* svg */
-.study_list_svg {
-    border-bottom:  1px dashed #fff;
-}
 .study_list_svg .left {
-    font-size: 2vw;
     width: 33%;
-    margin-left: 1vw;
 }
 .study_list_svg .center {
-    width: 50%;
-    font-size: 1vw;
-    font-family: 'GmarketSans';
+    width: 42%;
 }
 .study_list_svg .right {
+    display: flex;
+    justify-content: flex-end;
     width: 30%;
-    font-size: 1vw;
 }
 .study_list_svg .right .study_btn_flex {
     display: flex;
+    gap: 1vw;
+}
+
+/* site */
+.study_list_site {
+    border-bottom:  1px dashed #fff;
+}
+.study_list_site .left {
+    width: 33%;
+}
+.study_list_site .center {
+    width: 42%;
+}
+.study_list_site .right {
+    display: flex;
     justify-content: flex-end;
-    margin-right: 5vw;
+    width: 30%;
 }
-.study_list_svg .right .study_btn_flex .study_btn a {
-    display: inline-block;
-    background: #fff;
-    color: #000C42;
-    padding: 1vw 2vw;
+.study_list_site .right .study_btn_flex {
+    display: flex;
+    gap: 1vw;
 }
-.study_list_svg .right .study_btn_flex .study_btn:nth-child(1) {
-    margin-right: 1vw;
-}
+
 
 .skill-wrap {
     margin-top: 2vw;
@@ -2425,12 +2307,8 @@ html, body { max-width: 100%; overflow-x: hidden; }
         width: 73%;
     }
     .team-wrap .phpT .left h4 {
-        color: #6C90EE;
-        margin-left: -6vw;
-        margin-top: -9vw;
-        font-family: 'Migra-Extrabold';
+        margin: -9vw 0 0 -6vw;
         font-size: 10vw;
-        line-height: 1;
         text-align: left;
     }
     .team-wrap .left .btn_con .code a {
@@ -2478,6 +2356,32 @@ html, body { max-width: 100%; overflow-x: hidden; }
     /* 스터디 반응형 */
     .study_common  {
         flex-direction: column;
+        padding-top: 10vw;
+        gap: 2vw;
+        padding-bottom: 2vw;
+    }
+    .study_common .center{
+        width: 89%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4vw;
+        margin-bottom: 3vw;
+    }
+    .study_common .left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 5vw;
+        margin: 0;
+    }
+    .study_common .right {
+        width: 100%;
+    }
+    .study_list_wrap .study_btn a {
+        width: 16vw;
+        height: 8vw;
+        font-size: 2.5vw;
     }
     .study-wrap .hcont{
         display: inline-block;
@@ -2486,121 +2390,31 @@ html, body { max-width: 100%; overflow-x: hidden; }
         width: 100%;
         font-size: 22vw;
     }
+    .study-wrap  .mt1 {
+        margin-top: 4vw;
+    }
     .study-wrap .hcont .desc {
         font-size: 4vw;
         width: 100%;
-        padding-top: 3vw;
+        padding: 3vw 0;
     }
-    .study_list_js .left {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        font-size: 5vw;
-    }
-    .study_list_js .center {
-        width: 89%;
-        display: flex;
-        justify-content: center;
-        font-size: 4vw;
-        padding-top: 1vw;
-    }
-    .study_list_js .right {
-        width: 100%;
-        font-size: 3vw;
-    }
-    .study_list_js .right .study_btn_flex {
-        margin-right: 0;
-    }
-    .study_list_js .right .study_btn_flex .study_btn a {
-        padding: 2vw 4vw;
-        margin-bottom: 1vw;
-    }
-
-    .study_list_blog .left {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        font-size: 5vw;
-    }
-    .study_list_blog .center {
-        width: 89%;
-        display: flex;
-        justify-content: center;
-        font-size: 4vw;
-        padding-top: 2vw;
-    }
-    .study_list_blog .right {
-        width: 100%;
-        font-size: 3vw;
+    .study_list_wrap {
+        margin-top: 2vw;
     }
     .study_list_blog .right .study_btn_flex .study_btn a {
         padding: 2vw 4vw;
         margin-bottom: 1vw;
         margin: 1vw 0;
     }
-
-    .study_list_codepen .left {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        font-size: 5vw;
-    }
-    .study_list_codepen .center {
-        width: 93%;
-        display: flex;
-        justify-content: center;
-        font-size: 4vw;
-        padding-top: 2vw;
-    }
-    .study_list_codepen .right {
-        width: 100%;
-        font-size: 3vw;
-    }
     .study_list_codepen .right .study_btn_flex .study_btn a {
         padding: 2vw 4vw;
         margin-bottom: 1vw;
         margin: 1vw 0;
     }
-
-    .study_list_mysql .left {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        font-size: 5vw;
-    }
-    .study_list_mysql .center {
-        width: 93%;
-        display: flex;
-        justify-content: center;
-        font-size: 4vw;
-        padding-top: 2vw;
-    }
-    .study_list_mysql .right {
-        width: 100%;
-        font-size: 3vw;
-    }
     .study_list_mysql .right .study_btn_flex .study_btn a {
         padding: 2vw 4vw;
         margin-bottom: 1vw;
         margin: 1vw 0;
-    }
-
-    .study_list_notion .left {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        font-size: 5vw;
-    }
-    .study_list_notion .center {
-        width: 93%;
-        display: flex;
-        justify-content: center;
-        font-size: 4vw;
-        padding-top: 2vw;
-    }
-    .study_list_notion .right {
-        width: 100%;
-        font-size: 3vw;
     }
     .study_list_notion .right .study_btn_flex .study_btn a {
         padding: 2vw 4vw;
@@ -2608,50 +2422,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
         margin: 1vw 0;
     }
 
-    .study_list_figma .left {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        font-size: 5vw;
-    }
-    .study_list_figma .center {
-        width: 93%;
-        display: flex;
-        justify-content: center;
-        font-size: 4vw;
-        padding-top: 2vw;
-    }
-    .study_list_figma .right {
-        width: 100%;
-        font-size: 3vw;
-    }
     .study_list_figma .right .study_btn_flex .study_btn a {
-        padding: 2vw 4vw;
-        margin-bottom: 1vw;
-        margin: 1vw 0;
-    }
-
-    .study_list_svg .left {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        font-size: 5vw;
-    }
-    .study_list_svg .center {
-        width: 93%;
-        display: flex;
-        justify-content: center;
-        font-size: 4vw;
-        padding-top: 2vw;
-    }
-    .study_list_svg .right {
-        width: 100%;
-        font-size: 3vw;
-    }
-    .study_list_svg .right .study_btn_flex {
-        margin-right: 0;
-    }
-    .study_list_svg .right .study_btn_flex .study_btn a {
         padding: 2vw 4vw;
         margin-bottom: 1vw;
         margin: 1vw 0;

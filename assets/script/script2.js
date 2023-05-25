@@ -278,8 +278,8 @@ window.addEventListener("mousemove", (e) => {
 //  메인
 const header__inner = gsap.timeline({ duration: 0 });
 header__inner
-    .to(".header__inner", { rotation: 45, yPercent: 100, duration: 0 })
-    .to(".header__inner", { rotation: 0, yPercent: 0, duration: 4 });
+    .to(".header__inner", { rotation: 45, yPercent: 100, opacity: 1, duration: 0 })
+    .to(".header__inner", { rotation: 0, yPercent: 0, opacity: 1, duration: 4 });
 
 const section1 = gsap.timeline({ duration: 0 });
 section1
@@ -389,6 +389,93 @@ ScrollTrigger.matchMedia({
     },
 });
 
+// scroll
+// window.addEventListener("scroll", () => {
+//     let scrollTop =
+//         window.pageYOffset ||
+//         window.scrollY ||
+//         document.documentElement.scrollTop; //다써줌 브라우저 호환문제
+
+//         if (scrollTop >= document.querySelector("#section4").offsetTop ) {
+//             console.log( document.querySelector("#section4").offsetTop);
+//             console.log("scrolltop :",scrollTop);
+            
+            
+//             document.querySelector(".header__inner").classList.add("hide");
+//         }
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ScrollTrigger.create({
+// 	trigger: "#section4",
+// 	animation: gsap.fromTo(
+// 		".header__inner",
+// 		{
+// 			opacity: 1,
+// 		},
+// 		{
+// 			opacity: 0,
+// 		}
+// 	),
+// });
+// ScrollTrigger.create({
+// 	trigger: "#section5",
+// 	animation: gsap.fromTo(
+// 		".header__inner",
+// 		{
+// 			opacity: 0,
+// 		},
+// 		{
+// 			opacity: 1,
+// 		}
+// 	),
+// });
+
+
+
+
+// const section4H = gsap.timeline({
+//     yoyo: true,
+//     scrollTrigger: {
+//         trigger: "#section4",
+//         start: "top top",
+//         end: "top 90%",
+//         // scrub: 5,
+//     },
+// });
+// section4H
+// .to(".header__inner", { yPercent: 0 })
+// .to(".header__inner",{yPercent: -100});
+
+// const section5H = gsap.timeline({
+//     yoyo: true,
+//     scrollTrigger: {
+//         trigger: "#section5",
+//         start: "top top",
+//         end: "top 90%",
+//         // scrub: 5,
+//     },
+// });
+// section5H
+// .to(".header__inner", { yPercent: -100 })
+// .to(".header__inner",{yPercent: 0 });
+
+
+
+
+
 // const whale1 = gsap.timeline({
 // 	scrollTrigger : {
 // 		trigger: ".about1 .right img",
@@ -399,21 +486,3 @@ ScrollTrigger.matchMedia({
 // })
 // whale1.to(".Limg .whale1", {x: 1000, duration: 1,})
 // .to(".Limg .whale1", {x:-300 , duration: 1,})
-
-// ScrollTrigger.create({
-// 	trigger: ".rail__effect",
-// 	scrub: 1,
-// 	animation: gsap.fromTo(
-// 		".v2",
-// 		{
-// 			scale: 1.35,
-// 			opacity: 0,
-// 			transform: "translate3d(-20px,0,0)",
-// 		},
-// 		{
-// 			scale: 0.96,
-// 			opacity: 1,
-// 			transform: "translate3d(-20px,-20px,0)",
-// 		}
-// 	),
-// });
