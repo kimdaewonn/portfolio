@@ -118,7 +118,6 @@ gsap.to(".sec1 .img .img2", {
 
 //가로모드
 
-// 아래 다리
 const sections = gsap.utils.toArray(".section");
 ScrollTrigger.matchMedia({
     "(min-width: 300px)": function () {
@@ -389,28 +388,25 @@ ScrollTrigger.matchMedia({
     },
 });
 
-// scroll
-// window.addEventListener("scroll", () => {
-//     let scrollTop =
-//         window.pageYOffset ||
-//         window.scrollY ||
-//         document.documentElement.scrollTop; //다써줌 브라우저 호환문제
-
-//         if (scrollTop >= document.querySelector("#section4").offsetTop ) {
-//             console.log( document.querySelector("#section4").offsetTop);
-//             console.log("scrolltop :",scrollTop);
-            
-            
-//             document.querySelector(".header__inner").classList.add("hide");
-//         }
-// });
-
-
-
-
-
-
-
+// scroll sticky
+window.addEventListener("scroll", () => {
+    let scrollTop =
+        window.pageYOffset ||
+        window.scrollY ||
+        document.documentElement.scrollTop; //다써줌 브라우저 호환문제
+ 
+        const section4offset = document.querySelector('.pin-spacer').offsetTop
+        const section5offset = document.querySelector('#section5').offsetTop
+        
+        if (scrollTop >=section4offset) {
+            document.querySelector(".header__inner").classList.add("hide");
+        } else {
+            document.querySelector(".header__inner").classList.remove("hide");
+        }
+        if (scrollTop >=section5offset) {
+            document.querySelector(".header__inner").classList.remove("hide");
+        } 
+});
 
 
 

@@ -94,7 +94,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
 .Limg .whale1 {
     position: absolute;
     left: -100%;
-    top: 24%;
+    top: 17%;
     width: 45vw;
 }
 /* section1 */
@@ -1595,27 +1595,29 @@ html, body { max-width: 100%; overflow-x: hidden; }
     }
 }
 /* 다리 반응형 */
-@media(max-width: 1540px) {
-    .script_wrap .js_intro .right .img2 {
-        top: -120%;
+@media(max-width: 1450px) {
+    .script_wrap .js_intro .img2 {
+        top: -80%;
+    
     }
-    .script_wrap .js_intro .right .img1 {
+    .script_wrap .js_intro .img1 {
+        top: 80%;
+    }
+}
+@media(max-width: 1050px) {
+    .script_wrap .js_intro .img2 {
+        top: -80%;
+    
+    }
+    .script_wrap .js_intro .img1 {
         top: 120%;
     }
 }
-@media(max-width: 800px) {
-    .script_wrap .js_intro .right .img2 {
-        top: -160%;
-    }
-    .script_wrap .js_intro .right .img1 {
-        top: 225%;
-    }
-}
-@media(max-width: 400px) {
-    .script_wrap .js_intro .right .img2 {
+@media(max-width: 768px) {
+    .script_wrap .js_intro .img2 {
         display: none;
     }
-    .script_wrap .js_intro .right .img1 {
+    .script_wrap .js_intro .img1 {
         display: none;
     }
 }
