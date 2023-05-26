@@ -6,25 +6,25 @@ const btnMenuList = btnMenu.querySelectorAll("ul li a");
 btnHam.addEventListener("click", () => {
     btnHam.classList.toggle("active");
     btnMenu.classList.toggle("active");
-    document.body.classList.toggle("fixed");
+    // document.body.classList.toggle("fixed");
 });
 
 btnMenuList.forEach((list) => {
     list.addEventListener("click", () => {
-        document.body.classList.remove("fixed");
         btnMenu.classList.remove("active");
         btnHam.classList.remove("active");
+        // document.body.classList.remove("fixed");
     });
 });
 
-window.addEventListener("resize", () => {
-    let width = window.innerWidth;
-    if (width > 1300) {
-        document.body.classList.remove("fixed");
-        btnMenu.classList.remove("active");
-        btnHam.classList.remove("active");
-    }
-});
+// window.addEventListener("resize", () => {
+//     let width = window.innerWidth;
+//     if (width > 1300) {
+//         btnMenu.classList.remove("active");
+//         btnHam.classList.remove("active");
+//         document.body.classList.remove("fixed");
+//     }
+// });
 // 부드러운 메뉴이동
 document.querySelectorAll(".header__menu a").forEach((el) => {
     el.addEventListener("click", (e) => {
@@ -65,24 +65,24 @@ window.addEventListener("mousemove", (e) => {
     followY = (10 * mouseY) / 100;
 });
 
-window.addEventListener("keydown", (e) => {
-    switch (e.keyCode) {
-        case 37:
-            followX = 12;
-            break;
-        case 38:
-            followY = 10;
-            break;
-        case 39:
-            followX = -12;
-            break;
-        case 40:
-            followY = -10;
-            break;
-        default:
-            break;
-    }
-});
+// window.addEventListener("keydown", (e) => {
+//     switch (e.keyCode) {
+//         case 37:
+//             followX = 12;
+//             break;
+//         case 38:
+//             followY = 10;
+//             break;
+//         case 39:
+//             followX = -12;
+//             break;
+//         case 40:
+//             followY = -10;
+//             break;
+//         default:
+//             break;
+//     }
+// });
 
 mouse3Danimate1();
 
@@ -99,8 +99,9 @@ gsap.to(".tx2", {
         scrub: 1,
     },
 });
+//  section1 다리 , work 이질감효과
 gsap.to(
-    ".sec1 .img .img1, .work-wrap .work .right .img, .work-wrap .work .left .img",
+    ".sec1 .img .img1, .work .right .img, .work .left .img",
     {
         yPercent: -80,
         scrollTrigger: {
@@ -133,6 +134,7 @@ ScrollTrigger.matchMedia({
         });
     },
 });
+
 // 아래 다리
 ScrollTrigger.matchMedia({
     "(min-width: 300px)": function () {
@@ -282,8 +284,8 @@ header__inner
 
 const section1 = gsap.timeline({ duration: 0 });
 section1
-    .to("#section1", { skew: 45, yPercent: 100, duration: 0 })
-    .to("#section1", { skew: 0, yPercent: 0, duration: 2 });
+    .to("#section1", { yPercent: 100, duration: 0 })
+    .to("#section1", {  yPercent: 0, duration: 2 });
 
 // 오른쪽 다리
 const tl2 = gsap.timeline({ yoyo: true });
@@ -355,15 +357,20 @@ const reactT = gsap.timeline({
 reactT
     .to(".reactT .left .img", { x: -1000, scale: 0, duration: 0 })
     .to(".reactT .left .img", { x: 0, scale: 1, duration: 1 });
-// contatct
 
-const contactH = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".skill-wrap h3",
-        start: "center",
-        scrub: 3,
-    },
-});
+// contatct
+let contactH = gsap.matchMedia();
+
+contactH.add("(min-width: 768px)", () => {
+    contactH = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".skill-wrap h3",
+            start: "center",
+            scrub: 3,
+        },
+    });
+})
+
 contactH
     .to(".contact-wrap h3", { x: -1000, y: 1000, duration: 0 })
     .to(".contact-wrap h3", { x: 0, y: 0, duration: 1 });
