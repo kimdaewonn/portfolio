@@ -6,25 +6,25 @@ const btnMenuList = btnMenu.querySelectorAll("ul li a");
 btnHam.addEventListener("click", () => {
     btnHam.classList.toggle("active");
     btnMenu.classList.toggle("active");
-    document.body.classList.toggle("fixed");
+    // document.body.classList.toggle("fixed");
 });
 
 btnMenuList.forEach((list) => {
     list.addEventListener("click", () => {
-        document.body.classList.remove("fixed");
         btnMenu.classList.remove("active");
         btnHam.classList.remove("active");
+        // document.body.classList.remove("fixed");
     });
 });
 
-window.addEventListener("resize", () => {
-    let width = window.innerWidth;
-    if (width > 1300) {
-        document.body.classList.remove("fixed");
-        btnMenu.classList.remove("active");
-        btnHam.classList.remove("active");
-    }
-});
+// window.addEventListener("resize", () => {
+//     let width = window.innerWidth;
+//     if (width > 1300) {
+//         btnMenu.classList.remove("active");
+//         btnHam.classList.remove("active");
+//         document.body.classList.remove("fixed");
+//     }
+// });
 // 부드러운 메뉴이동
 document.querySelectorAll(".header__menu a").forEach((el) => {
     el.addEventListener("click", (e) => {
@@ -65,24 +65,24 @@ window.addEventListener("mousemove", (e) => {
     followY = (10 * mouseY) / 100;
 });
 
-window.addEventListener("keydown", (e) => {
-    switch (e.keyCode) {
-        case 37:
-            followX = 12;
-            break;
-        case 38:
-            followY = 10;
-            break;
-        case 39:
-            followX = -12;
-            break;
-        case 40:
-            followY = -10;
-            break;
-        default:
-            break;
-    }
-});
+// window.addEventListener("keydown", (e) => {
+//     switch (e.keyCode) {
+//         case 37:
+//             followX = 12;
+//             break;
+//         case 38:
+//             followY = 10;
+//             break;
+//         case 39:
+//             followX = -12;
+//             break;
+//         case 40:
+//             followY = -10;
+//             break;
+//         default:
+//             break;
+//     }
+// });
 
 mouse3Danimate1();
 
@@ -99,8 +99,9 @@ gsap.to(".tx2", {
         scrub: 1,
     },
 });
+//  section1 다리 , work 이질감효과
 gsap.to(
-    ".sec1 .img .img1, .work-wrap .work .right .img, .work-wrap .work .left .img",
+    ".sec1 .img .img1, .work .right .img, .work .left .img",
     {
         yPercent: -80,
         scrollTrigger: {
@@ -114,7 +115,10 @@ gsap.to(".sec1 .img .img2", {
         scrub: 1,
     },
 });
+
+
 //가로모드
+
 const sections = gsap.utils.toArray(".section");
 ScrollTrigger.matchMedia({
     "(min-width: 300px)": function () {
@@ -130,6 +134,7 @@ ScrollTrigger.matchMedia({
         });
     },
 });
+
 // 아래 다리
 ScrollTrigger.matchMedia({
     "(min-width: 300px)": function () {
@@ -139,7 +144,7 @@ ScrollTrigger.matchMedia({
             start: "top top",
             end: "+=3600",
             animation: gsap.fromTo(
-                ".script_wrap .js_intro .right .img1",
+                ".script_wrap .js_intro .img1",
                 {
                     xPercent: 0,
                     rotation: -60,
@@ -161,7 +166,7 @@ ScrollTrigger.matchMedia({
             start: "top top",
             end: "+=3600",
             animation: gsap.fromTo(
-                ".script_wrap .js_intro .right .img2",
+                ".script_wrap .js_intro .img2",
                 {
                     xPercent: 0,
                     rotation: 0,
@@ -201,42 +206,42 @@ window.addEventListener("mousemove", (e) => {
     gsap.to(cursor, { duration: 0.3, left: e.pageX - 5, top: e.pageY - 5 });
 
     // click
-    Box1.addEventListener("mouseover", () => {
+    Box1.addEventListener("mouseenter", () => {
         text1.style.display = "block";
     });
     text1.addEventListener("mouseleave", () => {
         text1.style.display = "none";
     });
 
-    Box2.addEventListener("mouseover", () => {
+    Box2.addEventListener("mouseenter", () => {
         text2.style.display = "block";
     });
     text2.addEventListener("mouseleave", () => {
         text2.style.display = "none";
     });
 
-    Box3.addEventListener("mouseover", () => {
+    Box3.addEventListener("mouseenter", () => {
         text3.style.display = "block";
     });
     text3.addEventListener("mouseleave", () => {
         text3.style.display = "none";
     });
 
-    Box4.addEventListener("mouseover", () => {
+    Box4.addEventListener("mouseenter", () => {
         text4.style.display = "block";
     });
     text4.addEventListener("mouseleave", () => {
         text4.style.display = "none";
     });
 
-    Box5.addEventListener("mouseover", () => {
+    Box5.addEventListener("mouseenter", () => {
         text5.style.display = "block";
     });
     text5.addEventListener("mouseleave", () => {
         text5.style.display = "none";
     });
 
-    Box6.addEventListener("mouseover", () => {
+    Box6.addEventListener("mouseenter", () => {
         text6.style.display = "block";
     });
     text6.addEventListener("mouseleave", () => {
@@ -274,13 +279,13 @@ window.addEventListener("mousemove", (e) => {
 //  메인
 const header__inner = gsap.timeline({ duration: 0 });
 header__inner
-    .to(".header__inner", { rotation: 45, yPercent: 100, duration: 0 })
-    .to(".header__inner", { rotation: 0, yPercent: 0, duration: 4 });
+    .to(".header__inner", { rotation: 45, yPercent: 100, opacity: 1, duration: 0 })
+    .to(".header__inner", { rotation: 0, yPercent: 0, opacity: 1, duration: 4 });
 
 const section1 = gsap.timeline({ duration: 0 });
 section1
-    .to("#section1", { skew: 45, yPercent: 100, duration: 0 })
-    .to("#section1", { skew: 0, yPercent: 0, duration: 2 });
+    .to("#section1", { yPercent: 100, duration: 0 })
+    .to("#section1", {  yPercent: 0, duration: 2 });
 
 // 오른쪽 다리
 const tl2 = gsap.timeline({ yoyo: true });
@@ -297,6 +302,7 @@ tl1.to(".sec1 .img .img2", { x: -1000, duration: 2 }).to(".sec1 .img .img2", {
     y: -200,
     duration: 2,
 });
+
 // 어바웃
 const aboutH = gsap.timeline({
     scrollTrigger: {
@@ -322,6 +328,7 @@ about1Desc
     .to(".about1 .left", { rotation: -5, duration: 1 })
     .to(".about .left", { rotation: 5, duration: 1 })
     .to(".about .left", { rotation: 0, duration: 1 });
+
 
 // 팀
 const phpT = gsap.timeline({
@@ -350,15 +357,20 @@ const reactT = gsap.timeline({
 reactT
     .to(".reactT .left .img", { x: -1000, scale: 0, duration: 0 })
     .to(".reactT .left .img", { x: 0, scale: 1, duration: 1 });
-// contatct
 
-const contactH = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".skill-wrap h3",
-        start: "center",
-        scrub: 3,
-    },
-});
+// contatct
+let contactH = gsap.matchMedia();
+
+contactH.add("(min-width: 768px)", () => {
+    contactH = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".skill-wrap h3",
+            start: "center",
+            scrub: 3,
+        },
+    });
+})
+
 contactH
     .to(".contact-wrap h3", { x: -1000, y: 1000, duration: 0 })
     .to(".contact-wrap h3", { x: 0, y: 0, duration: 1 });
@@ -383,6 +395,90 @@ ScrollTrigger.matchMedia({
     },
 });
 
+// scroll sticky
+window.addEventListener("scroll", () => {
+    let scrollTop =
+        window.pageYOffset ||
+        window.scrollY ||
+        document.documentElement.scrollTop; //다써줌 브라우저 호환문제
+ 
+        const section4offset = document.querySelector('.pin-spacer').offsetTop
+        const section5offset = document.querySelector('#section5').offsetTop
+        
+        if (scrollTop >=section4offset) {
+            document.querySelector(".header__inner").classList.add("hide");
+        } else {
+            document.querySelector(".header__inner").classList.remove("hide");
+        }
+        if (scrollTop >=section5offset) {
+            document.querySelector(".header__inner").classList.remove("hide");
+        } 
+});
+
+
+
+
+
+
+
+// ScrollTrigger.create({
+// 	trigger: "#section4",
+// 	animation: gsap.fromTo(
+// 		".header__inner",
+// 		{
+// 			opacity: 1,
+// 		},
+// 		{
+// 			opacity: 0,
+// 		}
+// 	),
+// });
+// ScrollTrigger.create({
+// 	trigger: "#section5",
+// 	animation: gsap.fromTo(
+// 		".header__inner",
+// 		{
+// 			opacity: 0,
+// 		},
+// 		{
+// 			opacity: 1,
+// 		}
+// 	),
+// });
+
+
+
+
+// const section4H = gsap.timeline({
+//     yoyo: true,
+//     scrollTrigger: {
+//         trigger: "#section4",
+//         start: "top top",
+//         end: "top 90%",
+//         // scrub: 5,
+//     },
+// });
+// section4H
+// .to(".header__inner", { yPercent: 0 })
+// .to(".header__inner",{yPercent: -100});
+
+// const section5H = gsap.timeline({
+//     yoyo: true,
+//     scrollTrigger: {
+//         trigger: "#section5",
+//         start: "top top",
+//         end: "top 90%",
+//         // scrub: 5,
+//     },
+// });
+// section5H
+// .to(".header__inner", { yPercent: -100 })
+// .to(".header__inner",{yPercent: 0 });
+
+
+
+
+
 // const whale1 = gsap.timeline({
 // 	scrollTrigger : {
 // 		trigger: ".about1 .right img",
@@ -393,21 +489,3 @@ ScrollTrigger.matchMedia({
 // })
 // whale1.to(".Limg .whale1", {x: 1000, duration: 1,})
 // .to(".Limg .whale1", {x:-300 , duration: 1,})
-
-// ScrollTrigger.create({
-// 	trigger: ".rail__effect",
-// 	scrub: 1,
-// 	animation: gsap.fromTo(
-// 		".v2",
-// 		{
-// 			scale: 1.35,
-// 			opacity: 0,
-// 			transform: "translate3d(-20px,0,0)",
-// 		},
-// 		{
-// 			scale: 0.96,
-// 			opacity: 1,
-// 			transform: "translate3d(-20px,-20px,0)",
-// 		}
-// 	),
-// });
